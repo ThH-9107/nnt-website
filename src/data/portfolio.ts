@@ -14,6 +14,12 @@ export const profile = {
   resumeDocx: "/resume-nguyen-ngoc-thanh.docx",
 };
 
+export const medicalManuscript = {
+  title: "Photometric Augmentation and Appearance Regularization for Self-Supervised Skin-Lesion Classification",
+  status: "Submitted October 2026 to Computer Methods and Programs in Biomedicine",
+  authorship: "First author: Nguyen Ngoc Thanh",
+};
+
 export const featured: Project[] = [
   { number: "01", category: "Computational research", title: "Medical AI Research", description: "From emotion recognition to self-supervised melanoma classification and model robustness.", image: "/images/medical-ai-placeholder.svg", href: "/research/medical-ai" },
   { number: "02", category: "Field & laboratory research", title: "Phytophthora / Bacillus Research", description: "Field sampling, careful isolation, and revised protocols for a durian pathogen study.", image: "/images/durian-research-placeholder.svg", href: "/research/phytophthora" },

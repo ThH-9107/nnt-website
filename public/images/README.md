@@ -1,8 +1,8 @@
 # Image replacement guide
 
-These SVGs are intentionally abstract placeholders. Replace each with a real, permission-cleared image and update the matching path and alt text in `src/app/page.tsx` or `src/data/portfolio.ts`.
+These SVGs are intentionally abstract placeholders. Replace each with a real, permission-cleared image and update the matching path and alt text in `src/data/inquiry.ts`, `src/app/creative/page.tsx`, or `src/data/project-pages.ts`.
 
-- `research-portrait-placeholder.svg`: portrait of Thanh, ideally in a laboratory or research setting.
+- The Phase 1 homepage hero uses a clearly labeled CSS portrait placeholder in `src/app/page.tsx` and `src/app/home.css`. Replace it with a real portrait of Thanh, ideally in a research setting. `research-portrait-placeholder.svg` is retained from the earlier homepage but is not currently shown there.
 - `medical-ai-placeholder.svg`: a real research workspace photograph or a carefully anonymized model-analysis visual. Do not show identifiable patient data.
 - `durian-research-placeholder.svg`: field sampling in Lam Ha or pathogen isolation at the bench.
 - `molebio-placeholder.svg`: a MoleBio pipetting, microscopy, or outreach workshop.

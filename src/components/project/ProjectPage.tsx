@@ -1,17 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import { profile } from "@/data/portfolio";
 import type { ProjectStory } from "@/data/project-pages";
+import { SiteFooter } from "@/components/SiteFooter";
+import { SiteHeader } from "@/components/SiteHeader";
 import { ImageGallery, MetricBlocks, ProjectNote, ProjectTimeline } from "./ProjectSections";
 
 export function ProjectPage({ project }: { project: ProjectStory }) {
   return <>
     <a className="skip-link" href="#main">Skip to content</a>
-    <header className="site-header"><div className="container header-inner">
-      <Link className="wordmark" href="/" aria-label="Nguyen Ngoc Thanh, home">N<span>.</span>NT</Link>
-      <nav className="site-nav" aria-label="Main navigation"><Link href="/#research">Research</Link><Link href="/#leadership">Leadership</Link><Link href="/#creative">Creative</Link><Link href="/#about">About</Link><Link href="/#contact">Contact</Link></nav>
-      <a className="header-contact" href={`mailto:${profile.email}`}>Get in touch ↗</a>
-    </div></header>
+    <SiteHeader />
 
     <main id="main" className="detail-page">
       <div className="container detail-topbar"><nav aria-label="Breadcrumb" className="detail-breadcrumb"><Link href="/">Home</Link><span aria-hidden="true">/</span><Link href={project.areaHref}>{project.area}</Link><span aria-hidden="true">/</span><span aria-current="page">{project.shortTitle}</span></nav><Link className="detail-back" href={project.areaHref}>← Back to {project.area.toLowerCase()}</Link></div>
@@ -33,6 +30,6 @@ export function ProjectPage({ project }: { project: ProjectStory }) {
       <div className="detail-next"><div className="container"><span className="detail-kicker">Continue exploring</span><Link href={project.next.href}>{project.next.label} <span aria-hidden="true">↗</span></Link></div></div>
     </main>
 
-    <footer className="site-footer detail-footer"><div className="container"><div className="footer-main"><div><p className="eyebrow">Contact</p><h2>Let’s exchange ideas.</h2><p>Research questions, collaborations, or a conversation about science education are welcome.</p></div><a className="footer-email" href={`mailto:${profile.email}`}>{profile.email} ↗</a></div><div className="footer-bottom"><span>© {new Date().getFullYear()} Nguyen Ngoc Thanh</span><span>{profile.location}</span><div><Link href="/">Home</Link><Link href={project.areaHref}>Back to {project.area.toLowerCase()}</Link></div></div></div></footer>
+    <SiteFooter />
   </>;
 }

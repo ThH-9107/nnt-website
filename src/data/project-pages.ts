@@ -73,7 +73,7 @@ export const medicalAi: ProjectStory = {
   ],
   note: { label: "Research note", title: "What the inconclusive work taught me", paragraphs: [
     "The 2024 augmentation comparison did not yield a clear conclusion. It changed how I approach control conditions, evaluation, and debugging: a pipeline that runs is only the beginning of a trustworthy experiment.",
-    "The current best F1 is a single-seed preliminary observation. A manuscript is in preparation while further validation continues.",
+    "The current best F1 is a single-seed preliminary observation. The first-author manuscript “Photometric Augmentation and Appearance Regularization for Self-Supervised Skin-Lesion Classification” was submitted in October 2026 to Computer Methods and Programs in Biomedicine. Further validation continues.",
   ] },
   outlook: { title: "Where the work stands", paragraphs: [
     "The study remains in validation. I am working toward a clearer account of which choices affect performance and where the F1–AUROC trade-off comes from.",
