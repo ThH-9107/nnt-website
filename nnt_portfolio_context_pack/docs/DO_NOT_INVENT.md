@@ -1,0 +1,165 @@
+# DO NOT INVENT — Hard Constraints
+
+These are non-negotiable unless Thanh explicitly provides an update.
+
+## Medical AI
+
+Do NOT say:
+- manuscript is published
+- manuscript is accepted
+- manuscript is peer-reviewed
+- manuscript is under review
+
+Current allowed status:
+**submitted to Computer Methods and Programs in Biomedicine, October 2026**
+
+Do NOT say:
+- Barlow Twins was invented by Thanh
+- the Barlow Twins core implementation was wholly written from scratch
+- the current model improved on every metric
+- the current result is multi-seed / statistically stable
+- melanoma diagnosis is “solved”
+- the system is clinically validated
+
+Must preserve:
+- single-seed status for current best result
+- AUROC trade-off
+- independent-test wording when discussing 0.5522 → 0.5795
+- further validation remains necessary
+
+Avoid calling the current auxiliary component “fairness” unless the site is explicitly discussing a validated fairness analysis.
+Prefer:
+- appearance regularization
+- skin-tone-aware / appearance-aware component
+- robustness framing consistent with the paper
+
+## Phytophthora
+
+Do NOT say:
+- Bacillus subtilis was proven effective
+- a validated inhibition result exists
+- the project has a final successful outcome
+- older preliminary observations are definitive
+
+Current truth:
+- ongoing study
+- difficult / inconsistent pathogen isolation
+- protocol revision
+- reproducibility prioritized
+- no reliable validated inhibition result claimed
+
+## GMO / Bioluminescent Plant Proposal
+
+Do NOT say:
+- the experiment was performed
+- a plant was genetically modified
+- a glowing plant was produced
+- experimental results exist
+
+Allowed:
+- proposal
+- methodology
+- predicted outcomes
+- mentor involvement
+- project did not reach bench experimentation because of practical / regulatory access constraints
+
+## Hoa Yen
+
+Do NOT say:
+- VND 284M was “raised” unless a fundraising ledger explicitly supports that
+- VND 284M is purely direct aid
+- Lam Dong activity supported 50+ households based only on the current 3-year report
+- every older résumé dollar figure is additive to VND 284M
+- all public event totals belong solely to Hoa Yen without attribution evidence
+
+Use:
+**VND 284M in documented total program expenditures/support**
+
+Life jackets:
+- 50+ is user-confirmed and said to be supported by a ward thank-you letter
+- do not silently change it to 100
+
+Beneficiaries:
+Use **beneficiary participations** for aggregated program counts unless unique-person deduplication is known.
+
+## FRC
+
+Do NOT say:
+- Thanh alone caused facility changes
+- the Council directly implemented every proposal
+- the online form proposal was fully adopted unless confirmed
+
+Prefer:
+- proposed
+- contributed
+- Council feedback contributed to
+
+## Stem Cell Summer School
+
+Do NOT automatically call Thanh:
+- Lab Assistant
+- Research Assistant
+- Intern
+
+Preferred safe title:
+**Selected Participant**
+
+Use a stronger title only if an official source supports it.
+
+## Molecular Biology Course
+
+Do NOT automatically call the role:
+- Research Trainee
+
+Preferred safe title:
+**Selected Participant**
+unless official documentation supports otherwise.
+
+## U.S. Leadership Program
+
+Do NOT imply:
+- Harvard University ran the full program
+- MIT ran the full program
+
+Safe:
+- The Academy at Harvard Square & Harvard Student Agencies
+- academic visits to Harvard University and MIT
+- business / experiential programming
+
+## Performing Arts
+
+Khoi Sac 27:
+Do NOT claim:
+- the May 2027 performance has happened
+- fundraising totals belong to Thanh
+- audience / outcome for the 2027 production unless later confirmed
+
+Current:
+- selected through two audition rounds
+- main antagonist cast
+- rehearsing / upcoming as of Oct. 2026
+
+## Awards
+
+Do NOT publish unresolved years as facts.
+
+Check `OPEN_QUESTIONS.md` for:
+- SAT total conflict
+- 30/4 Math year
+- Six Core Values year
+
+## General
+
+Never:
+- invent links
+- invent DOI
+- invent journal decision
+- invent media coverage
+- invent research collaborator titles
+- invent project outcomes
+- invent participant counts
+- invent money raised
+- invent exact dates from vague memory
+
+When uncertain:
+use conservative language or ask Thanh.

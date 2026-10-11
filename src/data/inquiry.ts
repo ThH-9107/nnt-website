@@ -8,7 +8,6 @@ export type InquiryNodeData = {
   destination: string;
   href: string;
   legacyAnchor: string;
-  side: "left" | "right";
 };
 
 export const inquiryNodes: InquiryNodeData[] = [
@@ -16,37 +15,34 @@ export const inquiryNodes: InquiryNodeData[] = [
     id: "see",
     number: "01",
     action: "SEE",
-    scale: "SIGNAL / IMAGE",
+    scale: "IMAGE",
     question: "How much can an image tell us — and when should we distrust what a model sees?",
     context: "Computer vision → melanoma classification",
     destination: "Medical AI research",
     href: "/research/medical-ai",
     legacyAnchor: "medical-ai",
-    side: "left",
   },
   {
     id: "test",
     number: "02",
     action: "TEST",
-    scale: "ORGANISM / EXPERIMENT",
+    scale: "ORGANISM",
     question: "What do you do when biology refuses to behave like the protocol says it should?",
     context: "Field sampling → protocol revision",
     destination: "Phytophthora / durian research",
     href: "/research/phytophthora",
     legacyAnchor: "plant-research",
-    side: "right",
   },
   {
     id: "share",
     number: "03",
     action: "SHARE",
-    scale: "LEARNER / LAB",
+    scale: "LEARNER",
     question: "How can scientific curiosity become something other students can touch and test for themselves?",
     context: "A lecture-heavy club → hands-on biology",
     destination: "MoleBio",
     href: "/leadership/molebio",
     legacyAnchor: "molebio",
-    side: "left",
   },
   {
     id: "serve",
@@ -58,19 +54,17 @@ export const inquiryNodes: InquiryNodeData[] = [
     destination: "Hoa Yen Charity Fund",
     href: "/leadership/hoa-yen",
     legacyAnchor: "hoa-yen",
-    side: "right",
   },
   {
     id: "express",
     number: "05",
     action: "EXPRESS",
-    scale: "STORY",
+    scale: "AUDIENCE",
     question: "What changes when understanding something is no longer enough — and you have to make someone else feel it?",
     context: "Writing · directing · performing",
     destination: "Theatre & creative work",
     href: "/creative",
     legacyAnchor: "theatre",
-    side: "left",
   },
 ];
 

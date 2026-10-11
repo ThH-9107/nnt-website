@@ -3,6 +3,7 @@ export type TimelineItem = { period: string; title: string; text: string };
 export type GalleryItem = { src: string; intendedImage: string; caption: string };
 export type StoryChapter = { label: string; title: string; paragraphs: string[] };
 export type ProjectStory = {
+  kind: "medical-ai" | "phytophthora" | "molebio" | "hoa-yen";
   area: "Research" | "Leadership";
   areaHref: string;
   title: string;
@@ -27,6 +28,7 @@ export type ProjectStory = {
 };
 
 export const medicalAi: ProjectStory = {
+  kind: "medical-ai",
   area: "Research",
   areaHref: "/#research",
   title: "Learning to ask better questions of medical AI",
@@ -63,7 +65,7 @@ export const medicalAi: ProjectStory = {
       "More than 200 full skin-cancer training experiments, totaling approximately 600 GPU-hours, reflect repeated attempts to understand the pipeline and its choices. Earlier inconclusive augmentation work is part of why I now treat design and evaluation as research questions in their own right.",
     ] },
     { label: "03 / Preliminary result", title: "An improvement with a trade-off", paragraphs: [
-      "The baseline test F1 is 0.5522 and its AUROC is 0.8724. The highest observed F1 so far is 0.5795, approximately 4.9% higher relative to the baseline F1.",
+      "On the independent test set, the baseline F1 is 0.5522. The highest observed F1 so far is 0.5795, approximately 4.9% higher relative to that baseline.",
       "That higher-F1 result is preliminary and comes from a single seed. AUROC shows a trade-off, so the result should not be read as an across-the-board improvement. Further validation is ongoing.",
     ] },
   ],
@@ -83,6 +85,7 @@ export const medicalAi: ProjectStory = {
 };
 
 export const phytophthora: ProjectStory = {
+  kind: "phytophthora",
   area: "Research",
   areaHref: "/#research",
   title: "Following a durian pathogen from field to lab",
@@ -138,39 +141,40 @@ export const phytophthora: ProjectStory = {
 };
 
 export const molebio: ProjectStory = {
+  kind: "molebio",
   area: "Leadership",
   areaHref: "/#leadership",
   title: "Making molecular biology something students can do",
   shortTitle: "MoleBio",
   period: "2025–26",
   role: "Founder & President",
-  introduction: "MoleBio grew from a lecture and self-study based predecessor club into a smaller laboratory community built around practice, access, and student initiative.",
+  introduction: "MoleBio grew from a lecture and self-study based predecessor club into a laboratory community built around practice, access, and student initiative.",
   heroImage: "/images/molebio-placeholder.svg",
   heroImageType: "MoleBio students working at a lab bench",
   questionLabel: "The design question",
   question: "What would a biology club look like if students could practice the methods they were learning about?",
-  questionContext: "The predecessor club had approximately 16 members. In 2025–26, I redesigned and relaunched it as a 20-member club, with approximately 80% newly recruited members and a more hands-on program.",
+  questionContext: "The predecessor club had approximately 16 members. In 2025–26, I redesigned and relaunched it with approximately 20 members, around 80% newly recruited, and a more hands-on program.",
   metrics: [
-    { value: "16 → 20", label: "members", detail: "predecessor to MoleBio" },
+    { value: "~16 → ~20", label: "members", detail: "predecessor to MoleBio" },
     { value: "36", label: "weekly sessions", detail: "80 minutes each" },
     { value: "~48h", label: "scheduled programming", detail: "during 2025–26" },
-    { value: "4", label: "workshops", detail: "3 internal, 1 outreach" },
+    { value: "60+", label: "outreach registrations", detail: "25 laboratory spots" },
   ],
   timelineIntro: "The change was a redesign of how students spent their time together.",
   timeline: [
     { period: "2024–25", title: "Seeing the gap", text: "As a member of the approximately 16-person predecessor club, I saw that its lecture and self-study format offered limited hands-on learning." },
-    { period: "2025–26", title: "Relaunching as MoleBio", text: "I built a 20-member club, approximately 80% newly recruited, with 36 weekly 80-minute sessions and about 48 hours of scheduled programming." },
-    { period: "During 2025–26", title: "Opening the lab", text: "Three internal workshops and one outreach workshop added practical experience. The osmosis and microscopy outreach session received 60+ registrations for 25 laboratory spots." },
+    { period: "2025–26", title: "Relaunching as MoleBio", text: "I built a club of approximately 20 members, around 80% newly recruited, with 36 weekly 80-minute sessions and about 48 hours of scheduled programming." },
+    { period: "During 2025–26", title: "Opening the lab", text: "Hands-on workshops added practical experience. An osmosis and microscopy outreach session received 60+ registrations for 25 laboratory spots." },
     { period: "Science Fair", title: "Taking science outside the bench", text: "Approximately 30 participants built mini terrariums using reused plastic bottles and locally collected materials." },
   ],
   chapters: [
     { label: "01 / Transformation", title: "From listening to doing", paragraphs: [
       "The predecessor club mainly centered on lectures and self-study. MoleBio kept the curiosity but changed the routine: sessions were designed so members could handle tools, see biological processes, and learn through careful practice.",
-      "Twenty members joined the relaunched club. Approximately 80% were newly recruited, which made orientation, laboratory safety, and a welcoming learning environment part of the design problem.",
+      "Approximately 20 members joined the relaunched club. Around 80% were newly recruited, which made orientation, laboratory safety, and a welcoming learning environment part of the design problem.",
     ] },
     { label: "02 / Weekly practice", title: "A program built around methods", paragraphs: [
       "Across 36 weekly 80-minute sessions, students worked through laboratory safety, pipetting, centrifugation, DNA extraction and purification, PCR, gel electrophoresis, and microscopy. The schedule amounted to approximately 48 hours of programming.",
-      "Three internal workshops supported the club's own learning. An outreach workshop focused on osmosis and microscopy drew more than 60 registrations for 25 lab spots, showing both interest and the practical limit of available space.",
+      "Workshops supported the club's practical learning. An outreach workshop focused on osmosis and microscopy drew 60+ registrations for 25 lab spots, showing both interest and the practical limit of available space.",
     ] },
     { label: "03 / Beyond scheduled sessions", title: "Letting students make something", paragraphs: [
       "At Science Fair, approximately 30 participants made mini terrariums from reused plastic bottles and locally collected materials. The activity offered a tangible way into biological systems without specialized equipment.",
@@ -191,6 +195,7 @@ export const molebio: ProjectStory = {
 };
 
 export const hoaYen: ProjectStory = {
+  kind: "hoa-yen",
   area: "Leadership",
   areaHref: "/#leadership",
   title: "Building a student-led network of practical care",
@@ -204,21 +209,21 @@ export const hoaYen: ProjectStory = {
   question: "How can a student group turn an immediate local need into steady, well-coordinated community support?",
   questionContext: "I began Hoa Yen in April 2024 with approximately 15 core members. The team has grown to approximately 25, while 20–25 volunteers can participate in a given event.",
   metrics: [
-    { value: "6+", label: "major programs", detail: "documented" },
-    { value: "330+", label: "beneficiary participations", detail: "documented lower bound" },
-    { value: "~VND 284m", label: "expenditures and support", detail: "documented lower bound" },
+    { value: "6", label: "major programs", detail: "documented in the three-year report" },
+    { value: "330+", label: "beneficiary participations", detail: "documented in the three-year report" },
+    { value: "~VND 284M", label: "program expenditures / support", detail: "documented in the three-year report" },
     { value: "~15 → ~25", label: "core members", detail: "growth since founding" },
   ],
   timelineIntro: "Selected documented programs show how Hoa Yen's focus widened over time.",
   timeline: [
-    { period: "Apr. 2024", title: "Starting with water safety", text: "Hoa Yen began as a student-led effort around water safety. At Cai Rang Floating Market, volunteers distributed more than 50 life jackets and promoted awareness in a river-dependent community." },
-    { period: "2024", title: "Supporting children and older residents", text: "Programs included a waste-for-gifts activity, a Mid-Autumn program serving 100+ children, and a care fund of about $1,200 for older people living alone in Can Tho." },
-    { period: "2025", title: "Extending rural support", text: "The team coordinated rice distribution, rural-lighting support for 50+ households, and gifts for older residents as activities expanded beyond Can Tho to Lam Ha, Lam Dong." },
-    { period: "2026", title: "Returning to recurring work", text: "A Mid-Autumn program served approximately 150 children. Hoa Yen's documented work also includes support for children and youth through other community partners." },
+    { period: "Apr. 2024", title: "Starting with water safety", text: "Hoa Yen began as a student-led effort around water safety. At Cai Rang Floating Market, volunteers distributed 50+ life jackets and promoted awareness in a river-dependent community." },
+    { period: "2024", title: "Supporting children and older residents", text: "A Mid-Autumn program in An Binh reached 50 children. A separate elderly and community-care program recorded 70 beneficiary participations." },
+    { period: "2025", title: "Extending rural support", text: "In Lam Dong, a documented program provided five lighting sets and installation, with 30 listed beneficiaries and gifts for 20 residents." },
+    { period: "2026", title: "Returning to recurring work", text: "A Mid-Autumn program at Cai Rang Floating Market reached 150 children, with gifts and scholarship or gift packages documented in the program report." },
   ],
   chapters: [
     { label: "01 / Origin", title: "A specific need became a group", paragraphs: [
-      "The first campaign focused on water safety in a river-dependent community. Distributing more than 50 life jackets at Cai Rang Floating Market turned a broad concern into an activity the team could plan, fund, and deliver.",
+      "The first campaign focused on water safety in a river-dependent community. Distributing 50+ life jackets at Cai Rang Floating Market turned a broad concern into an activity the team could plan, fund, and deliver.",
       "From that starting point, Hoa Yen developed into a recurring student-led initiative across water safety, children and youth, elderly care, rural development, and community support.",
     ] },
     { label: "02 / Organization", title: "Growing the people behind each program", paragraphs: [
@@ -226,7 +231,7 @@ export const hoaYen: ProjectStory = {
       "My role as Founder and President includes fundraising, program planning, partnerships, resource allocation, and on-site coordination. The network matters because each program depends on people who can carry out the practical work together.",
     ] },
     { label: "03 / Initiatives", title: "Support that responds to different places", paragraphs: [
-      "Hoa Yen's documented programs include water-safety awareness and life jackets, children's activities and Mid-Autumn events, an elderly care fund and visits, rice distribution, rural lighting, and gifts for older residents.",
+      "Hoa Yen's work includes water-safety awareness and life jackets, children's activities and Mid-Autumn events, elderly and community-care visits, rural lighting, and gifts for residents.",
       "The initiatives vary, but the pattern is consistent: identify a local need, work with volunteers and partners, and account for what was actually delivered.",
     ] },
   ],
@@ -234,8 +239,8 @@ export const hoaYen: ProjectStory = {
     { src: "/images/hoa-yen-water-placeholder.svg", intendedImage: "Water-safety program photograph", caption: "A real photograph of the Cai Rang life-jacket distribution or water-safety activity, with participant permission." },
     { src: "/images/hoa-yen-community-placeholder.svg", intendedImage: "Children, elderly-care, or rural program photograph", caption: "A real image from a documented Hoa Yen program, accompanied by its date and location." },
   ],
-  note: { label: "Impact note", title: "Documented minimums, not lifetime totals", paragraphs: [
-    "The current records support at least six major programs, more than 330 beneficiary participations, and approximately VND 284 million in program expenditures and support. These are documented lower-bound figures, not precise lifetime totals or unique-person counts.",
+  note: { label: "Impact note", title: "What the documented figures mean", paragraphs: [
+    "The three-year report records six major programs, 330+ beneficiary participations, and approximately VND 284 million in total program expenditures and support. The participation count does not mean 330 unique people, and the financial figure is not money raised.",
   ] },
   outlook: { title: "Current direction", paragraphs: [
     "Hoa Yen continues to coordinate recurring work in water safety, children and youth, elderly care, rural development, and community support. The team remains centered on volunteers, partners, and documented delivery.",

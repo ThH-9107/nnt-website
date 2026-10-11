@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./home.css";
-import "./project-pages.css";
+import "./scale-map.css";
+import "./story.css";
 
 export const metadata: Metadata = {
   title: "Nguyen Ngoc Thanh | Student Researcher",
@@ -13,6 +14,6 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body>{children}</body></html>;
+export default function RootLayout({ children, story }: Readonly<{ children: React.ReactNode; story: React.ReactNode }>) {
+  return <html lang="en"><body><div id="site-content">{children}</div>{story}</body></html>;
 }
