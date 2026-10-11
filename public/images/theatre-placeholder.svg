@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 800" role="img" aria-labelledby="title">
+  <title id="title">Editorial placeholder for theatre performance</title>
+  <rect width="900" height="800" fill="#294039"/>
+  <path d="M0 0h900v415c-81-17-145-81-190-189-41 117-116 177-260 184-144-7-219-67-260-184C145 334 81 398 0 415Z" fill="#486b5b"/>
+  <path d="M0 0h900v315c-91-20-157-76-205-178-44 109-117 167-245 173-128-6-201-64-245-173C157 239 91 295 0 315Z" fill="#6d8d71"/>
+  <path d="M209 612c92-60 196-91 241-91s149 31 241 91" fill="none" stroke="#b9c9aa" stroke-width="4"/>
+  <circle cx="450" cy="418" r="70" fill="#d0d6b8"/><path d="M360 627c18-98 42-142 90-142s72 44 90 142" fill="#d0d6b8"/>
+  <path d="M90 675h720" stroke="#829d83" stroke-width="2"/><text x="90" y="725" fill="#cbd6bc" font-family="Arial,sans-serif" font-size="17" letter-spacing="4">THEATRE / PRODUCTION PHOTO</text>
+</svg>

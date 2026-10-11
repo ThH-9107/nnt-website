@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title">
+  <title id="title">Editorial placeholder for molecular biology club</title>
+  <rect width="900" height="700" fill="#e5ebe3"/>
+  <g stroke="#456d5f" stroke-width="4" fill="none"><path d="M177 70c190 130 190 235 0 365M375 70c-190 130-190 235 0 365"/><path d="M177 90h198M225 140h102M260 193h30M225 245h102M177 299h198M225 355h102M177 414h198"/></g>
+  <path d="M500 88h56v242l61 171c10 27-6 47-34 47H473c-28 0-44-20-34-47l61-171Z" fill="#c5d5c6" stroke="#456d5f" stroke-width="4"/><path d="M461 459h135" stroke="#456d5f" stroke-width="3"/>
+  <path d="M700 135h80v270c0 34-18 57-40 57s-40-23-40-57Z" fill="#eef3eb" stroke="#456d5f" stroke-width="4"/><path d="M690 135h100M701 310h78" stroke="#456d5f" stroke-width="4"/>
+  <circle cx="531" cy="412" r="12" fill="#678d77"/><circle cx="553" cy="475" r="8" fill="#678d77"/>
+  <path d="M80 603h740" stroke="#a8bca9" stroke-width="2"/><text x="80" y="650" fill="#456d5f" font-family="Arial,sans-serif" font-size="17" letter-spacing="4">MOLEBIO / WORKSHOP IMAGE</text>
+</svg>
