@@ -66,6 +66,10 @@ Need:
 Life-jacket activity:
 50+ is user-confirmed and supported by a ward thank-you letter according to Thanh.
 
+### 2026 Mid-Autumn gift-count scope
+
+The three-year report records 150 gifts and 150 children. The Cai Rang Ward Youth Union letter dated September 18, 2026 (`public/images/hoa-yen/thucamta.jpg`) acknowledges 100 gift packages and 10 scholarships. Confirm whether the letter covers a subset or a separate allocation within the program. Until then, keep both records attributed to their own sources and do not add or reconcile the counts.
+
 ## 6. Hoa Yen accounting language
 
 Use current safe overall figure:

@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title">
-  <title id="title">Editorial placeholder for medical AI research</title>
-  <rect width="900" height="700" fill="#e1e9e2"/>
-  <g stroke="#a0b7a6" stroke-width="2" fill="none"><path d="M85 82h730v535H85z"/><path d="M328 82v535M572 82v535M85 260h730M85 439h730"/></g>
-  <g fill="#8fad98" opacity=".75"><circle cx="207" cy="168" r="50"/><circle cx="451" cy="350" r="62"/><circle cx="695" cy="527" r="49"/></g>
-  <g fill="none" stroke="#345d50" stroke-width="3"><circle cx="207" cy="168" r="36"/><circle cx="451" cy="350" r="48"/><circle cx="695" cy="527" r="36"/><path d="M207 132l244 170 244 189"/></g>
-  <g fill="#345d50"><circle cx="207" cy="168" r="5"/><circle cx="451" cy="350" r="5"/><circle cx="695" cy="527" r="5"/></g>
-  <text x="86" y="659" fill="#345d50" font-family="Arial,sans-serif" font-size="17" letter-spacing="4">MEDICAL IMAGING / RESEARCH IMAGE</text>
-</svg>

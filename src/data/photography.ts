@@ -1,0 +1,289 @@
+export type PortfolioImage = {
+  src: string;
+  fullSrc?: string;
+  width: number;
+  height: number;
+  title: string;
+  caption: string;
+  alt: string;
+  kind?: "photo" | "figure";
+  aspectRatio?: string;
+  position?: string;
+};
+
+// Curated delivery assets. Original uploads remain in public/images.
+export const photos = {
+  "portrait": {
+    "src": "/images/selected/thanh-school-portrait.webp",
+    "width": 960,
+    "height": 1280,
+    "title": "Nguyen Ngoc Thanh",
+    "caption": "Portrait in school uniform.",
+    "alt": "Thanh wearing his school uniform and glasses against a pale wall.",
+    "aspectRatio": "4 / 5",
+    "position": "50% 42%"
+  },
+  "labPortrait": {
+    "src": "/images/selected/thanh-at-the-lab-bench.webp",
+    "width": 1276,
+    "height": 956,
+    "title": "At the laboratory bench",
+    "caption": "Careful work with samples, tools, and an unfinished question.",
+    "alt": "Thanh wearing gloves and working with samples at a laboratory bench."
+  },
+  "medicalExamples": {
+    "src": "/images/selected/medical-ai-test-image-examples.webp",
+    "width": 2856,
+    "height": 1951,
+    "title": "The images behind the question",
+    "caption": "Selected independent-test skin-image examples. They illustrate the classification task and are not evidence of model performance.",
+    "alt": "Six skin-lesion image examples arranged in non-melanoma and melanoma rows.",
+    "kind": "figure"
+  },
+  "medicalComparison": {
+    "src": "/images/selected/medical-ai-condition-comparison.webp",
+    "width": 3633,
+    "height": 1917,
+    "title": "Compare both measures",
+    "caption": "The six current conditions, shown on the independent ISIC 2019 test set. These are single-seed results; higher F1 does not imply higher AUROC.",
+    "alt": "Side-by-side charts comparing independent-test F1 and AUROC across six conditions.",
+    "kind": "figure"
+  },
+  "medicalTradeoff": {
+    "src": "/images/selected/medical-ai-f1-auroc-tradeoff.webp",
+    "width": 2525,
+    "height": 2074,
+    "title": "An improvement with a trade-off",
+    "caption": "F1 captures performance at a selected decision threshold; AUROC describes ranking across thresholds. This plot makes the trade-off visible. Further validation remains necessary.",
+    "alt": "Scatter plot showing that the conditions with higher F1 have lower AUROC than the baseline.",
+    "kind": "figure"
+  },
+  "medicalPrototype": {
+    "src": "/images/selected/medical-ai-early-webcam-prototype.webp",
+    "width": 1600,
+    "height": 1000,
+    "title": "An early webcam prototype",
+    "caption": "A record from the emotion-recognition stage of the research, before the move to medical imaging.",
+    "alt": "A webcam frame of Thanh with a face-detection box, shown inside a development window."
+  },
+  "phytophthoraBench": {
+    "src": "/images/selected/phytophthora-laboratory-bench.webp",
+    "width": 1290,
+    "height": 704,
+    "title": "From field material to a lab workflow",
+    "caption": "The laboratory setting for isolation attempts and protocol work.",
+    "alt": "Laboratory bench with stacked culture plates, a notebook, and laboratory equipment."
+  },
+  "phytophthoraSampling": {
+    "src": "/images/selected/phytophthora-durian-trunk-sampling.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Sampling in the field",
+    "caption": "Durian trunk material collected for the field-to-laboratory study in Lam Ha.",
+    "alt": "A sample bag held beside a sampled area on a durian trunk.",
+    "aspectRatio": "3 / 4"
+  },
+  "phytophthoraFailed": {
+    "src": "/images/selected/phytophthora-unsuccessful-isolation.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "An attempt that needed revision",
+    "caption": "An unsuccessful isolation attempt. This is a record of the workflow problem, not a validated pathogen identification or inhibition result.",
+    "alt": "A culture plate with several patches of mixed growth, held by hand.",
+    "aspectRatio": "3 / 4"
+  },
+  "phytophthoraSoil": {
+    "src": "/images/selected/phytophthora-soil-and-leaf-setup.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Preparing material for isolation",
+    "caption": "A soil and leaf-material setup from the research record.",
+    "alt": "A laboratory container holding soil and green leaf material.",
+    "aspectRatio": "3 / 4"
+  },
+  "phytophthoraProcess": {
+    "src": "/images/selected/phytophthora-isolation-workspace.webp",
+    "width": 900,
+    "height": 1600,
+    "title": "The practical setup",
+    "caption": "Sample handling and tools used during isolation work.",
+    "alt": "Sample-handling tools and containers arranged on a laboratory bench.",
+    "aspectRatio": "3 / 4"
+  },
+  "phytophthoraPlate": {
+    "src": "/images/selected/phytophthora-culture-observation.webp",
+    "width": 720,
+    "height": 1280,
+    "title": "Observing a culture plate",
+    "caption": "A preliminary culture observation. The photograph does not establish the identity of the organism or a reliable biocontrol result.",
+    "alt": "A Petri dish with several small growth areas and handwritten markings.",
+    "aspectRatio": "3 / 4"
+  },
+  "molebioTeaching": {
+    "src": "/images/selected/molebio-thanh-teaching.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Making a method visible",
+    "caption": "Explaining microscopy to students in the laboratory.",
+    "alt": "Thanh standing beside a display of microscope images and speaking to students at lab benches.",
+    "aspectRatio": "4 / 5",
+    "position": "50% 45%"
+  },
+  "molebioBench": {
+    "src": "/images/selected/molebio-students-at-the-bench.webp",
+    "width": 1290,
+    "height": 1273,
+    "title": "Learning together at the bench",
+    "caption": "Students handle laboratory materials together during a practical session.",
+    "alt": "Students in laboratory coats working together with tubes and tools at a bench.",
+    "aspectRatio": "1 / 1"
+  },
+  "molebioFair": {
+    "src": "/images/selected/molebio-terrarium-workshop.webp",
+    "width": 1600,
+    "height": 1200,
+    "title": "Science that fits in your hands",
+    "caption": "The terrarium workshop used reused plastic bottles and locally collected materials.",
+    "alt": "Students gathered around a table assembling small bottle terrariums."
+  },
+  "molebioPCR": {
+    "src": "/images/selected/molebio-pcr-practice.webp",
+    "width": 1276,
+    "height": 1278,
+    "title": "PCR practice",
+    "caption": "Handling tubes and laboratory equipment during a practical session.",
+    "alt": "A gloved student handling a tube beside laboratory equipment.",
+    "aspectRatio": "1 / 1"
+  },
+  "molebioWorkshop": {
+    "src": "/images/selected/molebio-microscopy-workshop-group.webp",
+    "width": 1600,
+    "height": 1200,
+    "title": "A shared laboratory",
+    "caption": "A group photograph from the workshop record.",
+    "alt": "Workshop participants and students gathered in a school laboratory.",
+    "aspectRatio": "4 / 3"
+  },
+  "molebioModel": {
+    "src": "/images/selected/molebio-student-model-project.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "A student-led model project",
+    "caption": "A record of the club's DNA-model work and its presentation.",
+    "alt": "A laptop displaying molecular-model work and a project presentation.",
+    "aspectRatio": "4 / 5"
+  },
+  "stemcellLearning": {
+    "src": "/images/selected/stem-cell-summer-school-laboratory.webp",
+    "width": 1600,
+    "height": 1200,
+    "title": "Stem Cell Summer School · 2024",
+    "caption": "Selected participant at the Stem Cell Institute, University of Science, Vietnam National University Ho Chi Minh City.",
+    "alt": "Students in laboratory coats working together around a bench during the summer school.",
+    "aspectRatio": "4 / 3"
+  },
+  "binhphuLearning": {
+    "src": "/images/selected/binh-phu-laboratory-experience.webp",
+    "width": 900,
+    "height": 1600,
+    "title": "Binh Phu · September 2025",
+    "caption": "Supervised exposure to pharmaceutical laboratory and quality-control work.",
+    "alt": "Thanh working with a laboratory instrument during the Binh Phu experience.",
+    "aspectRatio": "4 / 3",
+    "position": "50% 42%"
+  },
+  "hoaYenWater": {
+    "src": "/images/selected/hoa-yen-cai-rang-water-safety.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Water safety at Cai Rang",
+    "caption": "A moment from the life-jacket campaign at Cai Rang Floating Market.",
+    "alt": "A volunteer in a life jacket handing supplies to a person in a boat at Cai Rang.",
+    "aspectRatio": "4 / 5",
+    "position": "50% 40%"
+  },
+  "hoaYenMidAutumn2024": {
+    "src": "/images/selected/hoa-yen-mid-autumn-2024.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "Mid-Autumn · 2024",
+    "caption": "The wider setting of a community program, with volunteers and participants gathered together.",
+    "alt": "People gathered outdoors under trees and lanterns during an evening community event.",
+    "aspectRatio": "3 / 4"
+  },
+  "hoaYenPreparation": {
+    "src": "/images/selected/hoa-yen-volunteer-preparation.webp",
+    "width": 1200,
+    "height": 1600,
+    "title": "The work before the visit",
+    "caption": "Volunteers preparing supplies during a community-care program.",
+    "alt": "A group of volunteers seated together and preparing supplies for a community-care activity.",
+    "aspectRatio": "4 / 5"
+  },
+  "hoaYenLamDong": {
+    "src": "/images/selected/hoa-yen-lam-dong-program.webp",
+    "width": 1600,
+    "height": 901,
+    "title": "Lam Dong · 2025",
+    "caption": "A photograph from the rural-support program. The documented program included lighting sets, installation, and gifts.",
+    "alt": "Hoa Yen representatives beside stacked supplies at the Lam Dong program."
+  },
+  "hoaYenMidAutumn2026": {
+    "src": "/images/selected/hoa-yen-mid-autumn-2026.webp",
+    "width": 1600,
+    "height": 900,
+    "title": "Mid-Autumn · 2026",
+    "caption": "A group photograph from the program record.",
+    "alt": "Organizers and participants standing together on a community-event stage."
+  },
+  "creativeEnsemble": {
+    "src": "/images/selected/hoa-chi-ensemble-on-stage.webp",
+    "width": 1600,
+    "height": 1063,
+    "title": "Hoa Chi · 2025",
+    "caption": "A scene from the ensemble performance.",
+    "alt": "The Hoa Chi ensemble performing together on stage before an audience.",
+    "aspectRatio": "3 / 2"
+  },
+  "creativeAudience": {
+    "src": "/images/selected/hoa-chi-stage-and-audience.webp",
+    "width": 1600,
+    "height": 899,
+    "title": "The room becomes part of the story",
+    "caption": "The wider view of the Hoa Chi performance and its audience.",
+    "alt": "A wide view of the Hoa Chi performance in a school gymnasium with rows of audience members."
+  },
+  "creativePoster": {
+    "src": "/images/selected/cao-van-lau-production-poster.webp",
+    "width": 1587,
+    "height": 2245,
+    "title": "The Cao Van Lau production",
+    "caption": "The original production poster, with Thanh credited in the role of Cao Van Lau.",
+    "alt": "The original poster for the Cao Van Lau production, showing the cast and title 1919 Xuyen Khong.",
+    "kind": "figure"
+  },
+  "creativeFamilyScene": {
+    "src": "/images/selected/school-family-performance-ensemble.webp",
+    "width": 1600,
+    "height": 900,
+    "title": "Inside the ensemble",
+    "caption": "A scene from the school family-performance archive.",
+    "alt": "Costumed performers sharing a scene on stage in a school family production."
+  },
+  "creativeWide": {
+    "src": "/images/selected/school-performance-full-stage.webp",
+    "width": 1600,
+    "height": 1067,
+    "title": "The whole stage",
+    "caption": "A wider view of the cast and performance space.",
+    "alt": "A school-performance ensemble spanning a stage with the auditorium visible in front."
+  },
+  "frcMeeting": {
+    "src": "/images/selected/family-representative-council-discussion.webp",
+    "width": 1600,
+    "height": 1066,
+    "title": "Family Representative Council",
+    "caption": "A council discussion in the school meeting space.",
+    "alt": "Student representatives seated around tables during a Family Representative Council discussion."
+  }
+} satisfies Record<string, PortfolioImage>;

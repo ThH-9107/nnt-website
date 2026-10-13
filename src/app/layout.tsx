@@ -3,6 +3,9 @@ import "./globals.css";
 import "./home.css";
 import "./scale-map.css";
 import "./story.css";
+import "./photography.css";
+import "./scale-photography.css";
+import "./certificates.css";
 
 export const metadata: Metadata = {
   title: "Nguyen Ngoc Thanh | Student Researcher",

@@ -1,6 +1,8 @@
+import { photos, type PortfolioImage } from "./photography";
+
 export type Metric = { value: string; label: string; detail?: string };
 export type TimelineItem = { period: string; title: string; text: string };
-export type GalleryItem = { src: string; intendedImage: string; caption: string };
+export type GalleryItem = PortfolioImage;
 export type StoryChapter = { label: string; title: string; paragraphs: string[] };
 export type ProjectStory = {
   kind: "medical-ai" | "phytophthora" | "molebio" | "hoa-yen";
@@ -11,8 +13,7 @@ export type ProjectStory = {
   period: string;
   role: string;
   introduction: string;
-  heroImage: string;
-  heroImageType: string;
+  hero: GalleryItem;
   questionLabel: string;
   question: string;
   questionContext: string;
@@ -21,6 +22,9 @@ export type ProjectStory = {
   timeline: TimelineItem[];
   chapters: StoryChapter[];
   gallery: GalleryItem[];
+  record?: GalleryItem[];
+  relatedImages?: GalleryItem[];
+  timelineImage?: GalleryItem;
   note: { label: string; title: string; paragraphs: string[] };
   outlook: { title: string; paragraphs: string[] };
   credits?: { label: string; name: string; detail: string }[];
@@ -36,8 +40,8 @@ export const medicalAi: ProjectStory = {
   period: "Nov. 2023–Present",
   role: "Student Researcher",
   introduction: "A continuing research journey from emotion recognition to self-supervised melanoma classification. Each change in direction has made the experimental question more precise.",
-  heroImage: "/images/medical-ai-placeholder.svg",
-  heroImageType: "Medical-imaging research visual or anonymized model analysis",
+  hero: photos.medicalExamples,
+  timelineImage: photos.medicalPrototype,
   questionLabel: "The research question",
   question: "Can a model learn useful representations from unlabeled skin images, and how should we judge the resulting classifier?",
   questionContext: "The current study evaluates melanoma versus non-melanoma classification while testing whether Planckian Jitter and a skin-tone-aware auxiliary branch change performance. It uses six experimental conditions; conclusions still need further validation.",
@@ -69,10 +73,7 @@ export const medicalAi: ProjectStory = {
       "That higher-F1 result is preliminary and comes from a single seed. AUROC shows a trade-off, so the result should not be read as an across-the-board improvement. Further validation is ongoing.",
     ] },
   ],
-  gallery: [
-    { src: "/images/medical-ai-dataset-placeholder.svg", intendedImage: "Anonymized dataset or preprocessing diagram", caption: "Show how unlabeled pretraining and the labeled train, validation, and independent test sets relate. No identifiable patient data." },
-    { src: "/images/medical-ai-experiment-placeholder.svg", intendedImage: "Experiment comparison chart", caption: "A verified chart comparing the six conditions, including F1 and AUROC, can be placed here after further validation." },
-  ],
+  gallery: [photos.medicalComparison, photos.medicalTradeoff],
   note: { label: "Research note", title: "What the inconclusive work taught me", paragraphs: [
     "The 2024 augmentation comparison did not yield a clear conclusion. It changed how I approach control conditions, evaluation, and debugging: a pipeline that runs is only the beginning of a trustworthy experiment.",
     "The current best F1 is a single-seed preliminary observation. The first-author manuscript “Photometric Augmentation and Appearance Regularization for Self-Supervised Skin-Lesion Classification” was submitted in October 2026 to Computer Methods and Programs in Biomedicine. Further validation continues.",
@@ -93,8 +94,7 @@ export const phytophthora: ProjectStory = {
   period: "May 2024–Present",
   role: "Team Lead & Primary Researcher · 2-student team",
   introduction: "A field and laboratory study in Lam Ha, Lam Dong, investigating whether Bacillus subtilis can inhibit Phytophthora palmivora, an important durian pathogen.",
-  heroImage: "/images/durian-research-placeholder.svg",
-  heroImageType: "Durian field sampling photograph from Lam Ha",
+  hero: photos.phytophthoraBench,
   questionLabel: "The research question",
   question: "Can a potential biological control approach be tested reliably against Phytophthora palmivora in durian?",
   questionContext: "Before an antagonism result is meaningful, the pathogen must be isolated and identified consistently. That first step has shaped the project more than any claim of success.",
@@ -123,10 +123,8 @@ export const phytophthora: ProjectStory = {
       "The 2025 International Science Exchange Program was a chance to explain a preliminary study to visiting partner schools from Taiwan. Communicating the research while the methods were still evolving made it necessary to distinguish the question, the work completed, and the results still needed.",
     ] },
   ],
-  gallery: [
-    { src: "/images/phytophthora-field-placeholder.svg", intendedImage: "Field sampling photograph", caption: "Photograph symptomatic durian material or the sampling setting in Lam Ha, with location and date checked before publication." },
-    { src: "/images/phytophthora-lab-placeholder.svg", intendedImage: "Pathogen-isolation workflow diagram or lab photograph", caption: "Show the current isolation process and protocol iteration without presenting an unverified outcome." },
-  ],
+  gallery: [photos.phytophthoraSampling, photos.phytophthoraFailed],
+  record: [photos.phytophthoraSoil, photos.phytophthoraProcess, photos.phytophthoraPlate],
   note: { label: "Research note", title: "No reliable efficacy claim yet", paragraphs: [
     "The current study has not produced a sufficiently reliable result to say Bacillus subtilis inhibits Phytophthora palmivora in this setting. Isolation difficulties and seasonal constraints are reasons to redesign and resample before making that claim.",
   ] },
@@ -149,8 +147,7 @@ export const molebio: ProjectStory = {
   period: "2025–26",
   role: "Founder & President",
   introduction: "MoleBio grew from a lecture and self-study based predecessor club into a laboratory community built around practice, access, and student initiative.",
-  heroImage: "/images/molebio-placeholder.svg",
-  heroImageType: "MoleBio students working at a lab bench",
+  hero: photos.molebioTeaching,
   questionLabel: "The design question",
   question: "What would a biology club look like if students could practice the methods they were learning about?",
   questionContext: "The predecessor club had approximately 16 members. In 2025–26, I redesigned and relaunched it with approximately 20 members, around 80% newly recruited, and a more hands-on program.",
@@ -181,10 +178,9 @@ export const molebio: ProjectStory = {
       "Members also started a website prototype and a physical 3D DNA model. These projects gave students room to explain biology in their own formats.",
     ] },
   ],
-  gallery: [
-    { src: "/images/molebio-lab-placeholder.svg", intendedImage: "MoleBio laboratory session photograph", caption: "A real image of pipetting, microscopy, DNA extraction, PCR, or gel electrophoresis during a club session." },
-    { src: "/images/molebio-fair-placeholder.svg", intendedImage: "Science Fair or outreach photograph", caption: "Show the terrarium activity or the osmosis and microscopy outreach workshop, with participant permission." },
-  ],
+  gallery: [photos.molebioBench, photos.molebioFair],
+  record: [photos.molebioPCR, photos.molebioWorkshop, photos.molebioModel],
+  relatedImages: [photos.stemcellLearning, photos.binhphuLearning],
   note: { label: "Program note", title: "Access has practical limits", paragraphs: [
     "The outreach workshop received 60+ registrations, but laboratory capacity allowed 25 spots. That gap is part of the story of building hands-on science opportunities in a school setting.",
   ] },
@@ -203,8 +199,7 @@ export const hoaYen: ProjectStory = {
   period: "Apr. 2024–Present",
   role: "Founder & President",
   introduction: "Hoa Yen began with a water-safety campaign and grew into recurring programs for children, older residents, and rural communities in and beyond Can Tho.",
-  heroImage: "/images/hoa-yen-placeholder.svg",
-  heroImageType: "Hoa Yen volunteers working at a community program",
+  hero: photos.hoaYenWater,
   questionLabel: "The organizing question",
   question: "How can a student group turn an immediate local need into steady, well-coordinated community support?",
   questionContext: "I began Hoa Yen in April 2024 with approximately 15 core members. The team has grown to approximately 25, while 20–25 volunteers can participate in a given event.",
@@ -235,10 +230,7 @@ export const hoaYen: ProjectStory = {
       "The initiatives vary, but the pattern is consistent: identify a local need, work with volunteers and partners, and account for what was actually delivered.",
     ] },
   ],
-  gallery: [
-    { src: "/images/hoa-yen-water-placeholder.svg", intendedImage: "Water-safety program photograph", caption: "A real photograph of the Cai Rang life-jacket distribution or water-safety activity, with participant permission." },
-    { src: "/images/hoa-yen-community-placeholder.svg", intendedImage: "Children, elderly-care, or rural program photograph", caption: "A real image from a documented Hoa Yen program, accompanied by its date and location." },
-  ],
+  gallery: [photos.hoaYenMidAutumn2024, photos.hoaYenLamDong, photos.hoaYenPreparation, photos.hoaYenMidAutumn2026],
   note: { label: "Impact note", title: "What the documented figures mean", paragraphs: [
     "The three-year report records six major programs, 330+ beneficiary participations, and approximately VND 284 million in total program expenditures and support. The participation count does not mean 330 unique people, and the financial figure is not money raised.",
   ] },

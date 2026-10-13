@@ -26,3 +26,8 @@ pnpm-debug.log*
 # TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# Original private upload archive and test report
+/local-source-documents/
+/public/images/awards.zip
+/public/images/awards/*ETRF.pdf

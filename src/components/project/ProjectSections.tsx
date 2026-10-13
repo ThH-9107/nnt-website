@@ -1,5 +1,5 @@
-import Image from "next/image";
 import type { GalleryItem, Metric, TimelineItem } from "@/data/project-pages";
+import { StoryFigure } from "@/components/story/StoryFigure";
 
 export function MetricBlocks({ metrics }: { metrics: Metric[] }) {
   return <div className="detail-metrics" aria-label="Project at a glance">
@@ -20,14 +20,7 @@ export function ProjectTimeline({ items }: { items: TimelineItem[] }) {
 
 export function ImageGallery({ images }: { images: GalleryItem[] }) {
   return <div className="detail-gallery">
-    {images.map((image) => <figure className="detail-gallery-item" key={image.src}>
-      <div className="detail-gallery-image">
-        {/* Replace the SVG path in src/data/project-pages.ts with the exact real image type named below. */}
-        <Image src={image.src} alt="" fill sizes="(max-width: 800px) 100vw, 50vw" />
-        <span className="detail-image-tag">Image placeholder</span>
-      </div>
-      <figcaption><strong>Intended image: {image.intendedImage}</strong><span>{image.caption}</span></figcaption>
-    </figure>)}
+    {images.map((image) => <StoryFigure key={image.src} image={image} className="detail-gallery-item" />)}
   </div>;
 }
 

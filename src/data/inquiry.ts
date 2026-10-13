@@ -1,3 +1,5 @@
+import { photos } from "./photography";
+
 export type InquiryNodeData = {
   id: "see" | "test" | "share" | "serve" | "express";
   number: string;
@@ -74,23 +76,24 @@ export const selectedHighlights = [
     title: "Medical AI, from the image to the method",
     description: "A research path from emotion recognition to self-supervised skin-lesion classification, with careful attention to what an evaluation can and cannot show.",
     href: "/research/medical-ai",
-    image: "/images/medical-ai-placeholder.svg",
-    imageType: "Verified model-analysis figure or anonymized dermoscopic research image",
+    image: photos.medicalExamples.src,
+    imageType: photos.medicalExamples.alt,
   },
   {
     number: "02 / Research",
     title: "When the field changes the protocol",
     description: "A durian pathogen study shaped by sampling, inconsistent isolation, and the need to redesign before drawing a conclusion.",
     href: "/research/phytophthora",
-    image: "/images/durian-research-placeholder.svg",
-    imageType: "Field sampling or laboratory isolation photograph from Lam Ha",
+    image: photos.phytophthoraSampling.src,
+    imageType: photos.phytophthoraSampling.alt,
   },
   {
     number: "03 / Community",
     title: "Building a program people can return to",
     description: "Hoa Yen grew from a water-safety campaign into recurring student-led community support.",
     href: "/leadership/hoa-yen",
-    image: "/images/hoa-yen-placeholder.svg",
-    imageType: "Documented Hoa Yen community event photograph, used with permission",
+    image: photos.hoaYenWater.src,
+    imageType: photos.hoaYenWater.alt,
   },
 ];
+

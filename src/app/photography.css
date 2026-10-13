@@ -1,0 +1,57 @@
+/* Actual photographs retain their framing; scientific figures retain every label. */
+.story-figure-image{display:block}
+.story-figure[data-kind="figure"] .story-figure-image{background:#f7f3e9}
+.story-figure-image .story-image-open{position:absolute;left:auto;top:auto;right:12px;bottom:12px;width:26px;height:26px;display:grid;place-items:center;padding:0;background:rgba(247,246,241,.93);color:var(--accent);font-size:15px;line-height:1;opacity:.7;transition:opacity .2s ease;pointer-events:none}
+.story-figure-image:hover .story-image-open,.story-figure-image:focus-visible .story-image-open{opacity:1}
+.story-medical-prototype{margin-top:30px}
+.story-medical-gallery .story-figure:last-child{margin-top:50px}
+.story-field-contact-sheet>div:last-child{grid-template-columns:repeat(3,minmax(0,1fr));gap:23px}
+.story-lab-documentation{padding:0 max(32px,5vw) 90px}
+.story-photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:start}
+.story-related-learning{padding:70px max(32px,5vw) 85px;border-top:1px solid var(--line);background:#f2f5ef}
+.story-related-learning .story-section-heading{max-width:650px}
+.story-related-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.story-community-gallery{display:block;columns:2;column-gap:30px}
+.story-community-gallery .story-figure{break-inside:avoid;margin:0 0 30px}
+.story-community-gallery .story-figure:last-child{margin:0 0 30px}
+.story-community-evidence{display:grid;grid-template-columns:1fr .7fr;gap:9%;align-items:start;padding:0 max(32px,5vw) 95px}
+.story-community-evidence .story-kicker{margin-bottom:18px}
+.story-community-evidence p{color:var(--muted);max-width:600px}
+.story-community-evidence>div>a{display:inline-flex;gap:18px;margin-top:12px;color:var(--accent);font-size:11px;font-weight:700;border-bottom:1px solid var(--accent);padding-bottom:5px}
+.story-creative .story-figure-image{background:#263f36}
+.story-creative .story-figure[data-kind="figure"] .story-figure-image{background:#253c35}
+.story-creative .story-figure figcaption{color:#bccfc1}
+.story-creative .story-figure figcaption strong{color:#c9dfcf;font-size:10px;font-weight:700;line-height:1.5;letter-spacing:.025em;text-transform:none}
+.story-creative .story-figure-image img{opacity:1}
+.story-creative-archive article>div>p:not(.story-kicker){color:#bfcec5;max-width:630px;margin:20px 0 0}
+.story-production-image{margin-top:26px}
+.story-production-image[data-kind="figure"]{width:min(100%,340px)}
+.story-creative-photo-essay{padding:0 max(32px,5vw) 90px}
+.story-creative-photo-essay>div:last-child{display:grid;grid-template-columns:1fr 1.25fr;gap:25px;align-items:start}
+.story-creative-photo-essay .story-figure:last-child{margin-top:55px}
+
+@media(max-width:900px){
+  .home-portrait{aspect-ratio:4/5;min-height:0;max-width:520px;width:100%;justify-self:center}
+  .story-lab-documentation{padding:0 24px 70px}
+  .story-related-learning{padding:60px 24px 70px}
+  .story-photo-grid{gap:16px}
+  .story-community-gallery{columns:2}
+  .story-community-evidence{grid-template-columns:1fr;gap:25px;padding:0 24px 70px}
+  .story-community-evidence .story-figure{max-width:500px}
+  .story-creative-photo-essay{padding:0 24px 70px}
+  .story-medical-gallery .story-figure:last-child{margin-top:0}
+}
+@media(max-width:620px){
+  .home-portrait{min-height:0;max-width:400px}
+  .story-field-contact-sheet>div:last-child,.story-photo-grid,.story-related-grid,.story-creative-photo-essay>div:last-child{grid-template-columns:1fr}
+  .story-field-contact-sheet>div:last-child{gap:25px}
+  .story-photo-grid{gap:28px}
+  .story-community-gallery{columns:1}
+  .story-related-learning{padding:55px 17px 65px}
+  .story-community-evidence{padding:0 17px 65px}
+  .story-lab-documentation{padding:0 17px 65px}
+  .story-creative-photo-essay{padding:0 17px 65px}
+  .story-creative-photo-essay .story-figure:last-child{margin-top:0}
+  .story-figure figcaption{font-size:11px}
+}
+@media(prefers-reduced-motion:reduce){.story-image-open{transition:none}}

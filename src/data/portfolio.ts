@@ -1,3 +1,5 @@
+import { photos } from "./photography";
+
 export type Project = { number: string; category: string; title: string; description: string; image: string; href: string };
 
 export const profile = {
@@ -21,10 +23,10 @@ export const medicalManuscript = {
 };
 
 export const featured: Project[] = [
-  { number: "01", category: "Computational research", title: "Medical AI Research", description: "From emotion recognition to self-supervised melanoma classification and model robustness.", image: "/images/medical-ai-placeholder.svg", href: "/research/medical-ai" },
-  { number: "02", category: "Field & laboratory research", title: "Phytophthora / Bacillus Research", description: "Field sampling, careful isolation, and revised protocols for a durian pathogen study.", image: "/images/durian-research-placeholder.svg", href: "/research/phytophthora" },
-  { number: "03", category: "Science education", title: "MoleBio", description: "A student club redesigned around practical molecular biology and access to the laboratory.", image: "/images/molebio-placeholder.svg", href: "/leadership/molebio" },
-  { number: "04", category: "Community leadership", title: "Hoa Yen Charity Fund", description: "A student-led effort supporting water safety, children, older residents, and rural communities.", image: "/images/hoa-yen-placeholder.svg", href: "/leadership/hoa-yen" },
+  { number: "01", category: "Computational research", title: "Medical AI Research", description: "From emotion recognition to self-supervised melanoma classification and model robustness.", image: photos.medicalExamples.src, href: "/research/medical-ai" },
+  { number: "02", category: "Field & laboratory research", title: "Phytophthora / Bacillus Research", description: "Field sampling, careful isolation, and revised protocols for a durian pathogen study.", image: photos.phytophthoraSampling.src, href: "/research/phytophthora" },
+  { number: "03", category: "Science education", title: "MoleBio", description: "A student club redesigned around practical molecular biology and access to the laboratory.", image: photos.molebioTeaching.src, href: "/leadership/molebio" },
+  { number: "04", category: "Community leadership", title: "Hoa Yen Charity Fund", description: "A student-led effort supporting water safety, children, older residents, and rural communities.", image: photos.hoaYenWater.src, href: "/leadership/hoa-yen" },
 ];
 
 export const journey = [
@@ -51,3 +53,4 @@ export const honors = [
   { award: "Silver · StemCo Summer Biology Competition, Grades 9–10", detail: "", year: "2025" },
   { award: "Exemplary Young Leader", detail: "School recognition", year: "2026" },
 ];
+

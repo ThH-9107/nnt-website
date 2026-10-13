@@ -1,6 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 import type { GalleryItem, ProjectStory, StoryChapter, TimelineItem } from "@/data/project-pages";
+import { StoryFigure } from "./StoryFigure";
+import { hoaYenThankYouLetter } from "@/data/community-documents";
 
 const scalePosition: Record<ProjectStory["kind"], string> = {
   "medical-ai": "01 / 05 · IMAGE",
@@ -9,8 +10,8 @@ const scalePosition: Record<ProjectStory["kind"], string> = {
   "hoa-yen": "04 / 05 · COMMUNITY",
 };
 
-function Figure({ src, intendedImage, caption, className = "" }: GalleryItem & { className?: string }) {
-  return <figure className={`story-figure ${className}`}><div className="story-figure-image"><Image src={src} alt="" fill sizes="(max-width: 800px) 100vw, 50vw" /><span>Image placeholder</span></div><figcaption><strong>Intended image: {intendedImage}</strong>{caption && <small>{caption}</small>}</figcaption></figure>;
+function Figure({ className = "", priority = false, ...image }: GalleryItem & { className?: string; priority?: boolean }) {
+  return <StoryFigure image={image} className={className} priority={priority} />;
 }
 
 function Chapter({ chapter, className = "" }: { chapter: StoryChapter; className?: string }) {
@@ -39,29 +40,28 @@ function StoryEnd({ project }: { project: ProjectStory }) {
 }
 
 function StoryOpening({ project }: { project: ProjectStory }) {
-  return <header className="story-opening"><div className="story-opening-copy"><p className="story-kicker">{scalePosition[project.kind]} / {project.area}</p><h1>{project.title}</h1><p className="story-introduction">{project.introduction}</p><div className="story-meta"><span>{project.period}</span><span>{project.role}</span></div></div><Figure src={project.heroImage} intendedImage={project.heroImageType} caption="A verified project image can replace this labeled placeholder." className="story-opening-figure" /></header>;
+  return <header className="story-opening"><div className="story-opening-copy"><p className="story-kicker">{scalePosition[project.kind]} / {project.area}</p><h1>{project.title}</h1><p className="story-introduction">{project.introduction}</p><div className="story-meta"><span>{project.period}</span><span>{project.role}</span></div></div><Figure {...project.hero} priority className="story-opening-figure" /></header>;
 }
 
 function MedicalAIStory({ project }: { project: ProjectStory }) {
   return <article className="story story-medical"><StoryOpening project={project} />
     <section className="story-question story-medical-question"><span className="story-kicker">The question beneath the image</span><h2>{project.question}</h2><p>{project.questionContext}</p></section>
-    <section className="story-medical-evolution"><div className="story-section-heading"><span className="story-kicker">Research path / 2023 → present</span><h2>The method changed as the question became clearer.</h2><p>{project.timelineIntro}</p></div><Timeline items={project.timeline} /></section>
+    <section className="story-medical-evolution"><div className="story-section-heading"><span className="story-kicker">Research path / 2023 → present</span><h2>The method changed as the question became clearer.</h2><p>{project.timelineIntro}</p>{project.timelineImage && <Figure {...project.timelineImage} className="story-medical-prototype" />}</div><Timeline items={project.timeline} /></section>
     <section className="story-medical-study"><div className="story-section-heading"><span className="story-kicker">Current study / Design & evidence</span><h2>Learn a representation. Then test what it carries.</h2></div><Metrics project={project} /><div className="story-medical-chapters">{project.chapters.map((chapter) => <Chapter key={chapter.label} chapter={chapter} />)}</div></section>
     <section className="story-medical-result" aria-label="Preliminary result"><div><span className="story-kicker">Independent test / preliminary single seed</span><p>F1 <strong>0.5522 <span aria-hidden="true">→</span> 0.5795</strong></p></div><p>The higher F1 comes with an AUROC trade-off. Further validation is required before interpreting it as a general improvement.</p></section>
-    <section className="story-visual-section"><div className="story-section-heading"><span className="story-kicker">Figures to document the work</span><h2>Make the evidence visible.</h2></div><div className="story-medical-gallery">{project.gallery.map((item) => <Figure key={item.src} {...item} />)}</div></section>
+    <section className="story-visual-section"><div className="story-section-heading"><span className="story-kicker">Independent test / Single-seed figures</span><h2>Make the evidence visible.</h2><p>The supplied experiment figures show both the improvement and its limits. Open any figure to inspect the full image.</p></div><div className="story-medical-gallery">{project.gallery.map((item) => <Figure key={item.src} {...item} />)}</div></section>
     <Status project={project} /><Credits project={project} /><StoryEnd project={project} />
   </article>;
 }
 
 function PhytophthoraStory({ project }: { project: ProjectStory }) {
   const process = ["Farm", "Symptom", "Sample", "Culture", "Observation", "Revise"];
-  const photoRecord = ["Farm setting in Lam Ha", "Symptomatic durian tissue", "Field sampling", "Petri dish / isolation", "Microscopy", "Laboratory process"];
   return <article className="story story-field"><StoryOpening project={project} />
     <section className="story-question story-field-question"><span className="story-kicker">The research question</span><h2>{project.question}</h2><p>{project.questionContext}</p></section>
     <section className="story-field-process" aria-label="Field to laboratory process"><span className="story-kicker">A movement inward / then back to the field</span><ol>{process.map((step, index) => <li key={step}><span>{String(index + 1).padStart(2, "0")}</span><strong>{step}</strong></li>)}</ol><p>Sample → isolate → inspect → inconsistent → revise ↺</p></section>
     <section className="story-field-diary"><div className="story-section-heading"><span className="story-kicker">Field notes / May 2024–present</span><h2>Conditions outside the lab shape the method inside it.</h2><p>{project.timelineIntro}</p></div><Timeline items={project.timeline} /></section>
     <section className="story-field-chapters">{project.chapters.map((chapter, index) => <div className="story-field-chapter" key={chapter.label}><Chapter chapter={chapter} />{index < project.gallery.length && <Figure {...project.gallery[index]} />}</div>)}</section>
-    <section className="story-field-contact-sheet"><div className="story-section-heading"><span className="story-kicker">Future field & laboratory record</span><h2>What needs to be seen.</h2></div><div>{photoRecord.map((label, index) => <figure key={label} className={`story-field-photo story-field-photo-${index + 1}`}><div role="img" aria-label={`Placeholder for ${label} photograph`}><span>Photograph / to be added</span></div><figcaption>{label}</figcaption></figure>)}</div></section>
+    <section className="story-field-contact-sheet"><div className="story-section-heading"><span className="story-kicker">Field & laboratory record</span><h2>The process, before a conclusion.</h2><p>These photographs document attempts, materials, and observations. They do not establish a validated inhibition result.</p></div><div>{project.record?.map((item) => <Figure key={item.src} {...item} />)}</div></section>
     <div className="story-field-metrics"><Metrics project={project} /></div><Status project={project} /><Credits project={project} /><StoryEnd project={project} />
   </article>;
 }
@@ -72,7 +72,10 @@ function MoleBioStory({ project }: { project: ProjectStory }) {
     <section className="story-question story-lab-question"><span className="story-kicker">The design question</span><h2>{project.question}</h2><p>{project.questionContext}</p></section>
     <section className="story-lab-program"><div className="story-section-heading"><span className="story-kicker">At the lab table</span><h2>Repeated practice made the difference.</h2></div><Metrics project={project} /><div className="story-lab-methods" aria-label="Techniques practiced"><span>Pipetting</span><span>Centrifugation</span><span>DNA extraction & purification</span><span>PCR</span><span>Gel electrophoresis</span><span>Microscopy</span></div></section>
     <section className="story-lab-record"><div><Timeline items={project.timeline} /></div><div className="story-lab-photos">{project.gallery.map((item) => <Figure key={item.src} {...item} />)}</div></section>
-    <section className="story-lab-chapters">{project.chapters.map((chapter) => <Chapter key={chapter.label} chapter={chapter} />)}</section><Status project={project} /><StoryEnd project={project} />
+    <section className="story-lab-chapters">{project.chapters.map((chapter) => <Chapter key={chapter.label} chapter={chapter} />)}</section>
+    <section className="story-lab-documentation"><div className="story-section-heading"><span className="story-kicker">Sessions, workshops & student projects</span><h2>A laboratory shared by learners.</h2></div><div className="story-photo-grid">{project.record?.map((item) => <Figure key={item.src} {...item} />)}</div></section>
+    <section className="story-related-learning"><div className="story-section-heading"><span className="story-kicker">Related laboratory experience / Beyond MoleBio</span><h2>Continuing to learn.</h2><p>Separate from the club: selected learning experiences in research and pharmaceutical laboratories.</p></div><div className="story-related-grid">{project.relatedImages?.map((item) => <Figure key={item.src} {...item} />)}</div></section>
+    <Status project={project} /><StoryEnd project={project} />
   </article>;
 }
 
@@ -82,6 +85,7 @@ function HoaYenStory({ project }: { project: ProjectStory }) {
     <section className="story-community-route"><div className="story-section-heading"><span className="story-kicker">Selected documented programs / 2024–2026</span><h2>Each return widened the work.</h2><p>{project.timelineIntro}</p></div><Timeline items={project.timeline} /></section>
     <section className="story-community-impact"><div><span className="story-kicker">Documented reach</span><h2>Counted carefully.</h2><p>Figures from the three-year report. Beneficiary participations are not unique people; program expenditures and support are not funds raised.</p></div><Metrics project={project} /></section>
     <section className="story-community-gallery">{project.gallery.map((item) => <Figure key={item.src} {...item} />)}</section>
+    <section className="story-community-evidence" aria-labelledby="hoa-yen-letter-title"><div><span className="story-kicker">Acknowledgment from a community partner</span><h2 id="hoa-yen-letter-title">A letter from Cai Rang.</h2><p>The Cai Rang Ward Youth Union thanked Thanh and Hoa Yen for supporting its 2026 Mid-Autumn activities.</p><p>The letter acknowledges 100 gift packages and 10 scholarships. These figures describe the support recognized in this document and are not added to the program totals above.</p><a href={hoaYenThankYouLetter.fullSrc} target="_blank" rel="noopener noreferrer">Read the original letter <span aria-hidden="true">↗</span></a></div><StoryFigure image={hoaYenThankYouLetter} sizes="(max-width: 900px) 90vw, 40vw" /></section>
     <section className="story-community-chapters">{project.chapters.map((chapter) => <Chapter key={chapter.label} chapter={chapter} />)}</section><Status project={project} /><StoryEnd project={project} />
   </article>;
 }

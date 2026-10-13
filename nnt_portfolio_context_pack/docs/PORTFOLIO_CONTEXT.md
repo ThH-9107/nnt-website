@@ -446,6 +446,8 @@ A rough subtotal of direct-support categories in the documented breakdown is app
 - 10 scholarship / gift packages
 - VND 100M total program cost
 
+A separate Cai Rang Ward Youth Union thank-you letter, dated September 18, 2026, is photographed in `public/images/hoa-yen/thucamta.jpg`. It is addressed to Thanh and Hoa Yen and acknowledges 100 Mid-Autumn gift packages and 10 scholarships. Present this as the support recognized in that letter. Its scope has not yet been reconciled with the report's 150 gifts; do not add these counts or silently replace the report figures.
+
 #### “Dem Trang Yeu Thuong” / Dong Nai 2026
 - Hoa Yen participation
 - beneficiary count not specified in the report

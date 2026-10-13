@@ -302,6 +302,17 @@ Do not convert this into “50+ households” unless separate verified evidence 
 - 10 scholarship / gift packages
 - VND 100M total program cost
 
+### Additional 2026 Mid-Autumn acknowledgment
+
+**[VERIFIED BY USER-SUPPLIED PHOTOGRAPH, OCTOBER 2026]**
+- Source: `public/images/hoa-yen/thucamta.jpg`.
+- Issuer: Cai Rang Ward Youth Union.
+- Letter date: September 18, 2026.
+- Addressed to Nguyen Ngoc Thanh and the Hoa Yen Charity Fund.
+- Acknowledges 100 Mid-Autumn gift packages and 10 scholarships for children in difficult circumstances in Cai Rang Ward.
+- The report separately records 150 children and 150 gifts. The scope of the letter's 100 gift packages has not been reconciled with that report; keep these source-specific counts separate and do not add them together.
+- Life-jacket documentation remains a separate record.
+
 ## Dong Nai 2026
 
 **[VERIFIED]**
