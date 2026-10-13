@@ -24,7 +24,12 @@ Open `http://localhost:3000`.
 - `src/app/scale-map.css` — the expanding scale pathway and mobile path.
 - `src/app/story.css` — project story, overlay, and responsive presentation.
 - `src/components/ProjectCard.tsx` — reusable featured-project card.
-- `src/components/inquiry/` — interactive, keyboard-accessible Inquiry Map and SVG scale textures.
+- `src/components/inquiry/` — scroll-controlled Inquiry Map and reusable SVG photographic viewports.
+- `src/data/scale-images.ts` — selected scale photographs, display-only crop coordinates, and field labels.
+- `src/app/scale-photography.css` — shared observation frame, expanding view, and mobile compositions.
+- `src/components/CertificateArchive.tsx` — manually browsable document shelf with arrows, keyboard navigation, touch scrolling, and reduced motion.
+- `src/data/certificates.ts` — original document links, preview scans, issuing organizations, and dates.
+- `src/app/certificates.css` — document-archive typography and paper presentation.
 - `src/components/SiteHeader.tsx` and `src/components/SiteFooter.tsx` — shared navigation and contact footer.
 - `src/components/story/` — reusable overlay shell and five distinct project story presentations.
 - `src/app/@story/` — intercepted routes that keep the homepage mounted behind project stories.
@@ -32,7 +37,9 @@ Open `http://localhost:3000`.
 
 The homepage map and browse links open `/research/medical-ai`, `/research/phytophthora`, `/leadership/molebio`, `/leadership/hoa-yen`, and `/creative` as large route-aware overlays. Direct visits to those URLs render the same content as standalone pages with a Back to Inquiry Map link.
 
-The Inquiry Map is one outward path from QUESTION through SEE, TEST, SHARE, SERVE, and EXPRESS. Desktop scrolling moves through an overview and five focus states; hover and keyboard focus preview any scale. Mobile uses a vertical path with expandable questions and direct project links. Motion uses SVG and CSS with a reduced-motion fallback. No 3D or canvas dependency was added.
+The Inquiry Map moves from IMAGE through ORGANISM, LEARNER, COMMUNITY, and AUDIENCE. Desktop scrolling widens a shared observation frame while the grid becomes less dense. Hover and focus are cosmetic; all project links remain available. Mobile uses five static, progressively wider compositions along a vertical path. Motion uses SVG and CSS with a reduced-motion fallback. No 3D or canvas dependency was added.
+
+The hero provides direct research and leadership links, alongside the résumé download. About includes two compact scientific-training records. Selected honors remain concise; original certificates are browsed horizontally near the bottom, with additional learning records inside a disclosure. The archive has no autoplay. Focus the shelf and use Left/Right, Home/End, the arrow buttons, or native touch/trackpad scrolling.
 
 The current résumé is available as `public/resume-nguyen-ngoc-thanh.docx`. This public copy has its phone number removed; the original DOCX in the project root remains unchanged. When a reviewed PDF is ready, save it as `public/resume-nguyen-ngoc-thanh.pdf` and set `resumePdf` in `src/data/portfolio.ts` to `"/resume-nguyen-ngoc-thanh.pdf"`. Add verified GitHub and LinkedIn URLs to the same file when available.
 

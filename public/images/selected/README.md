@@ -2,11 +2,16 @@
 
 Curated from the images supplied in October 2026. Originals are preserved. Delivery copies are resized, encoded as WebP, and stripped of EXIF metadata; no faces, research observations, or event content are retouched.
 
-The homepage uses the original school portrait with a CSS crop. An AI background-removal attempt was discarded because it altered details.
+The homepage uses the lakeside portrait with its natural background. Scale images share an expanding observation frame; SVG viewports show details without altering source assets. The full photographs and labeled scientific figures remain in project stories. No AI retouching is used.
 
 | Placement | Selected image | Original source |
 | --- | --- | --- |
-| Homepage portrait | [thanh-school-portrait.webp](./thanh-school-portrait.webp) | portrait/1791827757306_148179545437676827_148179545437676827_68f0f36c0f3e502ec45d1664ba658dd4.jpg |
+| Homepage portrait | [thanh-lakeside-portrait.webp](./thanh-lakeside-portrait.webp) | portrait/1791827772253_148179545437676827_148179545437676827_bfab8487206faf545e869ec448a857f2.jpg |
+| IMAGE scale | Close viewport of [medical-ai-test-image-examples.webp](./medical-ai-test-image-examples.webp) | medical-ai/figures/11_test_image_examples.png |
+| ORGANISM scale | Bark viewport of [phytophthora-durian-bark.webp](./phytophthora-durian-bark.webp) | phytophthora/sample_3.jpg |
+| LEARNER scale | [molebio-students-at-the-bench.webp](./molebio-students-at-the-bench.webp) | molebio/DNA_extract2.jpg |
+| COMMUNITY scale | Interaction viewport of [hoa-yen-cai-rang-water-safety.webp](./hoa-yen-cai-rang-water-safety.webp) | hoa-yen/CaiRang.jpg |
+| AUDIENCE scale | [school-performance-full-stage.webp](./school-performance-full-stage.webp) | creative/family3.jpg |
 | Homepage About | [thanh-at-the-lab-bench.webp](./thanh-at-the-lab-bench.webp) | portrait/lab_work.jpg |
 | Medical AI opening | [medical-ai-test-image-examples.webp](./medical-ai-test-image-examples.webp) | medical-ai/figures/11_test_image_examples.png |
 | Medical AI evidence gallery | [medical-ai-condition-comparison.webp](./medical-ai-condition-comparison.webp) | medical-ai/figures/01_condition_comparison.png |

@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import { inquiryNodes } from "@/data/inquiry";
 import { photos } from "@/data/photography";
 import { scaleImages } from "@/data/scale-images";
+import { ScaleObservationImage } from "./ScaleObservationImage";
 
 export function InquiryMap() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -61,7 +62,7 @@ export function InquiryMap() {
                     <span className="scale-stage-subtitle"><em>{node.action.toLowerCase()}</em> <span aria-hidden="true">·</span> {node.destination}</span>
                     <span className="scale-stage-question">“{node.question}”</span>
                   </span>
-                  <span className="scale-stage-texture" aria-hidden="true"><Image src={scaleImages[node.id].src} alt="" fill sizes="(max-width: 900px) 90vw, 1px" style={{ objectFit: node.id === "see" ? "contain" : "cover" }} /></span>
+                  <span className="scale-stage-texture" data-scene={node.id} aria-hidden="true"><ScaleObservationImage id={node.id} /><span className="scale-mobile-caption">{scaleImages[node.id].title}</span></span>
                   <span className="scale-stage-arrow" aria-hidden="true">↗</span>
                 </Link>
                 {node.id === "test" && <details className="scale-secondary scale-secondary-unfinished">
@@ -79,10 +80,19 @@ export function InquiryMap() {
 
           <div className="scale-scene-area">
             <div className="scale-scene-top"><span>OBSERVATION FIELD</span><span>{activeNode.number} / 05</span></div>
-            <div className="scale-photographs">{inquiryNodes.map((node) => <figure className="scale-photograph" key={node.id} data-scene={node.id} data-active={activeNode.id === node.id} aria-hidden={activeNode.id !== node.id}>
-              <Image src={scaleImages[node.id].src} alt={scaleImages[node.id].alt} fill sizes="(max-width: 900px) 1px, 65vw" quality={node.id === "see" ? 90 : 75} style={{ objectFit: node.id === "see" ? "contain" : "cover", objectPosition: node.id === "test" ? "50% 45%" : "50% 50%" }} />
-              <figcaption>{scaleImages[node.id].title}</figcaption>
-            </figure>)}</div>
+            <div className="scale-observation-field">
+              <div className="scale-observation-grid" aria-hidden="true" />
+              <span className="scale-field-axis scale-field-axis-x" aria-hidden="true" />
+              <span className="scale-field-axis scale-field-axis-y" aria-hidden="true" />
+              <div className="scale-observation-window">
+                <span className="scale-window-corner scale-window-corner-tl" aria-hidden="true" /><span className="scale-window-corner scale-window-corner-br" aria-hidden="true" />
+                <div className="scale-observation-plate">{inquiryNodes.map((node) => <figure className="scale-photograph" key={node.id} data-scene={node.id} data-active={activeNode.id === node.id} aria-hidden={activeNode.id !== node.id}>
+                  <ScaleObservationImage id={node.id} />
+                </figure>)}</div>
+              </div>
+              <span className="scale-field-note">{scaleImages[activeNode.id].fieldNote}</span>
+            </div>
+            <p className="scale-image-label">{scaleImages[activeNode.id].title}</p>
             <div className="scale-scene-caption"><span className="scale-scene-rule" />{activeNode.context}</div>
           </div>
         </div>

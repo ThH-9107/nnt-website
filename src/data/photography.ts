@@ -14,14 +14,14 @@ export type PortfolioImage = {
 // Curated delivery assets. Original uploads remain in public/images.
 export const photos = {
   "portrait": {
-    "src": "/images/selected/thanh-school-portrait.webp",
-    "width": 960,
-    "height": 1280,
+    "src": "/images/selected/thanh-lakeside-portrait.webp",
+    "width": 1620,
+    "height": 1080,
     "title": "Nguyen Ngoc Thanh",
-    "caption": "Portrait in school uniform.",
-    "alt": "Thanh wearing his school uniform and glasses against a pale wall.",
+    "caption": "A portrait beside the water in Ho Chi Minh City.",
+    "alt": "Thanh wearing glasses and a navy shirt beside a pond, with the city skyline behind him.",
     "aspectRatio": "4 / 5",
-    "position": "50% 42%"
+    "position": "50% 50%"
   },
   "labPortrait": {
     "src": "/images/selected/thanh-at-the-lab-bench.webp",
@@ -34,7 +34,7 @@ export const photos = {
   "medicalExamples": {
     "src": "/images/selected/medical-ai-test-image-examples.webp",
     "width": 2856,
-    "height": 1951,
+    "height": 1948,
     "title": "The images behind the question",
     "caption": "Selected independent-test skin-image examples. They illustrate the classification task and are not evidence of model performance.",
     "alt": "Six skin-lesion image examples arranged in non-melanoma and melanoma rows.",
@@ -43,7 +43,7 @@ export const photos = {
   "medicalComparison": {
     "src": "/images/selected/medical-ai-condition-comparison.webp",
     "width": 3633,
-    "height": 1917,
+    "height": 1810,
     "title": "Compare both measures",
     "caption": "The six current conditions, shown on the independent ISIC 2019 test set. These are single-seed results; higher F1 does not imply higher AUROC.",
     "alt": "Side-by-side charts comparing independent-test F1 and AUROC across six conditions.",
@@ -52,7 +52,7 @@ export const photos = {
   "medicalTradeoff": {
     "src": "/images/selected/medical-ai-f1-auroc-tradeoff.webp",
     "width": 2525,
-    "height": 2074,
+    "height": 1812,
     "title": "An improvement with a trade-off",
     "caption": "F1 captures performance at a selected decision threshold; AUROC describes ranking across thresholds. This plot makes the trade-off visible. Further validation remains necessary.",
     "alt": "Scatter plot showing that the conditions with higher F1 have lower AUROC than the baseline.",

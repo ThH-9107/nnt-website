@@ -1,8 +1,9 @@
-export type CertificateDocument = { id: string; title: string; detail: string; period: string; pdf: string; thumbnail: string; width: number; height: number };
+export type CertificateDocument = { id: string; title: string; issuer: string; detail: string; period: string; pdf: string; thumbnail: string; width: number; height: number };
 
 export const awardCertificates: CertificateDocument[] = [
   {
     "id": "pimso-science-gold",
+    "issuer": "PIMSO / ICE",
     "title": "PIMSO Science",
     "detail": "Gold Award · National Round",
     "period": "2025",
@@ -13,8 +14,9 @@ export const awardCertificates: CertificateDocument[] = [
   },
   {
     "id": "lsts-academic-scholarship",
+    "issuer": "Lawrence S. Ting School",
     "title": "LSTS Academic Scholarship",
-    "detail": "Lawrence S. Ting School",
+    "detail": "Academic scholarship",
     "period": "AY 2025–26",
     "pdf": "/documents/certificates/lsts-academic-scholarship.pdf",
     "thumbnail": "/images/certificates/lsts-academic-scholarship.webp",
@@ -23,6 +25,7 @@ export const awardCertificates: CertificateDocument[] = [
   },
   {
     "id": "house-fantasy-exemplary-student",
+    "issuer": "Lawrence S. Ting School",
     "title": "Most Exemplary Student of House Fantasy",
     "detail": "School recognition",
     "period": "2025",
@@ -33,6 +36,7 @@ export const awardCertificates: CertificateDocument[] = [
   },
   {
     "id": "vietnamese-culture-first-prize",
+    "issuer": "Lawrence S. Ting School",
     "title": "The Beauty of Vietnamese Culture",
     "detail": "First Prize",
     "period": "2025",
@@ -43,6 +47,7 @@ export const awardCertificates: CertificateDocument[] = [
   },
   {
     "id": "community-service-recognition",
+    "issuer": "Lawrence S. Ting School",
     "title": "Community Service",
     "detail": "Active Participation in Community Service Activities",
     "period": "2025",
@@ -53,6 +58,7 @@ export const awardCertificates: CertificateDocument[] = [
   },
   {
     "id": "academic-top-five-percent",
+    "issuer": "Lawrence S. Ting School",
     "title": "Academic Standing",
     "detail": "Top 5% · Grade 11",
     "period": "AY 2025–26",
@@ -66,6 +72,7 @@ export const awardCertificates: CertificateDocument[] = [
 export const learningCertificates: CertificateDocument[] = [
   {
     "id": "stem-cell-summer-school",
+    "issuer": "Stem Cell Institute · VNU-HCM University of Science",
     "title": "Stem Cell Summer School",
     "detail": "Selected participant",
     "period": "2024",
@@ -76,6 +83,7 @@ export const learningCertificates: CertificateDocument[] = [
   },
   {
     "id": "molecular-biology-course",
+    "issuer": "Lawrence S. Ting School",
     "title": "Molecular Biology Course",
     "detail": "Course completion",
     "period": "2025",
@@ -86,6 +94,7 @@ export const learningCertificates: CertificateDocument[] = [
   },
   {
     "id": "international-science-exchange",
+    "issuer": "Lawrence S. Ting School",
     "title": "International Science Exchange",
     "detail": "Program completion",
     "period": "2025",
@@ -96,8 +105,9 @@ export const learningCertificates: CertificateDocument[] = [
   },
   {
     "id": "us-leadership-program",
+    "issuer": "The Academy at Harvard Square & Harvard Student Agencies",
     "title": "U.S. Leadership Program",
-    "detail": "The Academy at Harvard Square & Harvard Student Agencies",
+    "detail": "Program completion",
     "period": "2025",
     "pdf": "/documents/certificates/us-leadership-program.pdf",
     "thumbnail": "/images/certificates/us-leadership-program.webp",
