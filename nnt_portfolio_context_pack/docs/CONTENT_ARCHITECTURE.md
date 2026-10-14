@@ -44,7 +44,7 @@ Why:
 - experimental iteration
 
 Secondary side story:
-**A question I couldn't test** — proposed bioluminescent / GMO plant research
+**A question I couldn't test** — May–July 2026 proposal for transient GFP fluorescence in Hygrophila polysperma; experiment not conducted
 
 This side story must remain visually secondary.
 
@@ -106,7 +106,11 @@ Must communicate immediately:
 
 Keep calm.
 
-### B. Scale experience
+### B. Personal introduction
+
+The hero is followed by Thanh's personal “A little about me” introduction, supplied in October 2026. Keep his wording, including curiosity for biology, experimenting, theatre, music, storytelling, and bringing people together. The About navigation points here.
+
+### C. Scale experience
 Main memorable interaction.
 
 The scale concept is stronger than the old tree metaphor.
@@ -122,7 +126,7 @@ Use:
 Primary scale sequence:
 IMAGE → ORGANISM → LEARNER → COMMUNITY → AUDIENCE
 
-### C. Current work
+### D. Current work
 Concise editorial strip.
 
 Highlight:
@@ -133,7 +137,7 @@ Highlight:
 
 Do not create a giant repeated Medical AI card immediately after the scale map.
 
-### D. About / Working Method
+### E. Working Method
 Short.
 
 Core idea:
@@ -143,11 +147,11 @@ Core idea:
 - reproducibility matters
 - people / communication matter
 
-### E. Selected Honors
+### F. Selected Honors
 Only strongest / most informative.
 Do not dump every award.
 
-### F. Contact / Footer
+### G. Contact / Footer
 
 ## 4. Project-story architecture
 
@@ -255,6 +259,8 @@ These can live in:
 - small related-story modules
 - résumé
 - contextual links within primary stories
+
+The GFP proposal remains within ORGANISM, at `/research/phytophthora#unfinished-research`, after the main study's advisor credits. Its sequence is question → proposal → seeking support → obstacle → moving on. Keep supervisor attribution separate from later implementation discussions. The original Vietnamese DOCX and its workflow diagram are the documentary artifacts.
 
 Secondary:
 - Stem Cell Summer School

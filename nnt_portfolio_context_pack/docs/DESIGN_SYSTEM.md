@@ -97,7 +97,7 @@ Preferred:
 
 The path is a connective motif, not the core metaphor.
 
-The GMO side story may use one intentionally incomplete dashed branch because the branch itself has narrative meaning.
+The GFP fluorescence proposal side story may use one intentionally incomplete dashed branch because the branch itself has narrative meaning. It remains secondary under ORGANISM.
 
 ## 5. Interaction model
 
@@ -179,11 +179,12 @@ Direct URL: same story content can render standalone.
 ## 8. Homepage hierarchy
 
 1. Hero — calm, easy to scan
-2. Scale experience — main memorable moment
-3. Current work strip — concise first-author manuscript status
-4. About / working method — short
-5. Selected honors — clean
-6. Footer
+2. A little about me — Thanh's supplied personal introduction, immediately below the hero
+3. Scale experience — main memorable moment
+4. Current work strip — concise first-author manuscript status
+5. Working method — research practice and selected scientific training
+6. Selected honors — original list with expandable certificate scans
+7. Footer
 
 ## 9. Typography / material feel
 
@@ -202,6 +203,9 @@ Typography:
 - clean sans-serif for navigation, labels, metadata
 - generous line height
 - strong scale hierarchy
+- reading text generally 17–20px, with larger introductory serif passages
+- navigation 14–15px; captions and supporting text generally 13–15px
+- the corner wordmark is NThanh, in the existing restrained serif/green language
 
 Avoid:
 - SaaS-card typography

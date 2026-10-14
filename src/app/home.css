@@ -29,6 +29,17 @@
 .home-hero{position:relative}
 .home-hero::after{content:"";position:absolute;z-index:1;left:50%;bottom:-35px;width:1px;height:69px;background:linear-gradient(var(--accent),#9fbaaa,transparent);opacity:.55;pointer-events:none}
 
+.home-introduction{padding:90px 0 95px;background:var(--paper);border-bottom:1px solid var(--line);scroll-margin-top:110px}
+.home-introduction-grid{display:grid;grid-template-columns:.55fr 1fr;gap:11%;align-items:start}
+.home-introduction h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(44px,4.7vw,66px);font-weight:400;line-height:1.08;letter-spacing:-.05em;margin:0}
+.home-introduction h2 em{font-weight:400;color:var(--accent)}
+.home-introduction-copy{max-width:68ch}
+.home-introduction-copy>p{font-size:clamp(18px,1.3vw,20px);line-height:1.8;margin:0 0 25px}
+.home-introduction-copy>p:last-child{margin-bottom:0}
+.home-introduction-copy .home-introduction-lead{font-family:Georgia,'Times New Roman',serif;font-size:clamp(23px,2vw,28px);line-height:1.5;letter-spacing:-.015em;color:var(--ink)}
+@media(max-width:900px){.home-introduction{padding:65px 0 70px}.home-introduction-grid{grid-template-columns:1fr;gap:28px}.home-introduction h2{font-size:46px}.home-introduction h2 br{display:none}}
+@media(max-width:620px){.home-introduction{padding:55px 0 60px}.home-introduction-copy>p{font-size:18px}.home-introduction-copy .home-introduction-lead{font-size:23px}}
+
 .home-current{padding:75px 0;background:var(--paper)}
 .home-current-grid{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1fr);gap:34px 9%}
 .home-current h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(40px,4.5vw,62px);font-weight:400;letter-spacing:-.055em;line-height:1.08;margin:0;max-width:500px}

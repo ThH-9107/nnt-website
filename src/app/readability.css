@@ -1,0 +1,105 @@
+/* Reading text and navigation use a larger, consistent scale. */
+body{font-size:17px;line-height:1.7}
+.wordmark{font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;letter-spacing:-.055em;line-height:1.2}
+.site-nav a,.header-contact{font-size:15px;line-height:1.4}
+.eyebrow{font-size:13px;letter-spacing:.13em}
+.button{font-size:15px;min-height:50px}
+.home-hero-detail{font-size:18px;line-height:1.75}
+.home-quick-links{gap:12px}
+.home-quick-links>div{gap:9px 22px}
+.home-quick-links span{width:94px;font-size:12px}
+.home-quick-links a{font-size:15px}
+.home-hero-location,.home-portrait-label span,.home-portrait-index{font-size:12px}
+.home-portrait-label small{font-size:14px}
+.home-current-kicker{font-size:13px}
+.home-current-status{font-size:17px;line-height:1.7}
+.home-current-detail>a{font-size:15px}
+.home-about-copy>p{font-size:clamp(20px,1.6vw,24px);line-height:1.7}
+.home-about-photo figcaption{font-size:14px}
+.home-training>h3,.home-training time,.home-about-links span{font-size:13px}
+.home-training article{grid-template-columns:78px 1fr;gap:17px}
+.home-training h4{font-size:24px}
+.home-training p{font-size:17px;line-height:1.75}
+.home-about-links a{font-size:15px}
+.home-about-links small{font-size:14px}
+.scale-heading>p{font-size:16px;line-height:1.6}
+.scale-rail-intro{font-size:11px;letter-spacing:.08em;padding-left:24px}
+.scale-stage-link{min-height:80px;padding-top:10px;padding-bottom:10px}
+.scale-stage-number{font-size:11px;letter-spacing:.08em}
+.scale-stage-content strong{font-size:32px}
+.scale-stage-subtitle{font-size:14px;line-height:1.45}
+.scale-secondary summary,.scale-secondary p,.scale-secondary-note-link{font-size:13px;line-height:1.6}
+.scale-secondary-photo figcaption{font-size:12px;line-height:1.5}
+.scale-scene-top,.scale-image-label{font-size:12px;letter-spacing:.08em}
+.scale-field-note{font-size:12px;letter-spacing:.04em}
+.scale-observation-field{bottom:112px}
+.scale-scene-caption{line-height:1.35}
+.scale-reading-index{font-size:12px;letter-spacing:.08em}
+.scale-reading blockquote{font-size:clamp(20px,1.75vw,26px);line-height:1.35}
+.scale-reading>a{font-size:14px;line-height:1.5}
+.scale-orientation{font-size:11px;letter-spacing:.06em}
+.scale-orientation-instruction{font-size:12px}
+.scale-mobile-caption{font-size:12px;line-height:1.5}
+.honors-heading>p:last-child{font-size:16px;line-height:1.7}
+.honor-copy>strong{font-size:16px;line-height:1.55}
+.honor-detail,.honor-year{font-size:14px}
+.certificate-scan-meta,.certificate-scan-note{font-size:14px;line-height:1.6}
+.certificate-scan-open{font-size:15px}
+.honors-more>summary small,.honors-more-count{font-size:13px;line-height:1.5}
+.story-page-top,.story-overlay-bar{font-size:14px;line-height:1.5}
+.story p{font-size:18px;line-height:1.8}
+.story-kicker{font-size:13px;letter-spacing:.1em}
+.story-meta,.story-time{font-size:14px;line-height:1.55}
+.story-timeline small{font-size:12px}
+.story-timeline p{font-size:17px;line-height:1.75}
+.story-metrics span{font-size:15px;line-height:1.5}
+.story-metrics small{font-size:14px;line-height:1.6}
+.story-chapter p{font-size:18px;line-height:1.8}
+.story-figure figcaption,.story-figure figcaption small{font-size:14px;line-height:1.6}
+.story-figure figcaption strong,.story-creative .story-figure figcaption strong{font-size:15px}
+.story-figure-image>span{font-size:12px}
+.story-field-process li span{font-size:12px}
+.story-field-process>p{font-size:15px}
+.story-credits span{font-size:13px}
+.story-credits small{font-size:15px;line-height:1.65}
+.story-community-evidence>div>a{font-size:15px}
+.story-end>span,.story-creative-end{font-size:14px;line-height:1.5}
+.story-creative-archive article strong{font-size:14px;line-height:1.5}
+.footer-main p:not(.eyebrow){font-size:17px}
+.footer-bottom{font-size:12px;letter-spacing:.045em;line-height:1.6}
+@media(max-width:900px){
+ .home-hero-detail{font-size:18px}
+ .scale-stage-link{min-height:0;padding:21px 14px}
+ .scale-stage-content strong{font-size:clamp(32px,5vw,41px)}
+ .scale-stage-question{font-size:20px;line-height:1.5}
+ .scale-stage-number{font-size:12px}
+ .scale-stage-subtitle{font-size:15px;white-space:normal}
+ .scale-secondary summary,.scale-secondary p,.scale-secondary-note-link{font-size:14px}
+ .story p,.story-chapter p,.story-timeline p{font-size:17px}
+}
+@media(max-width:800px){.site-nav{gap:clamp(12px,3vw,20px)}.site-nav a{font-size:14px}.header-inner{gap:0}}
+@media(max-width:620px){
+ .home-quick-links>div{gap:8px 14px}
+ .home-quick-links span{width:88px;font-size:11px}
+ .home-quick-links a{font-size:14px}
+ .home-hero-location{font-size:11px;line-height:1.7}
+ .home-training article{grid-template-columns:72px 1fr;gap:12px}
+ .honor-entry>summary,.honor-text-row{grid-template-columns:minmax(0,1fr) auto 20px;gap:10px}
+ .honor-copy>strong{font-size:15px}
+ .honor-detail,.honor-year{font-size:13px}
+ .honors-more>summary{align-items:start;gap:12px}
+ .honors-more-count{font-size:12px}
+ .story-overlay-bar{gap:12px;font-size:13px}
+ .story-overlay-bar>span{font-size:11px}
+}
+@media(max-height:820px) and (min-width:901px){
+ .scale-stage-link{min-height:74px;padding-top:8px;padding-bottom:8px}
+ .scale-stage-content strong{font-size:29px}
+ .scale-stage-number{font-size:10px}
+ .scale-stage-subtitle{font-size:13px}
+ .scale-heading>p{font-size:15px}
+ .scale-reading blockquote{font-size:20px}
+ .scale-reading{min-height:116px}
+ .scale-field-note,.scale-image-label{font-size:11px}
+ .scale-observation-field{bottom:104px}
+}

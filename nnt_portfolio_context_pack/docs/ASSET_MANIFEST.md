@@ -2,6 +2,15 @@
 
 Status: planning document. Real assets may not yet be present.
 
+## October 2026 GFP proposal update
+
+- Source document: `docs/H_polysperma.docx` (original Vietnamese proposal).
+- Public copy: `/public/documents/research/hygrophila-polysperma-gfp-proposal.docx`.
+- Original embedded workflow: `/public/images/research-proposal/hygrophila-proposed-workflow.png`.
+- The workflow shows planned methods and predicted expression, not executed experiments or results.
+- A real cover preview may be added from a supplied PDF later. Do not fabricate one.
+- ORGANISM scale source photo: `/public/images/phytophthora/durian_tree.png`; delivery copy `/public/images/selected/phytophthora-durian-tree.webp`.
+
 Goal: use real documentation to make the portfolio feel lived-in rather than template-like.
 
 Do not use generic stock photos.

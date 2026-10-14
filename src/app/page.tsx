@@ -33,6 +33,15 @@ export default function Home() {
         </figure>
       </div></section>
 
+      <section className="home-introduction" id="about" aria-labelledby="about-title"><div className="container home-introduction-grid">
+        <header><p className="eyebrow">Hello, beyond the projects</p><h2 id="about-title">A little<br /><em>about me.</em></h2></header>
+        <div className="home-introduction-copy">
+          <p className="home-introduction-lead">Hi, I&apos;m Ngọc Thành, a high school student from Ho Chi Minh City with a curiosity for biology and a tendency to turn seemingly simple questions into rather complicated projects.</p>
+          <p>I&apos;ve always enjoyed figuring out how things work, especially when it comes to science. I love experimenting, solving problems, and exploring ideas that I don&apos;t fully understand yet. Even when things don&apos;t go as planned (which happens quite often), there&apos;s something exciting about discovering what went wrong and trying again.</p>
+          <p>But science isn&apos;t everything to me. I also have a love for theatre, music, and storytelling. I enjoy writing, directing, and occasionally pretending to be someone completely different on stage. Beyond that, I love bringing people together, trying new things, and finding little ways to make a difference in the lives of those around me.</p>
+        </div>
+      </div></section>
+
       <InquiryMap />
 
       <section className="home-current" aria-labelledby="current-title"><div className="container home-current-grid">
@@ -40,8 +49,8 @@ export default function Home() {
         <div className="home-current-detail"><p className="home-current-kicker">First-author manuscript</p><h3>{medicalManuscript.title}</h3><p className="home-current-status">{medicalManuscript.status}</p><Link href="/research/medical-ai" scroll={false}>Read the research story <span aria-hidden="true">↗</span></Link></div>
       </div></section>
 
-      <section className="home-about" id="about" aria-labelledby="about-title"><div className="container home-about-grid">
-        <div><p className="eyebrow">About / Working method</p><h2 id="about-title">I learn by making,<br />then revising.</h2><figure className="home-about-photo"><Image src={photos.labPortrait.src} alt={photos.labPortrait.alt} width={photos.labPortrait.width} height={photos.labPortrait.height} sizes="(max-width: 900px) 100vw, 40vw" /><figcaption>{photos.labPortrait.title}</figcaption></figure></div>
+      <section className="home-about" id="working-method" aria-labelledby="working-method-title"><div className="container home-about-grid">
+        <div><p className="eyebrow">Working method / In practice</p><h2 id="working-method-title">I learn by making,<br />then revising.</h2><figure className="home-about-photo"><Image src={photos.labPortrait.src} alt={photos.labPortrait.alt} width={photos.labPortrait.width} height={photos.labPortrait.height} sizes="(max-width: 900px) 100vw, 40vw" /><figcaption>{photos.labPortrait.title}</figcaption></figure></div>
         <div className="home-about-copy">
           <p>My research moves between training models and handling biological samples. In Medical AI, inconclusive augmentation experiments led me to study the method more carefully. In the durian study, inconsistent isolation attempts have meant revising the workflow before I can test the biocontrol question.</p>
           <p>MoleBio brings that learning to a shared bench: pipettes, DNA extraction, microscopy, and students trying a method for themselves. Theatre and community work give me other ways to work with people and communicate what I care about.</p>

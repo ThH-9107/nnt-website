@@ -280,31 +280,28 @@ Current résumé wording says he delivered a short English presentation of the p
 
 ---
 
-## 4. Proposed Bioluminescent / Genetically Engineered Plant Project
+## 4. GFP Fluorescence / Hygrophila polysperma Proposal
 
-This is a **research proposal that did not reach experimentation**.
+This is a **May–July 2026 independent research proposal that did not reach experimentation**, clarified by Thanh in October 2026.
 
 It should be treated as an optional case study, not equivalent to an executed research project.
 
-Safe to say:
-- Thanh developed a mentored proposal
-- he had a research plan / methodology
-- he worked through literature and predicted outcomes
-- the project could not proceed to bench experimentation because of practical access / regulatory constraints surrounding the required genetic material and age / access limitations
+The question was whether an aquatic plant, Hygrophila polysperma, could transiently express GFP through Agrobacterium-mediated gene transfer. Thanh proposed comparing submerged and emersed forms, motivated by their different leaf structures. This was GFP fluorescence under suitable excitation light, not bioluminescence.
+
+He developed a literature review and formal proposal with objectives, planned methods/controls, a workflow diagram, and a possible tissue-culture pathway. The original Vietnamese document is `docs/H_polysperma.docx` and names Nguyễn Thị Thảo Sương as scientific supervisor.
+
+To investigate feasibility, Thanh met with Dr. Trần Trọng Tuấn from the Institute of Tropical Biology in Ho Chi Minh City and consulted Dr. Bùi Thế Vinh. Both were willing to support the project. These conversations were implementation discussions, not completed laboratory collaboration or experimental supervision.
+
+Obtaining the GFP plasmid was the main obstacle. Dr. Tuấn explained that procurement and import arrangements could take several months. The available summer window and practical constraints associated with being under 18 made the project infeasible within that timeline. By July 2026, Thanh stopped and returned to other research.
 
 Potential portfolio framing:
 
 > **A question I couldn't test**
 
-This can show that research is constrained not only by ideas and protocols, but also by:
-- biosafety,
-- regulation,
-- material access,
-- institutional requirements,
-- logistics.
+The story should remain a short, personal account of developing a question, seeking implementation support, encountering the procurement/timing obstacle, and moving on. It may use the original proposal and its authentic workflow diagram. No fictional cover, fluorescent-plant photograph, or laboratory result should be generated.
 
 Do not claim any experimental result.
-Do not claim a GMO plant was produced.
+Do not claim a genetically modified or GFP-expressing plant was produced. Do not describe the plasmid as categorically illegal to import.
 
 ---
 

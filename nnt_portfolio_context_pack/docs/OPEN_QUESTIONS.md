@@ -147,3 +147,9 @@ Before publication:
 - confirm images of children / beneficiaries are approved for public use
 - confirm school / event images are appropriate
 - avoid sensitive beneficiary identifying details
+
+## 13. GFP proposal documentary assets
+
+The October 2026 update resolves the scientific topic, May–July 2026 period, supervisor attribution, consulted researchers, and procurement/timing obstacle. Use the updated Facts and Metrics entry; older bioluminescence/regulatory-prohibition framing is superseded.
+
+The original Vietnamese DOCX is supplied as `docs/H_polysperma.docx`, with its actual workflow image embedded. A public PDF or rendered cover is not yet supplied. Link the original DOCX and use the authentic diagram; do not fabricate a cover preview or infer page count from cached Word metadata.

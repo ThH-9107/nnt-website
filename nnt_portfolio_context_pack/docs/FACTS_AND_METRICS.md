@@ -166,20 +166,28 @@ International Science Exchange:
 
 ---
 
-# Proposed Bioluminescent / GMO Plant Research
+# GFP Fluorescence / Hygrophila polysperma Proposal
 
-**[USER-CONFIRMED]**
-- proposal existed
-- mentor existed
-- methodology / predicted results were developed
-- project did **not** reach bench experimentation
-- practical / regulatory material-access constraints were a major reason
-- age / access requirements were also relevant
+**[USER-CONFIRMED IN OCTOBER 2026; ORIGINAL DOCX PROVIDED]**
+- May–July 2026 · Independent research proposal.
+- Proposed transient GFP expression in Hygrophila polysperma through Agrobacterium-mediated gene transfer.
+- Proposed comparison of submerged and emersed plant forms.
+- Developed literature review, background, objectives, planned methods/controls, workflow diagram, and a possible tissue-culture/regeneration extension.
+- Original Vietnamese proposal: `docs/H_polysperma.docx`.
+- Scientific supervisor named in that proposal: Nguyễn Thị Thảo Sương.
+- Subsequent implementation discussions: Dr. Trần Trọng Tuấn, Institute of Tropical Biology, Ho Chi Minh City, and Dr. Bùi Thế Vinh; both were willing to support implementation.
+- These discussions were not completed laboratory collaboration or experimental supervision.
+- Main obstacle: obtaining the GFP plasmid. Dr. Tuấn explained procurement and import arrangements could take several months.
+- Summer timing and additional practical constraints associated with being under 18 made the plan infeasible within the available research window.
+- Stopped by July 2026 without conducting the experiment. No experimental results obtained.
+- GFP fluorescence requires excitation light. This was not bioluminescence or a proposal for independently light-producing plants.
+- Do not infer a categorical legal prohibition on import from the procurement/timing obstacle.
 
 Allowed public framing:
 **“A question I couldn't test”**
 
-No experimental results may be claimed.
+Public status: **Research proposal — Experiment not conducted.**
+No transformed plant, validated hypothesis, experimental result, or completed laboratory work may be claimed.
 
 ---
 

@@ -48,20 +48,30 @@ Current truth:
 - reproducibility prioritized
 - no reliable validated inhibition result claimed
 
-## GMO / Bioluminescent Plant Proposal
+## GFP Fluorescence / Genetic-Engineering Proposal
 
 Do NOT say:
 - the experiment was performed
 - a plant was genetically modified
-- a glowing plant was produced
+- a GFP-expressing or fluorescent plant was produced
 - experimental results exist
+- GFP fluorescence is bioluminescence
+- the plant would independently produce visible light
+- the GFP plasmid was categorically illegal to import
+- the implementation discussions became completed laboratory collaboration or experimental supervision
 
 Allowed:
 - proposal
 - methodology
 - predicted outcomes
 - mentor involvement
-- project did not reach bench experimentation because of practical / regulatory access constraints
+- May–July 2026 independent proposal for transient GFP expression in Hygrophila polysperma using Agrobacterium-mediated transfer
+- comparison of submerged and emersed plant forms was proposed
+- procurement/import arrangements could take several months, beyond the available summer window
+- practical constraints associated with being under 18 also mattered
+- experiment never conducted; no experimental results obtained
+- Nguyễn Thị Thảo Sương is the scientific supervisor identified in the original proposal
+- Dr. Trần Trọng Tuấn and Dr. Bùi Thế Vinh were consulted about implementation and were willing to support it; no experiments followed
 
 ## Hoa Yen
 

@@ -8,7 +8,7 @@ The homepage uses the lakeside portrait with its natural background. Scale image
 | --- | --- | --- |
 | Homepage portrait | [thanh-lakeside-portrait.webp](./thanh-lakeside-portrait.webp) | portrait/1791827772253_148179545437676827_148179545437676827_bfab8487206faf545e869ec448a857f2.jpg |
 | IMAGE scale | Close viewport of [medical-ai-test-image-examples.webp](./medical-ai-test-image-examples.webp) | medical-ai/figures/11_test_image_examples.png |
-| ORGANISM scale | Bark viewport of [phytophthora-durian-bark.webp](./phytophthora-durian-bark.webp) | phytophthora/sample_3.jpg |
+| ORGANISM scale | Whole tree in [phytophthora-durian-tree.webp](./phytophthora-durian-tree.webp) | phytophthora/durian_tree.png |
 | LEARNER scale | [molebio-students-at-the-bench.webp](./molebio-students-at-the-bench.webp) | molebio/DNA_extract2.jpg |
 | COMMUNITY scale | Gathering viewport of [hoa-yen-mid-autumn-2024.webp](./hoa-yen-mid-autumn-2024.webp) | hoa-yen/mid_autumn_2024(2).jpg |
 | AUDIENCE scale | [school-performance-full-stage.webp](./school-performance-full-stage.webp) | creative/family3.jpg |
