@@ -44,13 +44,15 @@ export const medicalTimeline = [
   { period: "2026–Present", title: "Current study", text: "Testing Barlow Twins with Planckian Jitter and a skin-tone-aware auxiliary branch across six melanoma versus non-melanoma conditions." },
 ];
 
-export const honors = [
-  { award: "Lawrence S. Ting School Academic Scholarship", detail: "Four consecutive years", year: "2023–2026" },
-  { award: "Gold Award · Philippine International Math and Science Olympics (PIMSO)", detail: "", year: "2025" },
-  { award: "Gold Award · IMOCSEA–ISOCSEA National Round, Science (Grade 12)", detail: "", year: "2026" },
-  { award: "Most Exemplary Student of House Fantasy", detail: "One of four school-wide recipients", year: "2025" },
-  { award: "Gold · StemCo Summer Chemistry Competition, Grades 9–10", detail: "", year: "2025" },
-  { award: "Silver · StemCo Summer Biology Competition, Grades 9–10", detail: "", year: "2025" },
-  { award: "Exemplary Young Leader", detail: "School recognition", year: "2026" },
+export type Honor = { id: string; award: string; detail: string; year: string; certificateId?: string; certificateNote?: string };
+
+export const honors: Honor[] = [
+  { id: "scholarship", award: "Lawrence S. Ting School Academic Scholarship", detail: "Four consecutive years", year: "2023–2026", certificateId: "lsts-academic-scholarship", certificateNote: "Shown here: the AY 2025–26 certificate. The recognition above covers four consecutive years." },
+  { id: "pimso", award: "Gold Award · Philippine International Math and Science Olympics (PIMSO)", detail: "", year: "2025", certificateId: "pimso-science-gold" },
+  { id: "imocsea-isocsea", award: "Gold Award · IMOCSEA–ISOCSEA National Round, Science (Grade 12)", detail: "", year: "2026" },
+  { id: "house-fantasy", award: "Most Exemplary Student of House Fantasy", detail: "One of four school-wide recipients", year: "2025", certificateId: "house-fantasy-exemplary-student" },
+  { id: "stemco-chemistry", award: "Gold · StemCo Summer Chemistry Competition, Grades 9–10", detail: "", year: "2025", certificateId: "stemco-chemistry-gold" },
+  { id: "stemco-biology", award: "Silver · StemCo Summer Biology Competition, Grades 9–10", detail: "", year: "2025", certificateId: "stemco-biology-silver" },
+  { id: "young-leader", award: "Exemplary Young Leader", detail: "School recognition", year: "2026" },
 ];
 

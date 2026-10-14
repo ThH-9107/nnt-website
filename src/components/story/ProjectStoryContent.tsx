@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { GalleryItem, ProjectStory, StoryChapter, TimelineItem } from "@/data/project-pages";
 import { StoryFigure } from "./StoryFigure";
 import { hoaYenThankYouLetter } from "@/data/community-documents";
+import { UnfinishedResearchNote } from "./UnfinishedResearchNote";
 
 const scalePosition: Record<ProjectStory["kind"], string> = {
   "medical-ai": "01 / 05 · IMAGE",
@@ -62,7 +63,7 @@ function PhytophthoraStory({ project }: { project: ProjectStory }) {
     <section className="story-field-diary"><div className="story-section-heading"><span className="story-kicker">Field notes / May 2024–present</span><h2>Conditions outside the lab shape the method inside it.</h2><p>{project.timelineIntro}</p></div><Timeline items={project.timeline} /></section>
     <section className="story-field-chapters">{project.chapters.map((chapter, index) => <div className="story-field-chapter" key={chapter.label}><Chapter chapter={chapter} />{index < project.gallery.length && <Figure {...project.gallery[index]} />}</div>)}</section>
     <section className="story-field-contact-sheet"><div className="story-section-heading"><span className="story-kicker">Field & laboratory record</span><h2>The process, before a conclusion.</h2><p>These photographs document attempts, materials, and observations. They do not establish a validated inhibition result.</p></div><div>{project.record?.map((item) => <Figure key={item.src} {...item} />)}</div></section>
-    <div className="story-field-metrics"><Metrics project={project} /></div><Status project={project} /><Credits project={project} /><StoryEnd project={project} />
+    <div className="story-field-metrics"><Metrics project={project} /></div><Status project={project} /><Credits project={project} /><UnfinishedResearchNote /><StoryEnd project={project} />
   </article>;
 }
 

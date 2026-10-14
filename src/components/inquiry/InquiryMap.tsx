@@ -7,6 +7,7 @@ import { inquiryNodes } from "@/data/inquiry";
 import { photos } from "@/data/photography";
 import { scaleImages } from "@/data/scale-images";
 import { ScaleObservationImage } from "./ScaleObservationImage";
+import { unfinishedResearch } from "@/data/unfinished-research";
 
 export function InquiryMap() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -71,7 +72,8 @@ export function InquiryMap() {
                 </Link>
                 {node.id === "test" && <details className="scale-secondary scale-secondary-unfinished">
                   <summary>A question I couldn&apos;t test</summary>
-                  <p>A proposed bioluminescent plant experiment did not reach bench work because of practical access and regulatory constraints.</p>
+                  <p>{unfinishedResearch.summary}</p>
+                  <Link href="/research/phytophthora#unfinished-research" scroll={false} className="scale-secondary-note-link">Read the proposal note <span aria-hidden="true">↗</span></Link>
                 </details>}
                 {node.id === "serve" && <details className="scale-secondary" id="council">
                   <summary>Family Representative Council</summary>

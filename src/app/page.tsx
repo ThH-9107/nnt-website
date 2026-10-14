@@ -3,7 +3,7 @@ import Image from "next/image";
 import { InquiryMap } from "@/components/inquiry/InquiryMap";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
-import { honors, medicalManuscript, profile } from "@/data/portfolio";
+import { medicalManuscript, profile } from "@/data/portfolio";
 import { photos } from "@/data/photography";
 import { CertificateShowcase } from "@/components/CertificateShowcase";
 
@@ -53,7 +53,6 @@ export default function Home() {
         </div>
       </div></section>
 
-      <section className="home-honors" id="honors" aria-labelledby="honors-title"><div className="container home-honors-grid"><div><p className="eyebrow">Selected honors</p><h2 id="honors-title">Markers along the way.</h2></div><ul>{honors.map((item) => <li key={item.award}><div><strong>{item.award}</strong>{item.detail && <span>{item.detail}</span>}</div><time>{item.year}</time></li>)}</ul></div></section>
       <CertificateShowcase />
     </main>
 

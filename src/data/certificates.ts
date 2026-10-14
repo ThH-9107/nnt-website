@@ -2,6 +2,28 @@ export type CertificateDocument = { id: string; title: string; issuer: string; d
 
 export const awardCertificates: CertificateDocument[] = [
   {
+    id: "stemco-chemistry-gold",
+    title: "StemCo Summer Chemistry Competition",
+    issuer: "StemCo",
+    detail: "Gold · Grades 9–10",
+    period: "September 2025",
+    pdf: "/documents/certificates/stemco-chemistry-gold.pdf",
+    thumbnail: "/images/certificates/stemco-chemistry-gold.webp",
+    width: 1132,
+    height: 1600,
+  },
+  {
+    id: "stemco-biology-silver",
+    title: "StemCo Summer Biology Competition",
+    issuer: "StemCo",
+    detail: "Silver · Grades 9–10",
+    period: "September 2025",
+    pdf: "/documents/certificates/stemco-biology-silver.pdf",
+    thumbnail: "/images/certificates/stemco-biology-silver.webp",
+    width: 1132,
+    height: 1600,
+  },
+  {
     "id": "pimso-science-gold",
     "issuer": "PIMSO / ICE",
     "title": "PIMSO Science",

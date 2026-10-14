@@ -7,6 +7,7 @@ export function ProjectOverlay({ title, position, children }: { title: string; p
   const router = useRouter();
   const dialogRef = useRef<HTMLDivElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const previousFocus = document.activeElement instanceof HTMLElement ? document.activeElement : null;
@@ -15,8 +16,15 @@ export function ProjectOverlay({ title, position, children }: { title: string; p
     const wasInert = siteContent?.inert ?? false;
     document.documentElement.style.overflow = "hidden";
     if (siteContent) siteContent.inert = true;
-    closeRef.current?.focus();
+    closeRef.current?.focus({ preventScroll: true });
+    const frame = requestAnimationFrame(() => {
+      if (window.location.hash !== "#unfinished-research") return;
+      const target = dialogRef.current?.querySelector<HTMLElement>("#unfinished-research");
+      const scroll = scrollRef.current;
+      if (target && scroll) scroll.scrollTop += target.getBoundingClientRect().top - scroll.getBoundingClientRect().top - 24;
+    });
     return () => {
+      cancelAnimationFrame(frame);
       document.documentElement.style.overflow = previousOverflow;
       if (siteContent) siteContent.inert = wasInert;
       previousFocus?.focus({ preventScroll: true });
@@ -37,7 +45,7 @@ export function ProjectOverlay({ title, position, children }: { title: string; p
   return <div className="story-overlay-backdrop" onMouseDown={(event) => { if (event.target === event.currentTarget) router.back(); }}>
     <div className="story-overlay" role="dialog" aria-modal="true" aria-label={title} ref={dialogRef} onKeyDown={handleKeys}>
       <div className="story-overlay-bar"><button ref={closeRef} type="button" onClick={() => router.back()}>← Back to Inquiry Map</button><span>{position}</span></div>
-      <div className="story-overlay-scroll">{children}</div>
+      <div className="story-overlay-scroll" ref={scrollRef}>{children}</div>
     </div>
   </div>;
 }
