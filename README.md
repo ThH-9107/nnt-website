@@ -26,7 +26,7 @@ Open `http://localhost:3000`.
 - `src/components/ProjectCard.tsx` — reusable featured-project card.
 - `src/components/inquiry/` — scroll-controlled Inquiry Map and reusable SVG photographic viewports.
 - `src/data/scale-images.ts` — selected scale photographs, display-only crop coordinates, and field labels.
-- `src/app/scale-photography.css` — shared observation frame, expanding view, and mobile compositions.
+- `src/app/scale-photography.css` — shared landscape observation frame, pullback, and mobile compositions.
 - `src/components/CertificateArchive.tsx` — manually browsable document shelf with arrows, keyboard navigation, touch scrolling, and reduced motion.
 - `src/data/certificates.ts` — original document links, preview scans, issuing organizations, and dates.
 - `src/app/certificates.css` — document-archive typography and paper presentation.
@@ -37,7 +37,7 @@ Open `http://localhost:3000`.
 
 The homepage map and browse links open `/research/medical-ai`, `/research/phytophthora`, `/leadership/molebio`, `/leadership/hoa-yen`, and `/creative` as large route-aware overlays. Direct visits to those URLs render the same content as standalone pages with a Back to Inquiry Map link.
 
-The Inquiry Map moves from IMAGE through ORGANISM, LEARNER, COMMUNITY, and AUDIENCE. Desktop scrolling widens a shared observation frame while the grid becomes less dense. Hover and focus are cosmetic; all project links remain available. Mobile uses five static, progressively wider compositions along a vertical path. Motion uses SVG and CSS with a reduced-motion fallback. No 3D or canvas dependency was added.
+The Inquiry Map moves from IMAGE through ORGANISM, LEARNER, COMMUNITY, and AUDIENCE. Desktop scrolling pulls image detail back inside a steady 3:2 frame; grid marks contract with the view. The complete Audience photograph fits inside the frame without cropping. The frame fits both the available width and height on shorter screens. Hover and focus are cosmetic; all project links remain available. Mobile uses five static landscape compositions along a vertical path, with the same progression from close detail to a wider setting. Reduced motion disables the pullback. No 3D or canvas dependency was added.
 
 The hero provides direct research and leadership links, alongside the résumé download. About includes two compact scientific-training records. Selected honors remain concise; original certificates are browsed horizontally near the bottom, with additional learning records inside a disclosure. The archive has no autoplay. Focus the shelf and use Left/Right, Home/End, the arrow buttons, or native touch/trackpad scrolling.
 

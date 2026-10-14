@@ -2,7 +2,7 @@
 
 Curated from the images supplied in October 2026. Originals are preserved. Delivery copies are resized, encoded as WebP, and stripped of EXIF metadata; no faces, research observations, or event content are retouched.
 
-The homepage uses the lakeside portrait with its natural background. Scale images share an expanding observation frame; SVG viewports show details without altering source assets. The full photographs and labeled scientific figures remain in project stories. No AI retouching is used.
+The homepage uses the lakeside portrait with its natural background. Scale images share a steady landscape observation frame; the view pulls back inside it. SVG viewports show details without altering source assets, and Audience displays the entire stage photograph. The full photographs and labeled scientific figures remain in project stories. No AI retouching is used.
 
 | Placement | Selected image | Original source |
 | --- | --- | --- |
@@ -10,7 +10,7 @@ The homepage uses the lakeside portrait with its natural background. Scale image
 | IMAGE scale | Close viewport of [medical-ai-test-image-examples.webp](./medical-ai-test-image-examples.webp) | medical-ai/figures/11_test_image_examples.png |
 | ORGANISM scale | Bark viewport of [phytophthora-durian-bark.webp](./phytophthora-durian-bark.webp) | phytophthora/sample_3.jpg |
 | LEARNER scale | [molebio-students-at-the-bench.webp](./molebio-students-at-the-bench.webp) | molebio/DNA_extract2.jpg |
-| COMMUNITY scale | Interaction viewport of [hoa-yen-cai-rang-water-safety.webp](./hoa-yen-cai-rang-water-safety.webp) | hoa-yen/CaiRang.jpg |
+| COMMUNITY scale | Gathering viewport of [hoa-yen-mid-autumn-2024.webp](./hoa-yen-mid-autumn-2024.webp) | hoa-yen/mid_autumn_2024(2).jpg |
 | AUDIENCE scale | [school-performance-full-stage.webp](./school-performance-full-stage.webp) | creative/family3.jpg |
 | Homepage About | [thanh-at-the-lab-bench.webp](./thanh-at-the-lab-bench.webp) | portrait/lab_work.jpg |
 | Medical AI opening | [medical-ai-test-image-examples.webp](./medical-ai-test-image-examples.webp) | medical-ai/figures/11_test_image_examples.png |

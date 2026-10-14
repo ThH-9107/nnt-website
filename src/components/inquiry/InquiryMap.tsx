@@ -21,6 +21,10 @@ export function InquiryMap() {
       const rect = sectionRef.current.getBoundingClientRect();
       const travel = Math.max(1, rect.height - window.innerHeight + 78);
       const progress = Math.min(0.999, Math.max(0, (78 - rect.top) / travel));
+      // Pull back inside a steady frame; reach the uncropped view at AUDIENCE.
+      const pullback = Math.min(1, progress / ((inquiryNodes.length - 1) / inquiryNodes.length));
+      sectionRef.current.style.setProperty("--camera-scale", (1.4 - 0.4 * pullback).toFixed(4));
+      sectionRef.current.style.setProperty("--grid-step", `${(72 - 44 * pullback).toFixed(2)}px`);
       setActiveIndex(Math.min(inquiryNodes.length - 1, Math.floor(progress * inquiryNodes.length)));
     };
     const schedule = () => { if (!frame) frame = requestAnimationFrame(update); };
@@ -62,7 +66,7 @@ export function InquiryMap() {
                     <span className="scale-stage-subtitle"><em>{node.action.toLowerCase()}</em> <span aria-hidden="true">·</span> {node.destination}</span>
                     <span className="scale-stage-question">“{node.question}”</span>
                   </span>
-                  <span className="scale-stage-texture" data-scene={node.id} aria-hidden="true"><ScaleObservationImage id={node.id} /><span className="scale-mobile-caption">{scaleImages[node.id].title}</span></span>
+                  <span className="scale-stage-texture" data-scene={node.id} aria-hidden="true"><span className="scale-mobile-window"><ScaleObservationImage id={node.id} /></span><span className="scale-mobile-caption">{scaleImages[node.id].title}</span></span>
                   <span className="scale-stage-arrow" aria-hidden="true">↗</span>
                 </Link>
                 {node.id === "test" && <details className="scale-secondary scale-secondary-unfinished">
@@ -106,7 +110,7 @@ export function InquiryMap() {
         </div>
       </div>
 
-      <p className="scale-orientation"><span>IMAGE</span><span className="scale-orientation-line" aria-hidden="true"><i style={{ width: `${(activeIndex + 1) * 20}%` }} /></span><span>AUDIENCE</span><span className="scale-orientation-instruction">Scroll to change the scale · Select a name to open its story</span></p>
+      <p className="scale-orientation"><span>IMAGE</span><span className="scale-orientation-line" aria-hidden="true"><i style={{ width: `${(activeIndex + 1) * 20}%` }} /></span><span>AUDIENCE</span><span className="scale-orientation-instruction">Scroll to pull back · Select a name to open its story</span></p>
     </div></div>
   </section>;
 }

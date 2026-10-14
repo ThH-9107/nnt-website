@@ -4,6 +4,7 @@ import type { InquiryNodeData } from "./inquiry";
 export type ScaleImage = PortfolioImage & {
   // A display-only SVG viewport. The underlying photograph / figure stays intact.
   crop?: [number, number, number, number];
+  fit?: "cover" | "contain";
   fieldNote: string;
 };
 
@@ -27,9 +28,11 @@ export const scaleImages: Record<InquiryNodeData["id"], ScaleImage> = {
   },
   share: { ...photos.molebioBench, fieldNote: "One method → shared practice" },
   serve: {
-    ...photos.hoaYenWater,
-    crop: [0, 500, 1200, 1000],
-    fieldNote: "An exchange → its wider setting",
+    ...photos.hoaYenMidAutumn2024,
+    crop: [0, 400, 1200, 1000],
+    title: "Mid-Autumn / a community gathering",
+    alt: "A wide detail of volunteers and participants gathered outdoors beneath trees and lanterns at the 2024 Mid-Autumn program.",
+    fieldNote: "Shared work → a community gathering",
   },
-  express: { ...photos.creativeWide, fieldNote: "The ensemble → the whole room" },
+  express: { ...photos.creativeWide, fit: "contain", fieldNote: "The ensemble → the whole room" },
 };
