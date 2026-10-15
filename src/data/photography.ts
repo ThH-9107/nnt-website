@@ -28,15 +28,15 @@ export const photos = {
     "width": 1276,
     "height": 956,
     "title": "At the laboratory bench",
-    "caption": "Careful work with samples, tools, and an unfinished question.",
+    "caption": "Working with samples and tools at the laboratory bench.",
     "alt": "Thanh wearing gloves and working with samples at a laboratory bench."
   },
   "medicalExamples": {
     "src": "/images/selected/medical-ai-test-image-examples.webp",
     "width": 2856,
     "height": 1948,
-    "title": "The images behind the question",
-    "caption": "Selected independent-test skin-image examples. They illustrate the classification task and are not evidence of model performance.",
+    "title": "Skin-lesion image examples",
+    "caption": "Selected independent-test images illustrating the melanoma and non-melanoma classification task.",
     "alt": "Six skin-lesion image examples arranged in non-melanoma and melanoma rows.",
     "kind": "figure"
   },
@@ -45,7 +45,7 @@ export const photos = {
     "width": 3633,
     "height": 1810,
     "title": "Compare both measures",
-    "caption": "The six current conditions, shown on the independent ISIC 2019 test set. These are single-seed results; higher F1 does not imply higher AUROC.",
+    "caption": "F1 and AUROC for the six current conditions on the independent ISIC 2019 test set, from the single-seed evaluation.",
     "alt": "Side-by-side charts comparing independent-test F1 and AUROC across six conditions.",
     "kind": "figure"
   },
@@ -54,7 +54,7 @@ export const photos = {
     "width": 2525,
     "height": 1812,
     "title": "An improvement with a trade-off",
-    "caption": "F1 captures performance at a selected decision threshold; AUROC describes ranking across thresholds. This plot makes the trade-off visible. Further validation remains necessary.",
+    "caption": "Each point represents an experimental condition. The highest-F1 condition has lower AUROC than the baseline.",
     "alt": "Scatter plot showing that the conditions with higher F1 have lower AUROC than the baseline.",
     "kind": "figure"
   },
@@ -88,7 +88,7 @@ export const photos = {
     "width": 1200,
     "height": 1600,
     "title": "An attempt that needed revision",
-    "caption": "An unsuccessful isolation attempt. This is a record of the workflow problem, not a validated pathogen identification or inhibition result.",
+    "caption": "A culture plate from an unsuccessful isolation attempt.",
     "alt": "A culture plate with several patches of mixed growth, held by hand.",
     "aspectRatio": "3 / 4"
   },
@@ -115,7 +115,7 @@ export const photos = {
     "width": 720,
     "height": 1280,
     "title": "Observing a culture plate",
-    "caption": "A preliminary culture observation. The photograph does not establish the identity of the organism or a reliable biocontrol result.",
+    "caption": "A preliminary culture observation; organism identity remains unconfirmed.",
     "alt": "A Petri dish with several small growth areas and handwritten markings.",
     "aspectRatio": "3 / 4"
   },
@@ -258,7 +258,7 @@ export const photos = {
     "width": 1587,
     "height": 2245,
     "title": "The Cao Van Lau production",
-    "caption": "The original production poster, with Thanh credited in the role of Cao Van Lau.",
+    "caption": "The original poster credits Thanh as Cao Văn Lầu and XULONG, his team, for direction. November 15 is the performance date; January 2025 is the certificate date.",
     "alt": "The original poster for the Cao Van Lau production, showing the cast and title 1919 Xuyen Khong.",
     "kind": "figure"
   },

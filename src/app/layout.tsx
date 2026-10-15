@@ -10,10 +10,10 @@ import "./readability.css";
 
 export const metadata: Metadata = {
   title: "Nguyen Ngoc Thanh | Student Researcher",
-  description: "Nguyen Ngoc Thanh is a student researcher at Lawrence S. Ting School exploring biology, medical AI, community science, and theatre.",
+  description: "Nguyen Ngoc Thanh is a high school student researcher at Lawrence S. Ting School exploring biology and medical AI, with interests in teaching, community work, and theatre.",
   openGraph: {
     title: "Nguyen Ngoc Thanh | Student Researcher",
-    description: "Research in biology, medical AI, and community science.",
+    description: "Biology and medical AI research, science education, community leadership, and theatre.",
     type: "website",
   },
 };

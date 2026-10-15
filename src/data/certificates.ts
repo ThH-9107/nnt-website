@@ -1,4 +1,4 @@
-export type CertificateDocument = { id: string; title: string; issuer: string; detail: string; period: string; pdf: string; thumbnail: string; width: number; height: number };
+export type CertificateDocument = { id: string; title: string; issuer: string; detail: string; period: string; pdf: string; thumbnail: string; width: number; height: number; note?: string };
 
 export const awardCertificates: CertificateDocument[] = [
   {
@@ -82,8 +82,9 @@ export const awardCertificates: CertificateDocument[] = [
     "id": "academic-top-five-percent",
     "issuer": "Lawrence S. Ting School",
     "title": "Academic Standing",
-    "detail": "Top 5% · Grade 11",
-    "period": "AY 2025–26",
+    "detail": "Top 5% · Grade 11 · Semester 1",
+    "period": "Semester 1, AY 2025–26",
+    "note": "This certificate documents Semester 1 of Grade 11 only. The four-year standing listed in the résumé is a broader record.",
     "pdf": "/documents/certificates/academic-top-five-percent.pdf",
     "thumbnail": "/images/certificates/academic-top-five-percent.webp",
     "width": 1600,

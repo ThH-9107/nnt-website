@@ -54,5 +54,6 @@ export const honors: Honor[] = [
   { id: "stemco-chemistry", award: "Gold · StemCo Summer Chemistry Competition, Grades 9–10", detail: "", year: "2025", certificateId: "stemco-chemistry-gold" },
   { id: "stemco-biology", award: "Silver · StemCo Summer Biology Competition, Grades 9–10", detail: "", year: "2025", certificateId: "stemco-biology-silver" },
   { id: "young-leader", award: "Exemplary Young Leader", detail: "School recognition", year: "2026" },
+  { id: "donmun", award: "Honorable Mention · DONMUN", detail: "Special Political and Decolonization Committee", year: "2026" },
 ];
 

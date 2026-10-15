@@ -4,6 +4,8 @@
 
 The portfolio is not organized as a list of résumé categories.
 
+The October 15, 2026 review preserves this architecture. Public prose now emphasizes distinct personal contributions and experiences, with metrics consolidated and limitations explained where they affect interpretation. Community service and theatre retain their own identities alongside the research and science education.
+
 The main conceptual navigation is based on **scales of attention**:
 
 1. **IMAGE**
@@ -260,7 +262,7 @@ These can live in:
 - résumé
 - contextual links within primary stories
 
-The GFP proposal remains within ORGANISM, at `/research/phytophthora#unfinished-research`, after the main study's advisor credits. Its sequence is question → proposal → seeking support → obstacle → moving on. Keep supervisor attribution separate from later implementation discussions. The original Vietnamese DOCX and its workflow diagram are the documentary artifacts.
+The GFP proposal remains secondary within ORGANISM, with its own route and matching overlay at `/research/gfp-proposal`. A compact teaser after the main study's advisor credits preserves `/research/phytophthora#unfinished-research`. Its sequence is question → proposal → seeking support → obstacle → moving on. Keep supervisor attribution separate from later implementation discussions. The original Vietnamese DOCX and its workflow diagram are the documentary artifacts. This is not a sixth main scale.
 
 Secondary:
 - Stem Cell Summer School

@@ -19,8 +19,8 @@ export default function Home() {
         <div className="home-hero-copy">
           <p className="eyebrow">{profile.school} / {profile.classYear}</p>
           <h1 id="home-title">Nguyen Ngoc<br /><em>Thanh.</em></h1>
-          <p className="home-identity">Student researcher working across computation, experimental biology, and community science.</p>
-          <p className="home-hero-detail">I follow biological and biomedical questions from images to experiments, and from the lab to the people around it.</p>
+          <p className="home-identity">High school student researcher exploring biology through computation and experimentation.</p>
+          <p className="home-hero-detail">I also enjoy teaching, organizing community programs, and making theatre.</p>
           <div className="home-hero-actions"><a className="button button-primary" href="#inquiry-map">Explore the scales <span aria-hidden="true">↓</span></a><a className="button button-outline" href={resumeHref} download>Résumé {profile.resumePdf ? "(PDF)" : "(.docx)"} <span aria-hidden="true">↗</span></a></div>
           <nav className="home-quick-links" aria-label="Go directly to a project"><div id="research"><span>Research</span><Link href="/research/medical-ai" scroll={false}>Medical AI ↗</Link><Link href="/research/phytophthora" scroll={false}>Phytophthora ↗</Link></div><div id="leadership"><span>Leadership</span><Link href="/leadership/molebio" scroll={false}>MoleBio ↗</Link><Link href="/leadership/hoa-yen" scroll={false}>Hoa Yen ↗</Link></div></nav>
           <p className="home-hero-location">{profile.location} <span aria-hidden="true">/</span> Biology · Computation · People</p>
@@ -37,8 +37,8 @@ export default function Home() {
         <header><p className="eyebrow">Hello, beyond the projects</p><h2 id="about-title">A little<br /><em>about me.</em></h2></header>
         <div className="home-introduction-copy">
           <p className="home-introduction-lead">Hi, I&apos;m Ngọc Thành, a high school student from Ho Chi Minh City with a curiosity for biology and a tendency to turn seemingly simple questions into rather complicated projects.</p>
-          <p>I&apos;ve always enjoyed figuring out how things work, especially when it comes to science. I love experimenting, solving problems, and exploring ideas that I don&apos;t fully understand yet. Even when things don&apos;t go as planned (which happens quite often), there&apos;s something exciting about discovering what went wrong and trying again.</p>
-          <p>But science isn&apos;t everything to me. I also have a love for theatre, music, and storytelling. I enjoy writing, directing, and occasionally pretending to be someone completely different on stage. Beyond that, I love bringing people together, trying new things, and finding little ways to make a difference in the lives of those around me.</p>
+          <p>I love experimenting, solving problems, and exploring ideas that I don&apos;t fully understand yet. Even when things don&apos;t go as planned (which happens quite often), there&apos;s something exciting about discovering what went wrong and trying again.</p>
+          <p>But science isn&apos;t everything to me. I love theatre, music, and storytelling: writing, directing, and occasionally pretending to be someone completely different on stage. I also enjoy bringing people together, trying new things, and finding little ways to make a difference in the lives of those around me.</p>
         </div>
       </div></section>
 
@@ -46,17 +46,16 @@ export default function Home() {
 
       <section className="home-current" aria-labelledby="current-title"><div className="container home-current-grid">
         <div><p className="eyebrow">Current work / October 2026</p><h2 id="current-title">A question still in progress.</h2></div>
-        <div className="home-current-detail"><p className="home-current-kicker">First-author manuscript</p><h3>{medicalManuscript.title}</h3><p className="home-current-status">{medicalManuscript.status}</p><Link href="/research/medical-ai" scroll={false}>Read the research story <span aria-hidden="true">↗</span></Link></div>
+        <div className="home-current-detail"><p className="home-current-kicker">First-author manuscript · Submitted October 2026</p><h3>{medicalManuscript.title}</h3><p className="home-current-status">{medicalManuscript.status}</p><Link href="/research/medical-ai" scroll={false}>Read the research story <span aria-hidden="true">↗</span></Link></div>
       </div></section>
 
       <section className="home-about" id="working-method" aria-labelledby="working-method-title"><div className="container home-about-grid">
         <div><p className="eyebrow">Working method / In practice</p><h2 id="working-method-title">I learn by making,<br />then revising.</h2><figure className="home-about-photo"><Image src={photos.labPortrait.src} alt={photos.labPortrait.alt} width={photos.labPortrait.width} height={photos.labPortrait.height} sizes="(max-width: 900px) 100vw, 40vw" /><figcaption>{photos.labPortrait.title}</figcaption></figure></div>
         <div className="home-about-copy">
-          <p>My research moves between training models and handling biological samples. In Medical AI, inconclusive augmentation experiments led me to study the method more carefully. In the durian study, inconsistent isolation attempts have meant revising the workflow before I can test the biocontrol question.</p>
-          <p>MoleBio brings that learning to a shared bench: pipettes, DNA extraction, microscopy, and students trying a method for themselves. Theatre and community work give me other ways to work with people and communicate what I care about.</p>
+          <p>I enjoy building things, testing whether they work, and figuring out what to change when they don&apos;t. That has taken me from computer models to laboratory experiments, and from learning techniques myself to sharing them with others.</p>
           <section className="home-training" aria-labelledby="training-title"><h3 id="training-title">Scientific training & experience</h3>
-            <article><time>2024</time><div><h4>Stem Cell Summer School</h4><p>Selected among 47 participants from nearly 200 applicants at the Stem Cell Institute, VNU-HCM University of Science. Seminars, laboratory experimentation, and data analysis.</p></div></article>
-            <article><time>Sep. 2025</time><div><h4>Binh Phu pharmaceutical laboratory</h4><p>Supervised experience in formulation and quality control, including tests for tablet crumbling (friability), hardness, and moisture content.</p></div></article>
+            <article><time>Jul.–Aug.<br />2024</time><div><h4>Stem Cell Summer School</h4><p>Selected participant · July 8–August 12, 2024. Stem Cell Institute, University of Science, VNU-HCM. One of 47 selected from nearly 200 applicants, taking part in research seminars, laboratory experimentation, research planning, and data analysis under researcher mentorship.</p></div></article>
+            <article><time>Sep. 2025</time><div><h4>Binh Phu Pharmaceutical Trading & Services Co., Ltd.</h4><p>Laboratory Assistant Intern. Assisted with supervised pharmaceutical formulation and quality-control work, including tablet friability, hardness, and moisture-content testing.</p></div></article>
           </section>
           <div className="home-about-links"><div id="creative"><span>Beyond research</span><Link href="/creative" scroll={false}>Theatre & creative work ↗</Link></div><div id="cv"><span>Résumé</span><a href={resumeHref} download>Download current résumé {profile.resumePdf ? "(PDF)" : "(.docx)"} ↗</a></div></div>
         </div>

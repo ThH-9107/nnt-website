@@ -3,7 +3,7 @@
 import { useEffect, useRef, type KeyboardEvent, type ReactNode } from "react";
 import { useRouter } from "next/navigation";
 
-export function ProjectOverlay({ title, position, children }: { title: string; position: string; children: ReactNode }) {
+export function ProjectOverlay({ title, position, children, backLabel = "← Back to Inquiry Map" }: { title: string; position: string; children: ReactNode; backLabel?: string }) {
   const router = useRouter();
   const dialogRef = useRef<HTMLDivElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
@@ -44,7 +44,7 @@ export function ProjectOverlay({ title, position, children }: { title: string; p
 
   return <div className="story-overlay-backdrop" onMouseDown={(event) => { if (event.target === event.currentTarget) router.back(); }}>
     <div className="story-overlay" role="dialog" aria-modal="true" aria-label={title} ref={dialogRef} onKeyDown={handleKeys}>
-      <div className="story-overlay-bar"><button ref={closeRef} type="button" onClick={() => router.back()}>← Back to Inquiry Map</button><span>{position}</span></div>
+      <div className="story-overlay-bar"><button ref={closeRef} type="button" onClick={() => router.back()}>{backLabel}</button><span>{position}</span></div>
       <div className="story-overlay-scroll" ref={scrollRef}>{children}</div>
     </div>
   </div>;

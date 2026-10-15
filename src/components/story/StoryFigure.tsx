@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { PortfolioImage } from "@/data/photography";
+import { ScientificText } from "./ScientificText";
 
 export function StoryFigure({ image, className = "", priority = false, sizes = "(max-width: 900px) 100vw, 50vw" }: {
   image: PortfolioImage;
@@ -13,6 +14,6 @@ export function StoryFigure({ image, className = "", priority = false, sizes = "
       <Image src={image.src} alt={image.alt} fill priority={priority} quality={isFigure ? 90 : 75} sizes={sizes} style={{ objectFit: isFigure ? "contain" : "cover", objectPosition: image.position ?? "50% 50%" }} />
       <span className="story-image-open" aria-hidden="true">↗</span>
     </a>
-    <figcaption><strong>{image.title}</strong><small>{image.caption}</small></figcaption>
+    <figcaption><strong><ScientificText text={image.title} /></strong><small><ScientificText text={image.caption} /></small></figcaption>
   </figure>;
 }

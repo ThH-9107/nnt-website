@@ -31,3 +31,7 @@ next-env.d.ts
 /local-source-documents/
 /public/images/awards.zip
 /public/images/awards/*ETRF.pdf
+
+# Hoa Yen source reports supplied for factual review
+/nnt_portfolio_context_pack/docs/PHẦN 1 báo cáo kết quả 03 năm thực hiện Quỹ Thiện nguyện.docx
+/nnt_portfolio_context_pack/docs/PHẦN 2 CHƯƠNG TRÌNH  02 năm thực hiện Quỹ Thiện nguyện TIẾP THEO.docx

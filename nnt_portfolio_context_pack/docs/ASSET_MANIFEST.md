@@ -11,6 +11,14 @@ Status: planning document. Real assets may not yet be present.
 - A real cover preview may be added from a supplied PDF later. Do not fabricate one.
 - ORGANISM scale source photo: `/public/images/phytophthora/durian_tree.png`; delivery copy `/public/images/selected/phytophthora-durian-tree.webp`.
 
+## October 15 editorial evidence update
+
+- Final public résumé: `/public/resume-nguyen-ngoc-thanh.pdf`, unchanged from `docs/Resume Nguyễn Ngọc Thành.pdf`.
+- Local Hoa Yen report for factual review: `docs/PHẦN 1 báo cáo kết quả 03 năm thực hiện Quỹ Thiện nguyện.docx`.
+- Local Hoa Yen future plan: `docs/PHẦN 2 CHƯƠNG TRÌNH  02 năm thực hiện Quỹ Thiện nguyện TIẾP THEO.docx`. It describes proposed 2027–2028 work. Both original DOCX files are ignored by Git; no public delivery copy is included.
+- The Cao Van Lau poster credits direction to XULONG, Thanh's team. November 15 is the performance date and January 2025 the certificate date, confirmed by Thanh. The poster stays in the Creative story with this context.
+- The Top 5% certificate is explicitly captioned Grade 11, Semester 1, AY 2025–2026.
+
 Goal: use real documentation to make the portfolio feel lived-in rather than template-like.
 
 Do not use generic stock photos.

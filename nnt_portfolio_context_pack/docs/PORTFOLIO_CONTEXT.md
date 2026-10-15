@@ -35,6 +35,10 @@ Useful internal narrative:
 
 Do not make this sound grandiose or philosophical for its own sake. The projects should prove it.
 
+### October 15 editorial direction
+
+Keep this as research context, rather than forcing every activity into science. Hoa Yen is community service and organization; MoleBio is science education; theatre is a creative interest in its own right. Use concrete personal contributions and distinct conclusions for each story. The homepage introduction remains conversational. The final résumé is the latest personal reference, with unresolved discrepancies tracked separately.
+
 ---
 
 ## 2. Medical AI / Computer Vision Research
@@ -300,6 +304,8 @@ Potential portfolio framing:
 
 The story should remain a short, personal account of developing a question, seeking implementation support, encountering the procurement/timing obstacle, and moving on. It may use the original proposal and its authentic workflow diagram. No fictional cover, fluorescent-plant photograph, or laboratory result should be generated.
 
+The story now has its own secondary route and matching overlay at `/research/gfp-proposal`, still under ORGANISM. The former `/research/phytophthora#unfinished-research` anchor remains as a compact link to it.
+
 Do not claim any experimental result.
 Do not claim a genetically modified or GFP-expressing plant was produced. Do not describe the plasmid as categorically illegal to import.
 
@@ -366,6 +372,8 @@ Student-led side projects:
 
 Important leadership framing:
 Thanh did not only “run sessions.” He redesigned the club around practical work and delegated projects around members' strengths.
+
+In October 2026, Thanh described preparing workshop content in a document, making slides, contacting the teacher at MSC, visiting to check the facilities, and then teaching the students. This is a documented personal example of the work behind the sessions. MSC's full name has not been supplied.
 
 Do not claim fundraising revenue from the DNA model project; that plan was not implemented.
 
@@ -452,13 +460,9 @@ A separate Cai Rang Ward Youth Union thank-you letter, dated September 18, 2026,
 
 ### Water-safety campaign / life jackets
 
-Thanh has stated that Hoa Yen's Cai Rang Floating Market water-safety campaign distributed **50+ life jackets**.
+On October 15, 2026, Thanh explicitly confirmed **100 life jackets**, superseding the earlier 50+ figure, and supplied contemporary Giáo dục & Thời đại coverage from April 30, 2024. The article describes nearly 100 distributed during the joint local campaign, without naming Hoa Yen. Public copy credits Hoa Yen's participation and the campaign outcome; it does not imply exclusive delivery by Hoa Yen.
 
-Thanh also states that a **ward thank-you letter** exists to document this activity.
-
-This may remain in the portfolio as a concrete flagship example.
-
-Do not automatically substitute “100 life jackets” unless the evidence directly attributes that number to Hoa Yen rather than the overall event.
+The two supplied Hoa Yen DOCX files distinguish past work from a 2027–2028 plan. The report supports the existing expenditure/support total and five lighting installations. The plan proposes future educational, community, and civic work. Thanh says the $1,200 elderly-care figure is likely included in the overall total; do not add it separately or treat that tentative overlap as settled.
 
 ### Other user-confirmed / historical activities
 
@@ -603,7 +607,7 @@ Creative work is useful because it shows:
 
 ### “The Beauty of Vietnamese Culture” — Cao Van Lau Musical
 
-Date: **Jan. 2025** / academic year 2024–25
+Performance date: **November 15** (year not explicitly reconfirmed). First Prize certificate: **January 2025**. Thanh clarified that **XULONG is the team's name**, used in the poster's directing credit.
 
 Role:
 - Team Lead
@@ -633,6 +637,8 @@ Role: **Main Antagonist**
 - more than one month of rehearsal
 - audience: **1,000+ students / teachers / staff**
 - Fantasy House placed **1st of 4 Houses**
+
+Thanh's October 2026 recollection: staying after school to rehearse was tiring but very fun because everyone was trying their best. Use this authentic memory without inventing details about specific scenes or the character's psychology.
 
 ### Khoi Sac 27
 

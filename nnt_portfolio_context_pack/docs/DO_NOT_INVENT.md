@@ -86,8 +86,9 @@ Use:
 **VND 284M in documented total program expenditures/support**
 
 Life jackets:
-- 50+ is user-confirmed and said to be supported by a ward thank-you letter
-- do not silently change it to 100
+- October 15, 2026: Thanh explicitly confirmed 100 for the Cai Rang water-safety campaign, superseding the earlier 50+ lower bound.
+- Attribute the count to the campaign in which Hoa Yen participated. The supplied April 30, 2024 press article reports nearly 100 at the joint local activity and does not name Hoa Yen; it does not establish exclusive organizational attribution.
+- The Mid-Autumn acknowledgment of 100 gift packages is separate evidence and must never be used for the life-jacket count.
 
 Beneficiaries:
 Use **beneficiary participations** for aggregated program counts unless unique-person deduplication is known.
@@ -138,6 +139,10 @@ Safe:
 
 ## Performing Arts
 
+Cao Van Lau:
+- XULONG is Thanh's team name, confirmed October 15, 2026; the poster's directing credit uses that name.
+- November 15 is the performance date; January 2025 is the certificate date. Do not call January the performance date or infer the November year without confirmation.
+
 Khoi Sac 27:
 Do NOT claim:
 - the May 2027 performance has happened
@@ -173,3 +178,7 @@ Never:
 
 When uncertain:
 use conservative language or ask Thanh.
+
+## Editorial voice
+
+Preserve the five scales and their distinct stories. Explain a limitation where it affects interpretation; avoid repeating it as the conclusion to every section. Keep scientific claims precise while giving documented personal contributions, preparation, and creative interests room to speak for themselves. Specific user-confirmed memories may be used; fictional anecdotes may not.

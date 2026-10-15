@@ -126,6 +126,8 @@ Important:
 Attribution:
 - Barlow Twins implementation began from official Keras example and was adapted
 - do not claim the core method was invented or wholly implemented from scratch
+- Thanh adapted the end-to-end pipeline, designed the experimental comparisons, debugged training/memory/convergence issues, and evaluated the results under research supervision.
+- The 200+ experiments and compute total span the broader skin-cancer work. Keep them distinct from the six final controlled conditions and current single-seed evaluation.
 
 ---
 
@@ -231,6 +233,9 @@ Student-led side projects:
 - website prototype
 - physical / 3D DNA model
 
+**[USER-CONFIRMED OCT. 15, 2026]**
+Workshop preparation included compiling information into a document, making slides, contacting the teacher at MSC, visiting in person to check the facilities, and then teaching the students. The full name of MSC is not supplied; do not invent an expansion.
+
 Do not claim fundraising revenue from the DNA model.
 
 ---
@@ -330,13 +335,16 @@ Do not convert this into “50+ households” unless separate verified evidence 
 
 ## Water-safety / life-jacket activity
 
-**[USER-CONFIRMED WITH DOCUMENTATION SAID TO EXIST]**
-- **50+ life jackets**
+**[USER-CONFIRMED OCT. 15, 2026; CONTEMPORARY COVERAGE SUPPLIED]**
+- **100 life jackets**, replacing the older 50+ lower bound.
 - Cai Rang Floating Market
-- ward thank-you letter exists
+- Hoa Yen participated in the local water-safety campaign.
+- Thanh's supplied article: https://giaoducthoidai.vn/can-tho-tuyen-truyen-an-toan-giao-thong-tang-qua-thuong-ho-cho-noi-cai-rang-post681418.html
+- Giáo dục & Thời đại, April 30, 2024, describes nearly 100 life jackets distributed at the joint local activity. It does not name Hoa Yen. The exact 100 and Hoa Yen's involvement are user-confirmed; credit the outcome to the campaign rather than implying exclusive delivery by Hoa Yen.
+- The separate ward letter's gift-package count does not document life jackets.
 
 Allowed to use:
-“Distributed 50+ life jackets while promoting water-safety awareness...”
+“Hoa Yen took part in a local water-safety campaign at Cai Rang Floating Market. The campaign distributed 100 life jackets...”
 
 Do not substitute a different total unless direct Hoa Yen evidence supports it.
 
@@ -347,6 +355,14 @@ Do not substitute a different total unless direct Hoa Yen evidence supports it.
 - “$1,200 elderly care fund”
 
 These overlap awkwardly with the VND 284M documented program-expenditure figure and should not appear beside it without clear accounting definitions.
+
+October 15, 2026: Thanh says the $1,200 is **likely included** in the VND 284M. This is not a confirmed accounting reconciliation; do not add it as a separate total.
+
+## Program report and future plan supplied October 2026
+
+- `docs/PHẦN 1 báo cáo kết quả 03 năm thực hiện Quỹ Thiện nguyện.docx` is the six-program report supporting the existing figures above. Its expenditure/support line items sum to VND 284M. It documents five lighting sets and installation, not 50+ households.
+- `docs/PHẦN 2 CHƯƠNG TRÌNH  02 năm thực hiện Quỹ Thiện nguyện TIẾP THEO.docx` is a **2027–2028 future plan**. Proposed activities include academic support for students in remote areas, recurring holiday programs, practical support for Cai Rang traders, and other civic/environmental initiatives. Do not present the plan as completed impact.
+- The original DOCX reports remain local and ignored by Git. Use their supported facts and clearly labeled future plans; public distribution of the raw files has not been authorized.
 
 ---
 
@@ -425,7 +441,8 @@ unless stronger official wording is supplied.
 ## Cao Van Lau / Beauty of Vietnamese Culture
 
 **[VERIFIED / USER-CONFIRMED]**
-- Jan. 2025 / AY 2024–25
+- Performance: November 15 (year not explicitly reconfirmed); First Prize certificate: January 2025.
+- XULONG is the team's name, not a separate director's name; clarified by Thanh October 15, 2026.
 - 6-student team
 - Team Lead, Writer, Director & Performer
 - 15-minute musical
@@ -442,6 +459,7 @@ unless stronger official wording is supplied.
 - 1+ month rehearsal
 - audience 1,000+
 - Fantasy House placed 1st of 4 Houses
+- User-confirmed memory, October 15, 2026: staying after school to rehearse was tiring but very fun because everyone was trying their best.
 
 ## Khoi Sac 27
 
@@ -498,3 +516,13 @@ Do not claim final performance outcome yet.
 **[NEEDS-CONFIRMATION]**
 - Third Prize — Mathematics, 30/4 Olympic Competition: exact year
 - Student with Excellent Demonstration of Six Core Values: year conflict across drafts
+
+## Scope of displayed academic records
+
+- The displayed Top 5% certificate covers **Grade 11, Semester 1, AY 2025–2026**, issued January 14, 2026. It is one record within the broader four-year standing reported in the résumé.
+- The displayed scholarship certificate covers AY 2025–2026; the four-year scholarship claim is a broader user-confirmed record.
+- DONMUN 2026 Honorable Mention may be listed as text; no corresponding certificate is currently supplied for display.
+
+## Final résumé and editorial audit
+
+The final two-page PDF supplied October 15, 2026 is `docs/Resume Nguyễn Ngọc Thành.pdf`. All public résumé links point to `/resume-nguyen-ngoc-thanh.pdf`. This is the latest personal reference; conflicts with primary evidence remain subject to the constraints above and `OPEN_QUESTIONS.md`. See `EDITORIAL_REVIEW_2026-10.md` for the decisions made in this revision.

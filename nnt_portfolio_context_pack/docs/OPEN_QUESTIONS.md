@@ -64,7 +64,12 @@ Need:
 - which have independent documentation
 
 Life-jacket activity:
-50+ is user-confirmed and supported by a ward thank-you letter according to Thanh.
+Resolved October 15, 2026: Thanh explicitly confirmed 100 life jackets and supplied April 30, 2024 Giáo dục & Thời đại coverage. The article reports nearly 100 for the joint local campaign and does not name Hoa Yen. The site credits Hoa Yen's participation and the campaign count; the old 50+ lower bound is superseded. See Facts and Metrics for the source and attribution.
+
+Still unresolved after reading the two Hoa Yen DOCX files:
+- The report documents five lighting sets and installation; it does not establish the résumé's 50+ households.
+- Thanh says the $1,200 elderly-care fund is likely included in VND 284M. Its exact accounting scope remains unconfirmed, so it is not added separately.
+- The résumé's 100+ children in 2024 may cover activities beyond the report. Keep the report's individual program counts separate pending reconciliation.
 
 ### 2026 Mid-Autumn gift-count scope
 
@@ -153,3 +158,17 @@ Before publication:
 The October 2026 update resolves the scientific topic, May–July 2026 period, supervisor attribution, consulted researchers, and procurement/timing obstacle. Use the updated Facts and Metrics entry; older bioluminescence/regulatory-prohibition framing is superseded.
 
 The original Vietnamese DOCX is supplied as `docs/H_polysperma.docx`, with its actual workflow image embedded. A public PDF or rendered cover is not yet supplied. Link the original DOCX and use the authentic diagram; do not fabricate a cover preview or infer page count from cached Word metadata.
+
+The secondary story now opens at `/research/gfp-proposal`, with its own overlay and standalone page. The old Phytophthora anchor remains as a short link to it.
+
+## 14. Creative poster and performance date
+
+Resolved October 15, 2026: XULONG is Thanh's team name. November 15 is the performance date; January 2025 is the First Prize certificate date. The poster can be shown with this context. The performance year has not been explicitly reconfirmed; do not infer or publish it from the certificate date.
+
+## 15. Training titles
+
+The final résumé uses Research Trainee for Stem Cell Summer School and the Molecular Biology Course. The public site retains Selected Participant until official program evidence supports a stronger title. The Binh Phu Laboratory Assistant Intern title is supported by the supplied personal reference.
+
+## 16. Personal details that could add depth
+
+Thanh supplied real MoleBio preparation work and an after-school Hỏa Chí rehearsal memory on October 15, 2026; those have been incorporated. Further Phytophthora task ownership, specific training/debugging decisions, or a particular theatre scene could add depth later if he chooses to share them. Do not fabricate these details. MSC's full institutional name is not supplied.

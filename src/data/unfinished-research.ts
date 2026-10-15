@@ -1,6 +1,7 @@
 // Updated by Thanh in October 2026: GFP fluorescence, not bioluminescence.
 // Proposal only; no bench work, transformed plant, or experimental result.
 export const unfinishedResearch = {
+  href: "/research/gfp-proposal",
   title: "A question I couldn’t test",
   label: "Secondary research story / ORGANISM",
   subtitle: "Transient GFP expression in Hygrophila polysperma",
@@ -69,7 +70,7 @@ export const unfinishedResearch = {
     width: 1920,
     height: 1080,
     title: "The proposed workflow",
-    caption: "The original diagram from the Vietnamese proposal shows planned steps and predicted expression. None of these experimental steps were carried out.",
+    caption: "Original diagram from the Vietnamese proposal: planned steps and predicted expression, before experimentation.",
     alt: "Original Vietnamese proposal diagram connecting GFP plasmid preparation, Agrobacterium-mediated transfer, and proposed expression in Hygrophila polysperma. It depicts a plan, not experimental results.",
     kind: "figure" as const,
   },

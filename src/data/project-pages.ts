@@ -1,4 +1,5 @@
 import { photos, type PortfolioImage } from "./photography";
+import { medicalManuscript } from "./portfolio";
 
 export type Metric = { value: string; label: string; detail?: string };
 export type TimelineItem = { period: string; title: string; text: string };
@@ -26,7 +27,7 @@ export type ProjectStory = {
   relatedImages?: GalleryItem[];
   timelineImage?: GalleryItem;
   note: { label: string; title: string; paragraphs: string[] };
-  outlook: { title: string; paragraphs: string[] };
+  outlook?: { title: string; paragraphs: string[] };
   credits?: { label: string; name: string; detail: string }[];
   next: { label: string; href: string };
 };
@@ -35,53 +36,49 @@ export const medicalAi: ProjectStory = {
   kind: "medical-ai",
   area: "Research",
   areaHref: "/#research",
-  title: "Learning to ask better questions of medical AI",
+  title: "Building and testing a medical-imaging pipeline",
   shortTitle: "Medical AI Research",
   period: "Nov. 2023–Present",
-  role: "Student Researcher",
-  introduction: "A continuing research journey from emotion recognition to self-supervised melanoma classification. Each change in direction has made the experimental question more precise.",
+  role: "First Author & Student Researcher",
+  introduction: "I began with a webcam emotion-recognition prototype. My current work adapts self-supervised learning for skin-lesion classification, from implementing the pipeline to designing comparisons and interpreting the results.",
   hero: photos.medicalExamples,
   timelineImage: photos.medicalPrototype,
-  questionLabel: "The research question",
-  question: "Can a model learn useful representations from unlabeled skin images, and how should we judge the resulting classifier?",
-  questionContext: "The current study evaluates melanoma versus non-melanoma classification while testing whether Planckian Jitter and a skin-tone-aware auxiliary branch change performance. It uses six experimental conditions; conclusions still need further validation.",
+  questionLabel: "Research aim",
+  question: "Learning from skin images without labels.",
+  questionContext: "Medical-image labels require specialist work. Self-supervised learning uses unlabeled images to learn visual features first, before training a classifier to distinguish melanoma from non-melanoma.",
   metrics: [
     { value: "401,059", label: "unlabeled ISIC 2024 images", detail: "self-supervised pretraining" },
-    { value: "33,569", label: "labeled images", detail: "downstream evaluation" },
-    { value: "200+", label: "full training experiments", detail: "skin-cancer research" },
-    { value: "~600", label: "GPU-hours", detail: "approximate total" },
+    { value: "33,569", label: "labeled images", detail: "training, validation & test" },
+    { value: "200+", label: "full training experiments", detail: "across the wider skin-cancer research" },
+    { value: "~600", label: "GPU-hours", detail: "approximate research total" },
   ],
-  timelineIntro: "This is a progression of questions and methods, not a sequence of finished products.",
+  timelineIntro: "Since 2023, the work has progressed through computer-vision prototypes, medical imaging, and a larger experimental pipeline.",
   timeline: [
-    { period: "2023–2024", title: "A first prototype", text: "I started with FER-2013: 28,709 face images in seven emotion classes. I tried pretrained EfficientNet models and built a real-time webcam inference prototype for an adolescent emotion-management app concept." },
-    { period: "2024", title: "When a comparison did not settle the question", text: "Approximately 36 controlled runs compared geometric and photometric augmentation across multiple architectures and conditions. The findings were inconclusive, which pushed me to study machine-learning methodology more carefully." },
-    { period: "Late 2024–2025", title: "Moving into medical imaging", text: "Using ISIC data for melanoma classification, I studied learning-rate schedules, TFRecords, mixed precision, optimizers, cross-validation, inference pipelines, segmentation, and attention." },
-    { period: "2025–2026", title: "Understanding the training pipeline", text: "I moved to Barlow Twins self-supervised learning and independently debugged optimizer issues, gradient accumulation, oversampling, convergence, and memory constraints." },
-    { period: "2026–Present", title: "Testing a more specific idea", text: "The current study combines Barlow Twins, Planckian Jitter, and a skin-tone-aware auxiliary branch in six experimental conditions." },
+    { period: "2023–2024", title: "Starting with a webcam", text: "I explored facial-emotion recognition with FER-2013: 28,709 images in seven emotion classes. Using pretrained EfficientNet models, I built a real-time webcam prototype for an adolescent emotion-management app concept." },
+    { period: "2024", title: "Learning to design a comparison", text: "About 36 controlled runs compared geometric and photometric image augmentations. The comparison was inconclusive, so I looked more closely at experimental controls, training behavior, and evaluation." },
+    { period: "Late 2024–2025", title: "Moving to medical images", text: "I began melanoma classification with ISIC data and studied the training and inference tools needed for a larger image pipeline." },
+    { period: "2025–2026", title: "Working through implementation problems", text: "The move to Barlow Twins brought optimizer, memory, and convergence problems. I debugged the pipeline, including gradient accumulation and oversampling, to get the experiments running reliably." },
+    { period: "2026–Present", title: "Testing image appearance", text: "The current study examines Planckian Jitter and appearance regularization. It has developed into a first-author manuscript, submitted in October 2026." },
   ],
   chapters: [
-    { label: "01 / Method", title: "Learning first, then classifying", paragraphs: [
-      "Self-supervised pretraining uses 401,059 unlabeled ISIC 2024 images to learn image representations before downstream melanoma classification. The labeled set contains 33,569 images: 22,777 for training, 2,554 for validation, and 8,238 independent ISIC 2019 test images.",
-      "The Barlow Twins implementation was adapted from the official Keras example and substantially modified for this research pipeline. My work has focused on making the training, fine-tuning, and evaluation stages behave reliably under real compute and memory constraints.",
+    { label: "01 / My contribution", title: "Adapting the method and running the study", paragraphs: [
+      "I adapted Barlow Twins into an end-to-end pipeline for dermoscopic images: close-up images used to examine skin lesions. The core implementation began with the official Keras example; I modified it for pretraining, fine-tuning, and evaluation in this study.",
+      "I designed the experimental comparisons and worked through training and memory constraints. Evaluating the runs also meant deciding which observations were reliable enough to interpret, including the trade-off between the two performance measures below.",
     ] },
-    { label: "02 / Experimental design", title: "A result needs a comparison", paragraphs: [
-      "The current experiment compares six conditions for melanoma versus non-melanoma classification. It examines Planckian Jitter and a skin-tone-aware auxiliary branch against a baseline, with F1 and AUROC both important to interpretation.",
-      "More than 200 full skin-cancer training experiments, totaling approximately 600 GPU-hours, reflect repeated attempts to understand the pipeline and its choices. Earlier inconclusive augmentation work is part of why I now treat design and evaluation as research questions in their own right.",
-    ] },
-    { label: "03 / Preliminary result", title: "An improvement with a trade-off", paragraphs: [
-      "On the independent test set, the baseline F1 is 0.5522. The highest observed F1 so far is 0.5795, approximately 4.9% higher relative to that baseline.",
-      "That higher-F1 result is preliminary and comes from a single seed. AUROC shows a trade-off, so the result should not be read as an across-the-board improvement. Further validation is ongoing.",
+    { label: "02 / Study design", title: "Six controlled conditions", paragraphs: [
+      "Barlow Twins learns visual features from different views of unlabeled images. The current comparison tests a baseline, Planckian Jitter (an image-appearance augmentation), an appearance-regularization component, and combined variants across six conditions.",
+      "The labeled data are split into 22,777 training images, 2,554 validation images, and 8,238 independent ISIC 2019 test images. Training, validation, and independent testing have separate roles in the pipeline.",
+      "The experiment and compute totals above cover the wider skin-cancer research. The final six-condition comparison is reported here through its current single-seed evaluation.",
     ] },
   ],
   gallery: [photos.medicalComparison, photos.medicalTradeoff],
-  note: { label: "Research note", title: "What the inconclusive work taught me", paragraphs: [
-    "The 2024 augmentation comparison did not yield a clear conclusion. It changed how I approach control conditions, evaluation, and debugging: a pipeline that runs is only the beginning of a trustworthy experiment.",
-    "The current best F1 is a single-seed preliminary observation. The first-author manuscript “Photometric Augmentation and Appearance Regularization for Self-Supervised Skin-Lesion Classification” was submitted in October 2026 to Computer Methods and Programs in Biomedicine. Further validation continues.",
+  note: { label: "Current status / First author", title: "Manuscript submitted October 2026", paragraphs: [
+    `“${medicalManuscript.title}” was submitted to Computer Methods and Programs in Biomedicine on October 10, 2026.`,
   ] },
-  outlook: { title: "Where the work stands", paragraphs: [
-    "The study remains in validation. I am working toward a clearer account of which choices affect performance and where the F1–AUROC trade-off comes from.",
+  outlook: { title: "Continuing validation", paragraphs: [
+    "Further validation remains ongoing, including work to understand which experimental choices affect the F1–AUROC trade-off.",
   ] },
-  credits: [{ label: "Research advisor", name: "Bach-Tung Pham", detail: "National Central University, Taiwan" }],
+  credits: [{ label: "Research advisor", name: "Bach-Tung Pham, Ph.D.", detail: "Department of Computer Science and Information Engineering, National Central University, Taiwan" }],
   next: { label: "Phytophthora / Bacillus Research", href: "/research/phytophthora" },
 };
 
@@ -95,45 +92,44 @@ export const phytophthora: ProjectStory = {
   role: "Team Lead & Primary Researcher · 2-student team",
   introduction: "A field and laboratory study in Lam Ha, Lam Dong, investigating whether Bacillus subtilis can inhibit Phytophthora palmivora, an important durian pathogen.",
   hero: photos.phytophthoraBench,
-  questionLabel: "The research question",
-  question: "Can a potential biological control approach be tested reliably against Phytophthora palmivora in durian?",
-  questionContext: "Before an antagonism result is meaningful, the pathogen must be isolated and identified consistently. That first step has shaped the project more than any claim of success.",
+  questionLabel: "Research aim",
+  question: "Testing a biological-control approach in durian.",
+  questionContext: "The study investigates whether Bacillus subtilis can inhibit Phytophthora palmivora. To test that, we first need to isolate the pathogen from plant material and grow it consistently in the laboratory.",
   metrics: [
     { value: "2", label: "student researchers", detail: "team led by Thanh" },
     { value: "2024", label: "study began", detail: "field work in Lam Ha" },
     { value: "2025", label: "science exchange", detail: "research communication milestone" },
   ],
-  timelineIntro: "Field conditions have guided the pace and redesign of the study.",
+  timelineIntro: "I initiated the study and lead our two-student team. Our work connects field sampling in Lam Ha with culture work, experimental planning, and protocol revision.",
   timeline: [
     { period: "May 2024", title: "Starting in Lam Ha", text: "Our two-student team began investigating the durian pathogen through field sampling of symptomatic plant material in Lam Ha, Lam Dong." },
-    { period: "2024–2025", title: "Attempting isolation", text: "We made repeated pathogen-isolation attempts and developed experimental protocols, but inconsistent results prevented a dependable claim." },
-    { period: "2025", title: "Explaining the work in progress", text: "I was selected for the International Science Exchange Program and presented the preliminary study in English to visiting partner schools from Taiwan." },
-    { period: "Present", title: "Redesign and resampling", text: "Seasonal field constraints and isolation difficulties have led us to revise the workflow and resample before planned molecular identification and in-vitro antagonism testing." },
+    { period: "2024–2025", title: "Bringing samples into culture", text: "We worked through sample handling, laboratory culturing, and repeated isolation attempts while developing the experimental workflow." },
+    { period: "2025", title: "Sharing the preliminary work", text: "I presented the study during the International Science Exchange Program at school." },
+    { period: "Present", title: "Revising the workflow", text: "The next round of work focuses on resampling and repeat isolation, ahead of planned identification and inhibition testing." },
   ],
   chapters: [
     { label: "01 / Context", title: "The problem begins in the orchard", paragraphs: [
-      "Phytophthora palmivora is an important durian pathogen. Our question is whether Bacillus subtilis might inhibit it, but answering that question starts with field material that can be handled and studied reliably in the lab.",
-      "The project is based in Lam Ha, Lam Dong. Field sampling of symptomatic durian plant material connects the biological question to the conditions in which growers encounter the disease.",
+      "Our samples came from symptomatic durian plant material in Lam Ha, Lam Dong. The fieldwork gave the study a concrete starting point: material from trees showing signs of disease, collected for further examination in the laboratory.",
     ] },
     { label: "02 / Process", title: "Isolation before interpretation", paragraphs: [
-      "Repeated isolation attempts have not yet produced sufficiently consistent material for a reliable biological control result. We have revised the protocol and returned to sampling rather than treating an uncertain observation as a positive finding.",
-      "Seasonal field constraints affect when samples can be collected and how the work proceeds. Protocol development, planned molecular identification, and planned in-vitro antagonism tests are the next parts of a careful workflow.",
+      "Repeated isolation attempts produced inconsistent results. Without a dependable culture, a later test of Bacillus subtilis would be difficult to interpret. We revised the workflow and prioritized repeatable isolation before advancing to that comparison.",
+      "Seasonal field conditions also limit opportunities to collect fresh samples. Resampling therefore has to fit both the laboratory plan and the conditions in the orchard.",
     ] },
-    { label: "03 / Communication", title: "Presenting an unfinished study honestly", paragraphs: [
-      "The 2025 International Science Exchange Program was a chance to explain a preliminary study to visiting partner schools from Taiwan. Communicating the research while the methods were still evolving made it necessary to distinguish the question, the work completed, and the results still needed.",
+    { label: "03 / Research communication", title: "Presenting the study in English", paragraphs: [
+      "I was selected as one of approximately 15 Lawrence S. Ting School students for the 2025 International Science Exchange Program. I presented the preliminary research in English to visiting partner schools from Taiwan, explaining the fieldwork, laboratory attempts, and planned next steps.",
     ] },
   ],
   gallery: [photos.phytophthoraSampling, photos.phytophthoraFailed],
   record: [photos.phytophthoraSoil, photos.phytophthoraProcess, photos.phytophthoraPlate],
-  note: { label: "Research note", title: "No reliable efficacy claim yet", paragraphs: [
-    "The current study has not produced a sufficiently reliable result to say Bacillus subtilis inhibits Phytophthora palmivora in this setting. Isolation difficulties and seasonal constraints are reasons to redesign and resample before making that claim.",
+  note: { label: "Current status", title: "Ongoing field and laboratory study", paragraphs: [
+    "The study has no validated inhibition result. The current work is focused on the isolation protocol.",
   ] },
   outlook: { title: "Next in the workflow", paragraphs: [
     "The planned work is molecular identification followed by in-vitro antagonism testing, once the isolation workflow is reliable enough to support interpretation.",
   ] },
   credits: [
-    { label: "Faculty advisor", name: "Le Phuoc Thanh, Ph.D.", detail: "Department of Plant Protection, College of Agriculture, Can Tho University" },
-    { label: "Research mentor", name: "Truong Phuc Thinh", detail: "B.Sc. in Plant Protection, Can Tho University" },
+    { label: "Faculty advisor", name: "Lê Phước Thạnh, Ph.D.", detail: "Department of Plant Protection, College of Agriculture, Can Tho University" },
+    { label: "Research mentor", name: "Trương Phúc Thịnh", detail: "B.Sc. in Plant Protection, Can Tho University" },
   ],
   next: { label: "MoleBio", href: "/leadership/molebio" },
 };
@@ -144,48 +140,42 @@ export const molebio: ProjectStory = {
   areaHref: "/#leadership",
   title: "Making molecular biology something students can do",
   shortTitle: "MoleBio",
-  period: "2025–26",
+  period: "2025–2026",
   role: "Founder & President",
-  introduction: "MoleBio grew from a lecture and self-study based predecessor club into a laboratory community built around practice, access, and student initiative.",
+  introduction: "As a member of the predecessor biology club, I wanted more opportunities to work at the bench. I redesigned and relaunched it as MoleBio, building a program around practical sessions, workshops, and projects led by members.",
   hero: photos.molebioTeaching,
-  questionLabel: "The design question",
-  question: "What would a biology club look like if students could practice the methods they were learning about?",
-  questionContext: "The predecessor club had approximately 16 members. In 2025–26, I redesigned and relaunched it with approximately 20 members, around 80% newly recruited, and a more hands-on program.",
+  questionLabel: "The redesign",
+  question: "Putting laboratory practice at the center.",
+  questionContext: "The earlier club depended heavily on lectures and self-study. I planned the relaunch around students handling tools, running activities, and developing their own science-related work.",
   metrics: [
     { value: "~16 → ~20", label: "members", detail: "predecessor to MoleBio" },
+    { value: "~80%", label: "newly recruited", detail: "in the relaunched club" },
     { value: "36", label: "weekly sessions", detail: "80 minutes each" },
-    { value: "~48h", label: "scheduled programming", detail: "during 2025–26" },
-    { value: "60+", label: "outreach registrations", detail: "25 laboratory spots" },
+    { value: "~48h", label: "scheduled programming", detail: "during 2025–2026" },
   ],
   timelineIntro: "The change was a redesign of how students spent their time together.",
   timeline: [
-    { period: "2024–25", title: "Seeing the gap", text: "As a member of the approximately 16-person predecessor club, I saw that its lecture and self-study format offered limited hands-on learning." },
-    { period: "2025–26", title: "Relaunching as MoleBio", text: "I built a club of approximately 20 members, around 80% newly recruited, with 36 weekly 80-minute sessions and about 48 hours of scheduled programming." },
-    { period: "During 2025–26", title: "Opening the lab", text: "Hands-on workshops added practical experience. An osmosis and microscopy outreach session received 60+ registrations for 25 laboratory spots." },
-    { period: "Science Fair", title: "Taking science outside the bench", text: "Approximately 30 participants built mini terrariums using reused plastic bottles and locally collected materials." },
+    { period: "2024–2025", title: "Seeing the gap as a member", text: "I identified the limited opportunities for practical work and drafted a redesign incorporating laboratory activities, outreach, and student-led projects." },
+    { period: "2025–2026", title: "Recruiting and relaunching", text: "As Founder and President, I recruited members and designed the weekly program around hands-on molecular biology." },
+    { period: "During the year", title: "Organizing outreach", text: "An osmosis and microscopy workshop brought practical science to students beyond the regular club sessions." },
+    { period: "Science Fair", title: "Leading the terrarium activity", text: "I led a seven-member club team in a terrarium-building activity for approximately 30 participants, using recycled plastic bottles and locally collected materials." },
   ],
   chapters: [
-    { label: "01 / Transformation", title: "From listening to doing", paragraphs: [
-      "The predecessor club mainly centered on lectures and self-study. MoleBio kept the curiosity but changed the routine: sessions were designed so members could handle tools, see biological processes, and learn through careful practice.",
-      "Approximately 20 members joined the relaunched club. Around 80% were newly recruited, which made orientation, laboratory safety, and a welcoming learning environment part of the design problem.",
+    { label: "01 / Weekly practice", title: "Working with the tools", paragraphs: [
+      "I designed sessions around laboratory safety and methods that members could practice: measuring small volumes with pipettes, separating samples by centrifugation, and extracting and purifying DNA. Students also practiced PCR, which copies DNA, and gel electrophoresis, which separates DNA fragments.",
     ] },
-    { label: "02 / Weekly practice", title: "A program built around methods", paragraphs: [
-      "Across 36 weekly 80-minute sessions, students worked through laboratory safety, pipetting, centrifugation, DNA extraction and purification, PCR, gel electrophoresis, and microscopy. The schedule amounted to approximately 48 hours of programming.",
-      "Workshops supported the club's practical learning. An outreach workshop focused on osmosis and microscopy drew 60+ registrations for 25 lab spots, showing both interest and the practical limit of available space.",
+    { label: "02 / Outreach", title: "More interest than laboratory places", paragraphs: [
+      "The osmosis and microscopy workshop received 60+ registrations for 25 laboratory spots. Participants examined how cells respond to different surrounding solutions through microscopy and practical activities.",
     ] },
-    { label: "03 / Beyond scheduled sessions", title: "Letting students make something", paragraphs: [
-      "At Science Fair, approximately 30 participants made mini terrariums from reused plastic bottles and locally collected materials. The activity offered a tangible way into biological systems without specialized equipment.",
-      "Members also started a website prototype and a physical 3D DNA model. These projects gave students room to explain biology in their own formats.",
+    { label: "03 / Student ownership", title: "Making room for members’ ideas", paragraphs: [
+      "I delegated projects around members’ strengths. Alongside the scheduled activities, students developed a club website prototype and a physical 3D DNA model, giving them a role in deciding what the club could make and share.",
     ] },
   ],
   gallery: [photos.molebioBench, photos.molebioFair],
   record: [photos.molebioPCR, photos.molebioWorkshop, photos.molebioModel],
   relatedImages: [photos.stemcellLearning, photos.binhphuLearning],
-  note: { label: "Program note", title: "Access has practical limits", paragraphs: [
-    "The outreach workshop received 60+ registrations, but laboratory capacity allowed 25 spots. That gap is part of the story of building hands-on science opportunities in a school setting.",
-  ] },
-  outlook: { title: "What MoleBio became", paragraphs: [
-    "The 2025–26 redesign made hands-on techniques, workshops, and student-led projects central to the club. Its value lies in the time students spent learning methods together, not only in the number of sessions held.",
+  note: { label: "Behind the sessions", title: "The preparation before teaching", paragraphs: [
+    "I remember compiling the material into a document and making presentation slides, contacting the teacher, and finding time to visit in person to check the facilities. Teaching the students came after all that preparation.",
   ] },
   next: { label: "Hoa Yen Charity Fund", href: "/leadership/hoa-yen" },
 };
@@ -200,42 +190,33 @@ export const hoaYen: ProjectStory = {
   role: "Founder & President",
   introduction: "Hoa Yen began with a water-safety campaign and grew into recurring programs for children, older residents, and rural communities in and beyond Can Tho.",
   hero: photos.hoaYenWater,
-  questionLabel: "The organizing question",
-  question: "How can a student group turn an immediate local need into steady, well-coordinated community support?",
-  questionContext: "I began Hoa Yen in April 2024 with approximately 15 core members. The team has grown to approximately 25, while 20–25 volunteers can participate in a given event.",
+  questionLabel: "Origin / April 2024",
+  question: "Starting at Cai Rang Floating Market.",
+  questionContext: "I founded Hoa Yen around a water-safety campaign. As the organization grew, its work expanded to recurring programs with volunteers, university students, community partners, and local businesses.",
   metrics: [
     { value: "6", label: "major programs", detail: "documented in the three-year report" },
     { value: "330+", label: "beneficiary participations", detail: "documented in the three-year report" },
     { value: "~VND 284M", label: "program expenditures / support", detail: "documented in the three-year report" },
     { value: "~15 → ~25", label: "core members", detail: "growth since founding" },
   ],
-  timelineIntro: "Selected documented programs show how Hoa Yen's focus widened over time.",
+  timelineIntro: "The water-safety campaign was followed by children’s programs, community-care visits, and rural support. These selected programs trace that expansion.",
   timeline: [
-    { period: "Apr. 2024", title: "Starting with water safety", text: "Hoa Yen began as a student-led effort around water safety. At Cai Rang Floating Market, volunteers distributed 50+ life jackets and promoted awareness in a river-dependent community." },
+    { period: "Apr. 2024", title: "Starting with water safety", text: "Hoa Yen took part in a local water-safety campaign at Cai Rang Floating Market. The campaign distributed 100 life jackets and promoted safety in the river community." },
     { period: "2024", title: "Supporting children and older residents", text: "A Mid-Autumn program in An Binh reached 50 children. A separate elderly and community-care program recorded 70 beneficiary participations." },
     { period: "2025", title: "Extending rural support", text: "In Lam Dong, a documented program provided five lighting sets and installation, with 30 listed beneficiaries and gifts for 20 residents." },
     { period: "2026", title: "Returning to recurring work", text: "A Mid-Autumn program at Cai Rang Floating Market reached 150 children, with gifts and scholarship or gift packages documented in the program report." },
   ],
   chapters: [
-    { label: "01 / Origin", title: "A specific need became a group", paragraphs: [
-      "The first campaign focused on water safety in a river-dependent community. Distributing 50+ life jackets at Cai Rang Floating Market turned a broad concern into an activity the team could plan, fund, and deliver.",
-      "From that starting point, Hoa Yen developed into a recurring student-led initiative across water safety, children and youth, elderly care, rural development, and community support.",
+    { label: "01 / My role", title: "Organizing the work behind each visit", paragraphs: [
+      "As Founder and President, I lead fundraising, program planning, partnerships, and resource allocation, alongside volunteer coordination and on-site execution. As the calendar grew, these responsibilities extended across recurring activities in different places.",
     ] },
-    { label: "02 / Organization", title: "Growing the people behind each program", paragraphs: [
-      "The core team grew from approximately 15 to 25 members. A typical event can involve 20–25 volunteers drawn from youth volunteers, university students, community partners, and local businesses.",
-      "My role as Founder and President includes fundraising, program planning, partnerships, resource allocation, and on-site coordination. The network matters because each program depends on people who can carry out the practical work together.",
-    ] },
-    { label: "03 / Initiatives", title: "Support that responds to different places", paragraphs: [
-      "Hoa Yen's work includes water-safety awareness and life jackets, children's activities and Mid-Autumn events, elderly and community-care visits, rural lighting, and gifts for residents.",
-      "The initiatives vary, but the pattern is consistent: identify a local need, work with volunteers and partners, and account for what was actually delivered.",
+    { label: "02 / Volunteer network", title: "Coordinating people and partners", paragraphs: [
+      "An event can involve around 20–25 volunteers. Youth volunteers, university students, and community partners carry out the programs together; the documented outcomes belong to that shared effort.",
     ] },
   ],
   gallery: [photos.hoaYenMidAutumn2024, photos.hoaYenLamDong, photos.hoaYenPreparation, photos.hoaYenMidAutumn2026],
-  note: { label: "Impact note", title: "What the documented figures mean", paragraphs: [
-    "The three-year report records six major programs, 330+ beneficiary participations, and approximately VND 284 million in total program expenditures and support. The participation count does not mean 330 unique people, and the financial figure is not money raised.",
-  ] },
-  outlook: { title: "Current direction", paragraphs: [
-    "Hoa Yen continues to coordinate recurring work in water safety, children and youth, elderly care, rural development, and community support. The team remains centered on volunteers, partners, and documented delivery.",
+  note: { label: "Current direction / 2027–2028 plan", title: "Planning the next two years", paragraphs: [
+    "The next two-year program plan proposes academic support for students in remote areas, recurring holiday activities, and practical support for traders at Cai Rang Floating Market. These are planned activities; my continuing role is coordinating the people, partners, and resources needed to carry them forward.",
   ] },
   next: { label: "Medical AI Research", href: "/research/medical-ai" },
 };

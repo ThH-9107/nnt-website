@@ -73,11 +73,12 @@ export function InquiryMap() {
                 {node.id === "test" && <details className="scale-secondary scale-secondary-unfinished">
                   <summary>A question I couldn&apos;t test</summary>
                   <p>{unfinishedResearch.summary}</p>
-                  <Link href="/research/phytophthora#unfinished-research" scroll={false} className="scale-secondary-note-link">Read the proposal note <span aria-hidden="true">↗</span></Link>
+                  <Link href={unfinishedResearch.href} scroll={false} className="scale-secondary-note-link">Read the GFP proposal story <span aria-hidden="true">↗</span></Link>
                 </details>}
                 {node.id === "serve" && <details className="scale-secondary" id="council">
                   <summary>Family Representative Council</summary>
-                  <p>As an elected F08 representative, I bring student feedback into council discussions about school life and shared spaces.</p>
+                  <p>F08 Representative · May 2024–Present. Elected annually as one of 32 representatives serving a high-school community of 1,000+ students.</p>
+                  <p>On the Documentation Committee, I collect and summarize student feedback. I have proposed online feedback forms and contributed to well-being and onboarding work and the council’s vision and mission. Through discussions with the school, the council’s collective feedback helped prompt pool cleaning and shared-seating maintenance.</p>
                   <figure className="scale-secondary-photo"><Image src={photos.frcMeeting.src} alt={photos.frcMeeting.alt} width={photos.frcMeeting.width} height={photos.frcMeeting.height} sizes="(max-width: 900px) 80vw, 250px" /><figcaption>{photos.frcMeeting.caption}</figcaption></figure>
                 </details>}
               </li>)}

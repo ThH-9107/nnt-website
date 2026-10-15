@@ -80,6 +80,8 @@ This is not literal physical magnification. It is the scale of attention.
 
 The user should perceive a difference between IMAGE and AUDIENCE even without reading labels.
 
+The October 15 editorial revision preserves this visual system, motion, font sizes, navigation, and the five main stories. The GFP proposal uses the same paper-like overlay as a secondary ORGANISM story, with its own direct URL. Its link in the Phytophthora story is compact; old bookmarked anchors remain useful.
+
 ## 4. Map/path geometry
 
 Do not use:
