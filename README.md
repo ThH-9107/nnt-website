@@ -49,7 +49,7 @@ The May–July 2026 GFP fluorescence proposal appears as “A question I couldn�
 
 The ORGANISM image comes from `public/images/phytophthora/durian_tree.png`. A WebP delivery copy preserves the whole tree in the shared observation frame. Body text and supporting labels are larger across the homepage, map, certificates, and project stories; reduced-motion behavior remains available.
 
-The current résumé is available as `public/resume-nguyen-ngoc-thanh.docx`. This public copy has its phone number removed; the original DOCX in the project root remains unchanged. When a reviewed PDF is ready, save it as `public/resume-nguyen-ngoc-thanh.pdf` and set `resumePdf` in `src/data/portfolio.ts` to `"/resume-nguyen-ngoc-thanh.pdf"`. Add verified GitHub and LinkedIn URLs to the same file when available.
+The final two-page résumé supplied October 15, 2026 is available as `public/resume-nguyen-ngoc-thanh.pdf`, unchanged from `nnt_portfolio_context_pack/docs/Resume Nguyễn Ngọc Thành.pdf`. All résumé downloads use the shared `resumePdf` setting in `src/data/portfolio.ts`; the older Word document remains available as a fallback. To update the résumé later, replace the public PDF, or set `resumePdf` to a supplied public download URL. Add verified GitHub and LinkedIn URLs to the same file when available.
 
 ## Commands
 

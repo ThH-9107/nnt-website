@@ -137,9 +137,9 @@ Recommendation: do **not** put phone number publicly unless Thanh specifically w
 
 ## 11. CV / résumé version linked on site
 
-Need: final 2-page version filename and date.
+Resolved October 15, 2026: Thanh supplied the final two-page `docs/Resume Nguyễn Ngọc Thành.pdf` and requested that it replace the Word download. The unchanged public copy is `public/resume-nguyen-ngoc-thanh.pdf`; all website résumé links use that file through the shared `resumePdf` setting.
 
-The portfolio should not accidentally link an outdated master résumé.
+This resolves the linked version only. Differences between résumé claims and other primary evidence still need to be reconciled before changing website copy.
 
 ## 12. Portrait / project-image permissions
 

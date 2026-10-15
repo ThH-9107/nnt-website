@@ -11,8 +11,8 @@ export const profile = {
   // Add only verified account URLs when supplied.
   github: null as string | null,
   linkedin: null as string | null,
-  // Add a PDF at public/resume-nguyen-ngoc-thanh.pdf, then set this path.
-  resumePdf: null as string | null,
+  // Final two-page résumé supplied October 15, 2026.
+  resumePdf: "/resume-nguyen-ngoc-thanh.pdf" as string | null,
   resumeDocx: "/resume-nguyen-ngoc-thanh.docx",
 };
 
