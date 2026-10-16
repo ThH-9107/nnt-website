@@ -13,6 +13,15 @@ export type PortfolioImage = {
 
 // Curated delivery assets. Original uploads remain in public/images.
 export const photos = {
+  "aboutPortrait": {
+    "src": "/images/selected/thanh-restaurant-portrait.webp",
+    "width": 920,
+    "height": 1150,
+    "title": "Ngọc Thành",
+    "caption": "An upper-body portrait, edited from Thanh’s restaurant photograph.",
+    "alt": "Thanh wearing glasses, a white shirt, and a navy striped tie against warm off-white paper.",
+    "position": "50% 36%"
+  },
   "portrait": {
     "src": "/images/selected/thanh-lakeside-portrait.webp",
     "width": 1620,

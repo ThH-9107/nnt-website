@@ -70,11 +70,7 @@ export function InquiryMap() {
                   <span className="scale-stage-texture" data-scene={node.id} aria-hidden="true"><span className="scale-mobile-window"><ScaleObservationImage id={node.id} /></span><span className="scale-mobile-caption">{scaleImages[node.id].title}</span></span>
                   <span className="scale-stage-arrow" aria-hidden="true">↗</span>
                 </Link>
-                {node.id === "test" && <details className="scale-secondary scale-secondary-unfinished">
-                  <summary>A question I couldn&apos;t test</summary>
-                  <p>{unfinishedResearch.summary}</p>
-                  <Link href={unfinishedResearch.href} scroll={false} className="scale-secondary-note-link">Read the GFP proposal story <span aria-hidden="true">↗</span></Link>
-                </details>}
+                {node.id === "test" && <div className="scale-secondary scale-secondary-unfinished"><Link href={unfinishedResearch.href} scroll={false} className="scale-secondary-direct" aria-label="A question I couldn't test: open the GFP proposal story">A question I couldn&apos;t test <span aria-hidden="true">↗</span></Link></div>}
                 {node.id === "serve" && <details className="scale-secondary" id="council">
                   <summary>Family Representative Council</summary>
                   <p>F08 Representative · May 2024–Present. Elected annually as one of 32 representatives serving a high-school community of 1,000+ students.</p>

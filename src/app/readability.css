@@ -8,13 +8,16 @@ body{font-size:17px;line-height:1.7}
 .home-quick-links{gap:12px}
 .home-quick-links>div{gap:9px 22px}
 .home-quick-links span{width:94px;font-size:12px}
+.home-quick-links span strong{font-weight:800;color:var(--ink)}
 .home-quick-links a{font-size:15px}
 .home-hero-location,.home-portrait-label span,.home-portrait-index{font-size:12px}
 .home-portrait-label small{font-size:14px}
 .home-current-kicker{font-size:13px}
 .home-current-status{font-size:17px;line-height:1.7}
 .home-current-detail>a{font-size:15px}
-.home-about-copy>p{font-size:clamp(20px,1.6vw,24px);line-height:1.7}
+.home-about-copy>p{font-size:clamp(18px,1.4vw,20px);line-height:1.7}
+.home-introduction-copy>p{font-size:clamp(17px,1.2vw,18px);line-height:1.8}
+.home-introduction-copy .home-introduction-lead{font-size:clamp(20px,1.7vw,24px);line-height:1.55}
 .home-about-photo figcaption{font-size:14px}
 .home-training>h3,.home-training time,.home-about-links span{font-size:13px}
 .home-training article{grid-template-columns:78px 1fr;gap:17px}
@@ -29,6 +32,8 @@ body{font-size:17px;line-height:1.7}
 .scale-stage-content strong{font-size:32px}
 .scale-stage-subtitle{font-size:14px;line-height:1.45}
 .scale-secondary summary,.scale-secondary p,.scale-secondary-note-link{font-size:13px;line-height:1.6}
+.scale-secondary-direct{display:inline-flex;align-items:baseline;gap:12px;color:var(--accent);font-size:13px;font-weight:700;line-height:1.5;padding:5px 0}
+.scale-secondary-direct:hover{text-decoration:underline;text-underline-offset:4px}
 .scale-secondary-photo figcaption{font-size:12px;line-height:1.5}
 .scale-scene-top,.scale-image-label{font-size:12px;letter-spacing:.08em}
 .scale-field-note{font-size:12px;letter-spacing:.04em}

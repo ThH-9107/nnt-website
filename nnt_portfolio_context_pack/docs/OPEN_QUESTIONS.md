@@ -142,11 +142,13 @@ Recommendation: do **not** put phone number publicly unless Thanh specifically w
 
 ## 11. CV / résumé version linked on site
 
-Resolved October 15, 2026: Thanh supplied the final two-page `docs/Resume Nguyễn Ngọc Thành.pdf` and requested that it replace the Word download. The unchanged public copy is `public/resume-nguyen-ngoc-thanh.pdf`; all website résumé links use that file through the shared `resumePdf` setting.
+Updated October 16, 2026: Thanh requested the Google Drive viewer at `https://drive.google.com/file/d/1HIv2TwP5ZoX6nKdGstQ1LXpXr6HPol9g/view?usp=sharing`. All website résumé placements use it through `resumePdf` and `ResumeLink`. The final two-page PDF supplied October 15 remains archived at `public/resume-nguyen-ngoc-thanh.pdf`. Drive sharing permissions could not be verified through the available web tool.
 
 This resolves the linked version only. Differences between résumé claims and other primary evidence still need to be reconciled before changing website copy.
 
 ## 12. Portrait / project-image permissions
+
+October 16, 2026: Thanh requested the restaurant portrait for About, with a background edit preserving the original face, hair, clothing, and proportions. The processed WebP is used in About; the lakeside hero remains active. The candidate hero appears only at `/preview/portrait`, awaiting explicit approval before a hero replacement. Original restaurant upload and processing intermediates remain local. Do not treat the About addition as approval to replace the hero.
 
 Before publication:
 - confirm images of children / beneficiaries are approved for public use

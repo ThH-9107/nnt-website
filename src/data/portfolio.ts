@@ -11,8 +11,8 @@ export const profile = {
   // Add only verified account URLs when supplied.
   github: null as string | null,
   linkedin: null as string | null,
-  // Final two-page résumé supplied October 15, 2026.
-  resumePdf: "/resume-nguyen-ngoc-thanh.pdf" as string | null,
+  // Drive viewer supplied by Thanh October 16, 2026.
+  resumePdf: "https://drive.google.com/file/d/1HIv2TwP5ZoX6nKdGstQ1LXpXr6HPol9g/view?usp=sharing" as string | null,
   resumeDocx: "/resume-nguyen-ngoc-thanh.docx",
 };
 

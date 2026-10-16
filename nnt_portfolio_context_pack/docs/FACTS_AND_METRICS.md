@@ -525,4 +525,4 @@ Do not claim final performance outcome yet.
 
 ## Final résumé and editorial audit
 
-The final two-page PDF supplied October 15, 2026 is `docs/Resume Nguyễn Ngọc Thành.pdf`. All public résumé links point to `/resume-nguyen-ngoc-thanh.pdf`. This is the latest personal reference; conflicts with primary evidence remain subject to the constraints above and `OPEN_QUESTIONS.md`. See `EDITORIAL_REVIEW_2026-10.md` for the decisions made in this revision.
+The final two-page PDF supplied October 15, 2026 is `docs/Resume Nguyễn Ngọc Thành.pdf`. On October 16, Thanh requested that résumé links open the Google Drive PDF viewer at `https://drive.google.com/file/d/1HIv2TwP5ZoX6nKdGstQ1LXpXr6HPol9g/view?usp=sharing`; the local PDF remains an archive. This is the latest personal reference; conflicts with primary evidence remain subject to the constraints above and `OPEN_QUESTIONS.md`. See `EDITORIAL_REVIEW_2026-10.md` for the decisions made in that revision.

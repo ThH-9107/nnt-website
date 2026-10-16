@@ -2,6 +2,13 @@
 
 Status: planning document. Real assets may not yet be present.
 
+## October 16 finishing update
+
+- Personal About portrait: `/public/images/selected/thanh-restaurant-portrait.webp`, 920 × 1150, approximately 79 KB. Source: local `portrait/nnt_suit.png`, preserved unchanged. The delivered subject uses original pixels with masking, a table-free crop, uniform mild color correction, and an off-white background.
+- The hero retains `/public/images/selected/thanh-lakeside-portrait.webp`. `/preview/portrait` compares both hero options; replacement requires Thanh's approval.
+- ORGANISM uses a larger foliage crop and a complete-tree inset from `/public/images/selected/phytophthora-durian-tree.webp`. Both are display-only SVG viewports of the real source photograph.
+- Résumé access now uses the user-supplied Google Drive viewer through the shared profile setting; the previously supplied local PDF remains archived.
+
 ## October 2026 GFP proposal update
 
 - Source document: `docs/H_polysperma.docx` (original Vietnamese proposal).

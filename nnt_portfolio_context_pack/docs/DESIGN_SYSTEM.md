@@ -82,6 +82,8 @@ The user should perceive a difference between IMAGE and AUDIENCE even without re
 
 The October 15 editorial revision preserves this visual system, motion, font sizes, navigation, and the five main stories. The GFP proposal uses the same paper-like overlay as a secondary ORGANISM story, with its own direct URL. Its link in the Phytophthora story is compact; old bookmarked anchors remain useful.
 
+October 16 finishing adjustments: the personal-introduction lead is 20–24px, its body 17–18px, and the Working Method lead 18–20px. Other reading sizes remain unchanged. ORGANISM fills the shared frame with real foliage and a smaller full-tree context inset; one outside caption replaces repeated labels. Its secondary GFP navigation is a direct link with no expanding description. The lakeside hero stays active while the restaurant portrait is used in About and previewed separately as a possible hero.
+
 ## 4. Map/path geometry
 
 Do not use:

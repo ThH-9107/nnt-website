@@ -1,18 +1,23 @@
 # Selected portfolio images
 
-Curated from the images supplied in October 2026. Originals are preserved. Delivery copies are resized, encoded as WebP, and stripped of EXIF metadata; no faces, research observations, or event content are retouched.
+Curated from the images supplied in October 2026. Originals are preserved. Delivery copies are encoded as WebP and stripped of EXIF metadata. Research observations and event content remain photographic records.
 
-The homepage uses the lakeside portrait with its natural background. Scale images share a steady landscape observation frame; the view pulls back inside it. SVG viewports show details without altering source assets, and Audience displays the entire stage photograph. The full photographs and labeled scientific figures remain in project stories. No AI retouching is used.
+The homepage hero keeps the lakeside portrait with its natural background. About uses the restaurant portrait with background removal, a table-free upper-body crop, mild uniform color correction, and warm paper behind it. Its face, expression, clothing, and pose use the original photographed pixels. A generated draft was rejected because it changed clothing details. The final processing used a local foreground mask, source-based edge refinement, and lossless original RGB before the final global correction and WebP encoding. No subject regeneration or smoothing was used in the delivered asset. The original `portrait/nnt_suit.png` remains local and ignored by Git.
+
+Scale images share a steady landscape observation frame. ORGANISM now combines a foliage crop with a full-tree inset from the same authentic photograph; the composition is fixed so its inset is not cropped by the camera transform. Audience displays the complete stage photograph. The full photographs and scientific figures remain in project stories. No research imagery was generated.
+
+The portrait comparison at `/preview/portrait` reuses the actual hero and About components. The restaurant hero is a candidate awaiting Thanh's approval; it is not the active homepage hero. Processing notes and the exact built-in edit prompt are saved locally in `local-source-documents/portrait-tools/EDIT_NOTES.md`.
 
 | Placement | Selected image | Original source |
 | --- | --- | --- |
 | Homepage portrait | [thanh-lakeside-portrait.webp](./thanh-lakeside-portrait.webp) | portrait/1791827772253_148179545437676827_148179545437676827_bfab8487206faf545e869ec448a857f2.jpg |
 | IMAGE scale | Close viewport of [medical-ai-test-image-examples.webp](./medical-ai-test-image-examples.webp) | medical-ai/figures/11_test_image_examples.png |
-| ORGANISM scale | Whole tree in [phytophthora-durian-tree.webp](./phytophthora-durian-tree.webp) | phytophthora/durian_tree.png |
+| ORGANISM scale | Foliage crop + full-tree inset in [phytophthora-durian-tree.webp](./phytophthora-durian-tree.webp) | phytophthora/durian_tree.png |
 | LEARNER scale | [molebio-students-at-the-bench.webp](./molebio-students-at-the-bench.webp) | molebio/DNA_extract2.jpg |
 | COMMUNITY scale | Gathering viewport of [hoa-yen-mid-autumn-2024.webp](./hoa-yen-mid-autumn-2024.webp) | hoa-yen/mid_autumn_2024(2).jpg |
 | AUDIENCE scale | [school-performance-full-stage.webp](./school-performance-full-stage.webp) | creative/family3.jpg |
-| Homepage About | [thanh-at-the-lab-bench.webp](./thanh-at-the-lab-bench.webp) | portrait/lab_work.jpg |
+| Personal About | [thanh-restaurant-portrait.webp](./thanh-restaurant-portrait.webp) | portrait/nnt_suit.png (local original) |
+| Working Method | [thanh-at-the-lab-bench.webp](./thanh-at-the-lab-bench.webp) | portrait/lab_work.jpg |
 | Medical AI opening | [medical-ai-test-image-examples.webp](./medical-ai-test-image-examples.webp) | medical-ai/figures/11_test_image_examples.png |
 | Medical AI evidence gallery | [medical-ai-condition-comparison.webp](./medical-ai-condition-comparison.webp) | medical-ai/figures/01_condition_comparison.png |
 | Medical AI evidence gallery | [medical-ai-f1-auroc-tradeoff.webp](./medical-ai-f1-auroc-tradeoff.webp) | medical-ai/figures/03_f1_auroc_tradeoff.png |

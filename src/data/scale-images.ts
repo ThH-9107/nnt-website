@@ -6,6 +6,7 @@ export type ScaleImage = PortfolioImage & {
   crop?: [number, number, number, number];
   fit?: "cover" | "contain";
   fieldNote: string;
+  contextInset?: { label: string };
 };
 
 export const scaleImages: Record<InquiryNodeData["id"], ScaleImage> = {
@@ -20,11 +21,12 @@ export const scaleImages: Record<InquiryNodeData["id"], ScaleImage> = {
     src: "/images/selected/phytophthora-durian-tree.webp",
     width: 1200,
     height: 1600,
-    fit: "contain",
-    title: "Durian tree / the living context",
-    caption: "The supplied photograph of a durian tree and its surrounding growing environment.",
-    alt: "A whole durian tree with its canopy and trunk visible among vegetation on a hillside under a cloudy sky.",
-    fieldNote: "Image detail → a living organism",
+    crop: [180, 450, 840, 560],
+    title: "Durian foliage → whole-tree context",
+    caption: "A foliage crop and a full-tree inset from the same supplied durian photograph.",
+    alt: "A large close crop of durian foliage, with the complete original tree photograph inset at lower right to show the whole organism and its growing environment.",
+    fieldNote: "",
+    contextInset: { label: "Whole tree" },
   },
   share: { ...photos.molebioBench, fieldNote: "One method → shared practice" },
   serve: {
