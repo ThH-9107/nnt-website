@@ -30,8 +30,7 @@ export function HomeHero({ portrait = photos.portrait, previewId }: { portrait?:
       {mobile ? <picture>
         <source media="(max-width: 900px)" srcSet={mobile.srcSet} sizes={mobile.sizes} />
         {/* Both crops use Next's image optimizer; picture selects one source per viewport. */}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img {...desktop} loading={previewId ? "lazy" : "eager"} fetchPriority={previewId ? "auto" : "high"} />
+        <img {...desktop} alt={portrait.alt} loading={previewId ? "lazy" : "eager"} fetchPriority={previewId ? "auto" : "high"} />
       </picture> : <Image src={portrait.src} alt={portrait.alt} fill preload={!previewId} quality={90} sizes={imageProps.sizes} style={imageProps.style} />}
       <span className="home-portrait-corner home-portrait-corner-tl" aria-hidden="true" /><span className="home-portrait-corner home-portrait-corner-br" aria-hidden="true" />
       <figcaption className="home-portrait-label"><span>Nguyen Ngoc Thanh</span><strong>Student researcher</strong><small>LSTS · Class of 2027</small></figcaption>
