@@ -9,6 +9,7 @@ export type PortfolioImage = {
   kind?: "photo" | "figure";
   aspectRatio?: string;
   position?: string;
+  mobile?: { src: string; width: number; height: number };
 };
 
 // Curated delivery assets. Original uploads remain in public/images.
@@ -23,14 +24,20 @@ export const photos = {
     "position": "50% 36%"
   },
   "portrait": {
-    "src": "/images/selected/thanh-lakeside-portrait.webp",
-    "width": 1620,
-    "height": 1080,
+    "src": "/images/selected/thanh-dmdt0895-desktop.webp",
+    "fullSrc": "/images/selected/thanh-dmdt0895-hero.webp",
+    "width": 1000,
+    "height": 1500,
     "title": "Nguyen Ngoc Thanh",
-    "caption": "A portrait beside the water in Ho Chi Minh City.",
-    "alt": "Thanh wearing glasses and a navy shirt beside a pond, with the city skyline behind him.",
-    "aspectRatio": "4 / 5",
-    "position": "50% 50%"
+    "caption": "An upper-body portrait with a hand resting beneath the chin.",
+    "alt": "Thanh wearing glasses, a navy blazer, white shirt, and striped tie, with one hand beneath his chin and soft off-white shelves behind him.",
+    "aspectRatio": "2 / 3",
+    "position": "50% 50%",
+    "mobile": {
+      "src": "/images/selected/thanh-dmdt0895-mobile.webp",
+      "width": 880,
+      "height": 1100
+    }
   },
   "labPortrait": {
     "src": "/images/selected/thanh-at-the-lab-bench.webp",

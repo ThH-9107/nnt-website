@@ -2,15 +2,20 @@
 
 Curated from the images supplied in October 2026. Originals are preserved. Delivery copies are encoded as WebP and stripped of EXIF metadata. Research observations and event content remain photographic records.
 
-The homepage hero keeps the lakeside portrait with its natural background. About uses the restaurant portrait with background removal, a table-free upper-body crop, mild uniform color correction, and warm paper behind it. Its face, expression, clothing, and pose use the original photographed pixels. A generated draft was rejected because it changed clothing details. The final processing used a local foreground mask, source-based edge refinement, and lossless original RGB before the final global correction and WebP encoding. No subject regeneration or smoothing was used in the delivered asset. The original `portrait/nnt_suit.png` remains local and ignored by Git.
+The homepage hero uses Thanh's selected `DMDT0895.JPG`. The room's distracting bag, framed photo, screen, and shelf objects were removed with the built-in image editing tool. The selected files composite the original photographed subject over the cleaned backdrop, with a subtle exposure lift and warm color balance. The face, hair, glasses, expression, thoughtful hand pose, blazer, shirt, and tie retain their original photographed geometry and texture. No subject regeneration, skin smoothing, face reshaping, or artificial sharpening is used in the final composite. Natural lens reflections and tie details remain. The upper-body crops remove the table and most of the lower tie. The unchanged full-resolution original remains local and ignored by Git.
+
+About continues to use the restaurant portrait with background removal, a table-free crop, mild color correction, and warm paper behind it. Its face, clothing, and pose also use the original photographed pixels. The original `portrait/nnt_suit.png` remains local and ignored by Git.
 
 Scale images share a steady landscape observation frame. ORGANISM now combines a foliage crop with a full-tree inset from the same authentic photograph; the composition is fixed so its inset is not cropped by the camera transform. Audience displays the complete stage photograph. The full photographs and scientific figures remain in project stories. No research imagery was generated.
 
-The portrait comparison at `/preview/portrait` reuses the actual hero and About components. The restaurant hero is a candidate awaiting Thanh's approval; it is not the active homepage hero. Processing notes and the exact built-in edit prompt are saved locally in `local-source-documents/portrait-tools/EDIT_NOTES.md`.
+The review at `/preview/portrait` reuses the actual hero and About components and displays the desktop/mobile crops. The user explicitly selected the DMDT0895 hero on October 20, 2026. Processing notes and the exact built-in background edit prompt are saved locally in `local-source-documents/portrait-tools/DMDT0895_EDIT_NOTES.md`.
 
 | Placement | Selected image | Original source |
 | --- | --- | --- |
-| Homepage portrait | [thanh-lakeside-portrait.webp](./thanh-lakeside-portrait.webp) | portrait/1791827772253_148179545437676827_148179545437676827_bfab8487206faf545e869ec448a857f2.jpg |
+| Hero master | [thanh-dmdt0895-hero.webp](./thanh-dmdt0895-hero.webp) | portrait/DMDT0895.JPG (local original) |
+| Homepage desktop | [thanh-dmdt0895-desktop.webp](./thanh-dmdt0895-desktop.webp) | portrait/DMDT0895.JPG (local original) |
+| Homepage mobile | [thanh-dmdt0895-mobile.webp](./thanh-dmdt0895-mobile.webp) | portrait/DMDT0895.JPG (local original) |
+| Previous hero archive | [thanh-lakeside-portrait.webp](./thanh-lakeside-portrait.webp) | portrait/1791827772253_148179545437676827_148179545437676827_bfab8487206faf545e869ec448a857f2.jpg |
 | IMAGE scale | Close viewport of [medical-ai-test-image-examples.webp](./medical-ai-test-image-examples.webp) | medical-ai/figures/11_test_image_examples.png |
 | ORGANISM scale | Foliage crop + full-tree inset in [phytophthora-durian-tree.webp](./phytophthora-durian-tree.webp) | phytophthora/durian_tree.png |
 | LEARNER scale | [molebio-students-at-the-bench.webp](./molebio-students-at-the-bench.webp) | molebio/DNA_extract2.jpg |

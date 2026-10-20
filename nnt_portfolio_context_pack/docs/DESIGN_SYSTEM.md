@@ -82,7 +82,9 @@ The user should perceive a difference between IMAGE and AUDIENCE even without re
 
 The October 15 editorial revision preserves this visual system, motion, font sizes, navigation, and the five main stories. The GFP proposal uses the same paper-like overlay as a secondary ORGANISM story, with its own direct URL. Its link in the Phytophthora story is compact; old bookmarked anchors remain useful.
 
-October 16 finishing adjustments: the personal-introduction lead is 20–24px, its body 17–18px, and the Working Method lead 18–20px. Other reading sizes remain unchanged. ORGANISM fills the shared frame with real foliage and a smaller full-tree context inset; one outside caption replaces repeated labels. Its secondary GFP navigation is a direct link with no expanding description. The lakeside hero stays active while the restaurant portrait is used in About and previewed separately as a possible hero.
+October 16 finishing adjustments: the personal-introduction lead is 20–24px, its body 17–18px, and the Working Method lead 18–20px. Other reading sizes remain unchanged. ORGANISM fills the shared frame with real foliage and a smaller full-tree context inset; one outside caption replaces repeated labels. Its secondary GFP navigation is a direct link with no expanding description.
+
+October 20 portrait selection: Thanh explicitly selected DMDT0895.JPG as the main hero. Its cleaned background retains the room's soft off-white shelving, while the subject uses original photographed pixels with a small exposure lift. Desktop uses a 2:3 crop; screens up to 900px use a 4:5 crop and frame, preserving the face and hand-under-chin pose. The restaurant portrait stays in About. Typography, colors, project content, and five-scale architecture are unchanged by this image update.
 
 ## 4. Map/path geometry
 

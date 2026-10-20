@@ -38,3 +38,6 @@ next-env.d.ts
 
 # Original restaurant upload; use the selected edited delivery asset
 /public/images/portrait/nnt_suit.png
+
+# Full-resolution hero upload; publish only the selected optimized crops
+/public/images/portrait/DMDT0895.JPG

@@ -148,7 +148,7 @@ This resolves the linked version only. Differences between résumé claims and o
 
 ## 12. Portrait / project-image permissions
 
-October 16, 2026: Thanh requested the restaurant portrait for About, with a background edit preserving the original face, hair, clothing, and proportions. The processed WebP is used in About; the lakeside hero remains active. The candidate hero appears only at `/preview/portrait`, awaiting explicit approval before a hero replacement. Original restaurant upload and processing intermediates remain local. Do not treat the About addition as approval to replace the hero.
+October 20, 2026: resolved for the current hero. Thanh explicitly instructed using DMDT0895.JPG as the main homepage hero, with natural cleanup and separate desktop/mobile crops. That selection supersedes the previous lakeside hero and restaurant-hero approval question. The restaurant portrait stays in About. Original uploads and processing intermediates remain local; only the optimized selected images are committed. `/preview/portrait` now shows the selected hero and its two crops.
 
 Before publication:
 - confirm images of children / beneficiaries are approved for public use

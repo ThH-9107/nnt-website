@@ -2,10 +2,19 @@
 
 Status: planning document. Real assets may not yet be present.
 
+## October 20 hero selection
+
+- Thanh explicitly selected `portrait/DMDT0895.JPG` as the main homepage portrait. The 6.3 MB source is preserved unchanged and ignored by Git.
+- Cleaned upper-body master: `/public/images/selected/thanh-dmdt0895-hero.webp`, 1280 × 1600, approximately 159 KB.
+- Desktop hero crop: `/public/images/selected/thanh-dmdt0895-desktop.webp`, 1000 × 1500, approximately 139 KB.
+- Mobile hero crop: `/public/images/selected/thanh-dmdt0895-mobile.webp`, 880 × 1100, approximately 92 KB, served up to 900px viewport width.
+- The final subject uses the original photographed face, hair, glasses, pose, hand, blazer, shirt, and tie. Built-in image editing cleaned the backdrop; original subject pixels were composited over it with a subtle exposure/warmth correction. No facial reconstruction or skin smoothing is used in the selected files.
+- The restaurant portrait remains in About; the former lakeside asset is retained as an archive. `/preview/portrait` shows the selected hero and delivered crops.
+
 ## October 16 finishing update
 
 - Personal About portrait: `/public/images/selected/thanh-restaurant-portrait.webp`, 920 × 1150, approximately 79 KB. Source: local `portrait/nnt_suit.png`, preserved unchanged. The delivered subject uses original pixels with masking, a table-free crop, uniform mild color correction, and an off-white background.
-- The hero retains `/public/images/selected/thanh-lakeside-portrait.webp`. `/preview/portrait` compares both hero options; replacement requires Thanh's approval.
+- The lakeside hero was retained pending approval at that stage; it was superseded by Thanh's explicit October 20 DMDT0895 selection above.
 - ORGANISM uses a larger foliage crop and a complete-tree inset from `/public/images/selected/phytophthora-durian-tree.webp`. Both are display-only SVG viewports of the real source photograph.
 - Résumé access now uses the user-supplied Google Drive viewer through the shared profile setting; the previously supplied local PDF remains archived.
 

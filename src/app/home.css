@@ -46,6 +46,13 @@
 .portrait-preview-label{padding-top:45px}
 .portrait-preview-label h2{font-family:Georgia,'Times New Roman',serif;font-size:28px;font-weight:400;margin-bottom:8px}
 .portrait-preview-label p{font-size:16px;color:var(--muted);margin-bottom:0}
+.portrait-preview-crops{display:grid;grid-template-columns:1fr 1fr;gap:36px;padding-block:48px 70px;max-width:1000px}
+.portrait-preview-crops figure{margin:0;align-self:start}
+.portrait-preview-crops img{width:100%;height:auto}
+.portrait-preview-crops figcaption{padding-top:14px;color:var(--muted);font-size:15px;line-height:1.65}
+.portrait-preview-crops figcaption strong{display:block;color:var(--ink);font-weight:600}
+@media(max-width:900px){.home-portrait-responsive{width:100%;max-width:540px;min-height:0;aspect-ratio:4/5;justify-self:center}}
+@media(max-width:560px){.portrait-preview-crops{grid-template-columns:1fr;max-width:430px}}
 .home-introduction-copy .home-introduction-lead{font-family:Georgia,'Times New Roman',serif;font-size:clamp(23px,2vw,28px);line-height:1.5;letter-spacing:-.015em;color:var(--ink)}
 @media(max-width:900px){.home-introduction{padding:65px 0 70px}.home-introduction-grid{grid-template-columns:1fr;gap:28px}.home-introduction h2{font-size:46px}.home-introduction h2 br{display:none}}
 @media(max-width:620px){.home-introduction{padding:55px 0 60px}.home-introduction-copy>p{font-size:18px}.home-introduction-copy .home-introduction-lead{font-size:23px}}
