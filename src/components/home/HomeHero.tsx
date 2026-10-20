@@ -9,13 +9,12 @@ export function HomeHero({ portrait = photos.portrait, previewId }: { portrait?:
   const Heading = previewId ? "h2" : "h1";
   const imageProps = {
     alt: portrait.alt,
-    fill: true,
     quality: 90,
-    sizes: "(max-width: 900px) min(540px, calc(100vw - 40px)), (min-width: 1424px) 532px, 40vw",
+    sizes: "(max-width: 560px) calc(100vw - 32px), (max-width: 620px) 400px, (max-width: 900px) 520px, (min-width: 1424px) 532px, 40vw",
     style: { objectFit: "cover" as const, objectPosition: portrait.position },
   };
-  const { props: desktop } = getImageProps({ ...imageProps, src: portrait.src });
-  const mobile = portrait.mobile ? getImageProps({ ...imageProps, src: portrait.mobile.src }).props : null;
+  const { props: desktop } = getImageProps({ ...imageProps, src: portrait.src, width: portrait.width, height: portrait.height });
+  const mobile = portrait.mobile ? getImageProps({ ...imageProps, ...portrait.mobile }).props : null;
   return <section className="home-hero" id={previewId ?? "top"} aria-labelledby={titleId}><div className="container home-hero-grid">
     <div className="home-hero-copy">
       <p className="eyebrow">{profile.school} / {profile.classYear}</p>
@@ -27,10 +26,10 @@ export function HomeHero({ portrait = photos.portrait, previewId }: { portrait?:
       <p className="home-hero-location">{profile.location} <span aria-hidden="true">/</span> Biology · Computation · People</p>
     </div>
     <figure className={`home-portrait${mobile ? " home-portrait-responsive" : ""}`}>
-      {mobile ? <picture>
-        <source media="(max-width: 900px)" srcSet={mobile.srcSet} sizes={mobile.sizes} />
+      {mobile ? <picture className="home-portrait-picture">
+        <source media="(max-width: 900px)" srcSet={mobile.srcSet} sizes={mobile.sizes} width={portrait.mobile?.width} height={portrait.mobile?.height} />
         {/* Both crops use Next's image optimizer; picture selects one source per viewport. */}
-        <img {...desktop} alt={portrait.alt} loading={previewId ? "lazy" : "eager"} fetchPriority={previewId ? "auto" : "high"} />
+        <img {...desktop} alt={portrait.alt} style={imageProps.style} loading={previewId ? "lazy" : "eager"} fetchPriority={previewId ? "auto" : "high"} />
       </picture> : <Image src={portrait.src} alt={portrait.alt} fill preload={!previewId} quality={90} sizes={imageProps.sizes} style={imageProps.style} />}
       <span className="home-portrait-corner home-portrait-corner-tl" aria-hidden="true" /><span className="home-portrait-corner home-portrait-corner-br" aria-hidden="true" />
       <figcaption className="home-portrait-label"><span>Nguyen Ngoc Thanh</span><strong>Student researcher</strong><small>LSTS · Class of 2027</small></figcaption>
