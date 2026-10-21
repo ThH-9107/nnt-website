@@ -60,13 +60,14 @@ Do NOT say:
 - the GFP plasmid was categorically illegal to import
 - the implementation discussions became completed laboratory collaboration or experimental supervision
 
+October 22, 2026 privacy instruction: do not publish or link the full proposal, technical protocols, plasmid designs, original workflow, or other unpublished research details. Use a high-level narrative only. The source documents and technical images are retained locally outside the public tree and excluded from Git.
+
 Allowed:
 - proposal
 - methodology
 - predicted outcomes
 - mentor involvement
 - May–July 2026 independent proposal for transient GFP expression in Hygrophila polysperma using Agrobacterium-mediated transfer
-- comparison of submerged and emersed plant forms was proposed
 - procurement/import arrangements could take several months, beyond the available summer window
 - practical constraints associated with being under 18 also mattered
 - experiment never conducted; no experimental results obtained
@@ -159,7 +160,6 @@ Current:
 Do NOT publish unresolved years as facts.
 
 Check `OPEN_QUESTIONS.md` for:
-- SAT total conflict
 - 30/4 Math year
 - Six Core Values year
 

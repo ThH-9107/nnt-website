@@ -3,10 +3,8 @@ import { profile } from "@/data/portfolio";
 import { ResumeLink } from "./ResumeLink";
 
 const navigation = [
-  { label: "Research", href: "/#research" },
-  { label: "Leadership", href: "/#leadership" },
-  { label: "Creative", href: "/creative" },
-  { label: "About", href: "/#about" },
+  { label: "Contact", href: "/#contact" },
+  { label: "Portfolio", href: "/#inquiry-map" },
   { label: "CV", href: "/#cv" },
 ];
 
@@ -16,7 +14,7 @@ export function SiteHeader() {
     <nav className="site-nav" aria-label="Main navigation">
       {navigation.map((item) => item.label === "CV"
         ? <ResumeLink key={item.label} aria-label={`View résumé (${profile.resumePdf ? "PDF" : "Word document"}) in a new tab`}>{item.label}</ResumeLink>
-        : <Link key={item.label} href={item.href} scroll={item.href !== "/creative"}>{item.label}</Link>)}
+        : <Link key={item.label} href={item.href}>{item.label}</Link>)}
     </nav>
   </div></header>;
 }

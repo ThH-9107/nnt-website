@@ -135,6 +135,15 @@ export const photos = {
     "alt": "A Petri dish with several small growth areas and handwritten markings.",
     "aspectRatio": "3 / 4"
   },
+  "molebioEarlyClassroom": {
+    "src": "/images/selected/molebio-early-classroom.webp",
+    "width": 1440,
+    "height": 1082,
+    "title": "The earlier club · 2024–2025",
+    "caption": "Listening and discussing in the predecessor biology club.",
+    "alt": "Students seated at classroom laboratory benches, listening to a presentation in the earlier biology club.",
+    "aspectRatio": "4 / 3"
+  },
   "molebioTeaching": {
     "src": "/images/selected/molebio-thanh-teaching.webp",
     "width": 1200,

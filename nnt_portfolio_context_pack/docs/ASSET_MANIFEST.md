@@ -2,6 +2,13 @@
 
 Status: planning document. Real assets may not yet be present.
 
+## October 22 content and privacy update
+
+- Earlier MoleBio classroom: `/public/images/selected/molebio-early-classroom.webp`, 1440 × 1082, approximately 123 KB, from the user-supplied `mole2024.png`. The original remains unchanged and ignored by Git. It is used only for Listen / 2024–2025.
+- The two existing Beyond learning photographs remain authentic, uncropped records of separate Stem Cell Summer School and Binh Phu experiences.
+- Official AP and SAT score reports are private local sources. The markers use verified scores as text, with no report download or identifying fields.
+- The complete GFP proposal, original source DOCX, and technical workflow image have been removed from the current public/Git tree and preserved in ignored local storage. The Unseen uses a high-level narrative and CSS paper-edge motifs only. No unpublished technical artifact is embedded or linked.
+
 ## October 20 hero selection
 
 - Thanh explicitly selected `portrait/DMDT0895.JPG` as the main homepage portrait. The 6.3 MB source is preserved unchanged and ignored by Git.
@@ -20,11 +27,8 @@ Status: planning document. Real assets may not yet be present.
 
 ## October 2026 GFP proposal update
 
-- Source document: `docs/H_polysperma.docx` (original Vietnamese proposal).
-- Public copy: `/public/documents/research/hygrophila-polysperma-gfp-proposal.docx`.
-- Original embedded workflow: `/public/images/research-proposal/hygrophila-proposed-workflow.png`.
-- The workflow shows planned methods and predicted expression, not executed experiments or results.
-- A real cover preview may be added from a supplied PDF later. Do not fabricate one.
+- The original Vietnamese proposal and its embedded workflow were previously used as documentary sources. That presentation is superseded by the October 22 instruction above: no public proposal, workflow, protocols, plasmid designs, or unpublished details.
+- Do not create a proposal cover or fictional experiment imagery.
 - ORGANISM scale source photo: `/public/images/phytophthora/durian_tree.png`; delivery copy `/public/images/selected/phytophthora-durian-tree.webp`.
 
 ## October 15 editorial evidence update

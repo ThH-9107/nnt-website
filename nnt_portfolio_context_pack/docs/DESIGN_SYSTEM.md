@@ -80,9 +80,9 @@ This is not literal physical magnification. It is the scale of attention.
 
 The user should perceive a difference between IMAGE and AUDIENCE even without reading labels.
 
-The October 15 editorial revision preserves this visual system, motion, font sizes, navigation, and the five main stories. The GFP proposal uses the same paper-like overlay as a secondary ORGANISM story, with its own direct URL. Its link in the Phytophthora story is compact; old bookmarked anchors remain useful.
+The October 15 editorial revision preserved this visual system and the five main stories. The October 22 GFP refinement supersedes its former ORGANISM placement: **The Unseen** is a separate contemplative chapter after the five scales, with one route and a paper-like overlay. It is not a numbered sixth scale.
 
-October 16 finishing adjustments: the personal-introduction lead is 20–24px, its body 17–18px, and the Working Method lead 18–20px. Other reading sizes remain unchanged. ORGANISM fills the shared frame with real foliage and a smaller full-tree context inset; one outside caption replaces repeated labels. Its secondary GFP navigation is a direct link with no expanding description.
+October 16 finishing adjustments: the personal-introduction lead is 20–24px, its body 17–18px, and the Working Method lead 18–20px. Other reading sizes remain unchanged. ORGANISM fills the shared frame with real foliage and a smaller full-tree context inset; one outside caption replaces repeated labels. Its former secondary GFP link was removed October 22 when the proposal became its own chapter.
 
 October 20 portrait selection: Thanh explicitly selected DMDT0895.JPG as the main hero. Its cleaned background retains the room's soft off-white shelving, while the subject uses original photographed pixels with a small exposure lift. Desktop uses a 2:3 crop; screens up to 900px use a 4:5 crop and frame, preserving the face and hand-under-chin pose. The restaurant portrait stays in About. Typography, colors, project content, and five-scale architecture are unchanged by this image update.
 
@@ -103,7 +103,7 @@ Preferred:
 
 The path is a connective motif, not the core metaphor.
 
-The GFP fluorescence proposal side story may use one intentionally incomplete dashed branch because the branch itself has narrative meaning. It remains secondary under ORGANISM.
+The GFP proposal is separate from the map. Its restrained paper-edge treatment belongs to The Unseen chapter; it does not add a branch or sixth scale to the five-scale navigation.
 
 ## 5. Interaction model
 
@@ -185,12 +185,16 @@ Direct URL: same story content can render standalone.
 ## 8. Homepage hierarchy
 
 1. Hero — calm, easy to scan
-2. A little about me — Thanh's supplied personal introduction, immediately below the hero
+2. A little about me — two short personal paragraphs with the portrait beside the heading and prose
 3. Scale experience — main memorable moment
-4. Current work strip — concise first-author manuscript status
+4. The Unseen — separate proposal chapter; the repeated Current Work strip is removed
 5. Working method — research practice and selected scientific training
-6. Selected honors — original list with expandable certificate scans
+6. Markers — verified AP/SAT text records and selected honors with expandable certificate scans
 7. Footer
+
+October 22 navigation: Contact, Portfolio, CV. Portfolio currently jumps to the Five Scales. The hero has no separate Research/Leadership link rows. Mobile hero order is name → portrait → introductory copy/actions so the photo is visible earlier. The active desktop scale question sits above the images; mobile questions also precede their photographs.
+
+MoleBio keeps its distinct warm/green Listen/Practice comparison, with a full-width Beyond panel connected underneath. Beyond uses authentic images at their natural ratios. Its ending is a restrained unresolved reflection, with the preparation narrative preceding it.
 
 ## 9. Typography / material feel
 

@@ -146,7 +146,7 @@ export const molebio: ProjectStory = {
   hero: photos.molebioTeaching,
   questionLabel: "The redesign",
   question: "Putting laboratory practice at the center.",
-  questionContext: "The earlier club depended heavily on lectures and self-study. I planned the relaunch around students handling tools, running activities, and developing their own science-related work.",
+  questionContext: "Regular bench time gave members room to work through techniques together; outreach and student-led projects extended that practice beyond the weekly sessions.",
   metrics: [
     { value: "~16 → ~20", label: "members", detail: "predecessor to MoleBio" },
     { value: "~80%", label: "newly recruited", detail: "in the relaunched club" },
@@ -155,8 +155,6 @@ export const molebio: ProjectStory = {
   ],
   timelineIntro: "The change was a redesign of how students spent their time together.",
   timeline: [
-    { period: "2024–2025", title: "Seeing the gap as a member", text: "I identified the limited opportunities for practical work and drafted a redesign incorporating laboratory activities, outreach, and student-led projects." },
-    { period: "2025–2026", title: "Recruiting and relaunching", text: "As Founder and President, I recruited members and designed the weekly program around hands-on molecular biology." },
     { period: "During the year", title: "Organizing outreach", text: "An osmosis and microscopy workshop brought practical science to students beyond the regular club sessions." },
     { period: "Science Fair", title: "Leading the terrarium activity", text: "I led a seven-member club team in a terrarium-building activity for approximately 30 participants, using recycled plastic bottles and locally collected materials." },
   ],
@@ -171,13 +169,63 @@ export const molebio: ProjectStory = {
       "I delegated projects around members’ strengths. Alongside the scheduled activities, students developed a club website prototype and a physical 3D DNA model, giving them a role in deciding what the club could make and share.",
     ] },
   ],
-  gallery: [photos.molebioBench, photos.molebioFair],
+  gallery: [photos.molebioFair],
   record: [photos.molebioPCR, photos.molebioWorkshop, photos.molebioModel],
-  relatedImages: [photos.stemcellLearning, photos.binhphuLearning],
   note: { label: "Behind the sessions", title: "The preparation before teaching", paragraphs: [
-    "I remember compiling the material into a document and making presentation slides, contacting the teacher, and finding time to visit in person to check the facilities. Teaching the students came after all that preparation.",
+    "I remember compiling our materials into documents, preparing presentation slides, contacting teachers, and finding time to visit the facilities in person. By the time we welcomed students into the laboratory, much of the work had already happened behind the scenes.",
   ] },
   next: { label: "Hoa Yen Charity Fund", href: "/leadership/hoa-yen" },
+};
+
+export const molebioLearningSequence = {
+  listen: {
+    number: "01",
+    label: "Before / 2024–2025",
+    title: "Listen.",
+    subtitle: "Lectures and self-study.",
+    description: "Biology was something we mostly learned by listening, reading, and discussing. Opportunities to work directly with laboratory equipment were limited.",
+    image: photos.molebioEarlyClassroom,
+  },
+  practice: {
+    number: "02",
+    label: "After / 2025–2026",
+    title: "Practice.",
+    subtitle: "Laboratory sessions and student-led projects.",
+    description: "As president, I redesigned MoleBio around hands-on learning, giving members more opportunities to work with laboratory techniques, experiment together, and turn their curiosity into practical projects.",
+    image: { ...photos.molebioBench, aspectRatio: "4 / 3", position: "50% 65%" },
+  },
+  beyond: {
+    number: "03",
+    label: "Beyond MoleBio / Related laboratory experiences",
+    title: "Beyond.",
+    subtitle: "Learning science beyond the club.",
+    description: "My interest in hands-on biology also took me into learning environments outside MoleBio, where I had opportunities to observe and participate in supervised laboratory activities.",
+    context: "These were separate experiences at different points in time, including before my presidency. They belong to the same developing interest, rather than a later phase of the club.",
+    experiences: [
+      {
+        image: photos.stemcellLearning,
+        title: "Stem Cell Summer School",
+        date: "2024",
+        description: "Selected participant in a summer learning program at the Stem Cell Institute, University of Science, Vietnam National University Ho Chi Minh City, with exposure to research discussions and laboratory learning.",
+      },
+      {
+        image: photos.binhphuLearning,
+        title: "Binh Phu",
+        date: "September 2025",
+        description: "A supervised pharmaceutical laboratory experience introducing me to quality-control procedures, including tablet hardness, friability, and moisture testing.",
+      },
+    ],
+  },
+};
+
+export const molebioReflection = {
+  label: "Reflection / After MoleBio",
+  title: "What I Couldn't Carry Forward",
+  paragraphs: [
+    "MoleBio changed when I stopped assuming that an ambitious plan was necessarily a meaningful one. I initially wanted us to pursue iGEM, but as the year unfolded, I realized that many members wanted something different: fewer papers and simulations, more opportunities to experiment, build things, and enjoy biology together. When I finally suggested abandoning the plan, my core team laughed. They had been waiting for me to say it.",
+    "What I still regret is what happened afterward. School rules meant I could no longer serve as president in Grade 12. With iGEM becoming a mandatory focus the following year, nearly all the members I had worked with chose to leave. I had spent a year helping MoleBio become a place people genuinely wanted to return to, but I couldn't ensure it would stay that way.",
+    "I'm proud of what we built together. I just wish I had found a way to make it last beyond my time there.",
+  ],
 };
 
 export const hoaYen: ProjectStory = {

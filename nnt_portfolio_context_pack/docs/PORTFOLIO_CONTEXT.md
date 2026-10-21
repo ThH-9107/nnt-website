@@ -290,9 +290,9 @@ This is a **May–July 2026 independent research proposal that did not reach exp
 
 It should be treated as an optional case study, not equivalent to an executed research project.
 
-The question was whether an aquatic plant, Hygrophila polysperma, could transiently express GFP through Agrobacterium-mediated gene transfer. Thanh proposed comparing submerged and emersed forms, motivated by their different leaf structures. This was GFP fluorescence under suitable excitation light, not bioluminescence.
+The question was whether an aquatic plant, Hygrophila polysperma, could transiently express GFP through Agrobacterium-mediated gene transfer. This was GFP fluorescence under suitable excitation light, not bioluminescence. Unpublished experimental-design details are omitted from this public context.
 
-He developed a literature review and formal proposal with objectives, planned methods/controls, a workflow diagram, and a possible tissue-culture pathway. The original Vietnamese document is `docs/H_polysperma.docx` and names Nguyễn Thị Thảo Sương as scientific supervisor.
+He developed a literature review and substantial formal proposal with objectives and a proposed experimental approach. The original document names Nguyễn Thị Thảo Sương as scientific supervisor. The complete proposal and technical artifacts are private local sources, excluded from the current public/Git tree.
 
 To investigate feasibility, Thanh met with Dr. Trần Trọng Tuấn from the Institute of Tropical Biology in Ho Chi Minh City and consulted Dr. Bùi Thế Vinh. Both were willing to support the project. These conversations were implementation discussions, not completed laboratory collaboration or experimental supervision.
 
@@ -300,11 +300,11 @@ Obtaining the GFP plasmid was the main obstacle. Dr. Tuấn explained that procu
 
 Potential portfolio framing:
 
-> **A question I couldn't test**
+> **The Unseen. — Not everything worth exploring can be seen yet.**
 
-The story should remain a short, personal account of developing a question, seeking implementation support, encountering the procurement/timing obstacle, and moving on. It may use the original proposal and its authentic workflow diagram. No fictional cover, fluorescent-plant photograph, or laboratory result should be generated.
+The public story is a personal account of developing a question, seeking implementation guidance, encountering the procurement/timing obstacle, and stopping before experimentation. It does not publish or link the full proposal, technical workflow, protocols, plasmid designs, or unpublished design details. No fictional cover, fluorescent-plant photograph, or laboratory result should be generated.
 
-The story now has its own secondary route and matching overlay at `/research/gfp-proposal`, still under ORGANISM. The former `/research/phytophthora#unfinished-research` anchor remains as a compact link to it.
+The story has one canonical route and matching overlay at `/research/gfp-proposal`, reached from a separate homepage chapter after the Five Scales. It is not a sixth scale. The former ORGANISM branch and Phytophthora teaser are removed to keep the stories distinct.
 
 Do not claim any experimental result.
 Do not claim a genetically modified or GFP-expressing plant was produced. Do not describe the plasmid as categorically illegal to import.
@@ -374,6 +374,10 @@ Important leadership framing:
 Thanh did not only “run sessions.” He redesigned the club around practical work and delegated projects around members' strengths.
 
 In October 2026, Thanh described preparing workshop content in a document, making slides, contacting the teacher at MSC, visiting to check the facilities, and then teaching the students. This is a documented personal example of the work behind the sessions. MSC's full name has not been supplied.
+
+The October 22 refinement presents **Listen → Practice → Beyond** as a conceptual sequence. Beyond includes the 2024 Stem Cell Summer School and September 2025 Binh Phu experience as separate learning environments, not MoleBio programs or a chronological phase after the presidency. The genuine `mole2024.png` classroom image documents the earlier club period.
+
+Thanh's approved ending, **What I Couldn't Carry Forward**, describes initially pursuing iGEM, then discussing abandoning that direction when it did not fit members' interest in practical exploration. School rules prevented continuing as president in Grade 12; iGEM became a required direction the following year, and nearly all former team members chose to leave. Preserve the pride and regret without inventing a resolution, blaming the school, attacking iGEM, or claiming permanent club collapse.
 
 Do not claim fundraising revenue from the DNA model project; that plan was not implemented.
 
@@ -737,8 +741,10 @@ IELTS:
 - 7.5
 
 SAT:
-- see `OPEN_QUESTIONS.md` because prior records conflict between 1480 and 1490
-- Math score consistently reported as 800
+- official September 12, 2026 report confirms **1480**, Math **800**, Reading and Writing **680**
+- the prior 1490 résumé draft is superseded
+- 2026 AP report confirms Biology 5, Calculus BC 5, Statistics 4, plus AP Scholar; the Calculus AB 5 is a subscore, not another exam
+- full score reports stay private; the homepage presents text scores only
 
 ---
 

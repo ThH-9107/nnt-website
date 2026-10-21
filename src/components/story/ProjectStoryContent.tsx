@@ -2,8 +2,9 @@ import Link from "next/link";
 import type { GalleryItem, ProjectStory, StoryChapter, TimelineItem } from "@/data/project-pages";
 import { StoryFigure } from "./StoryFigure";
 import { hoaYenThankYouLetter } from "@/data/community-documents";
-import { UnfinishedResearchNote } from "./UnfinishedResearchNote";
 import { ScientificText } from "./ScientificText";
+import { MoleBioLearningSequence } from "./MoleBioLearningSequence";
+import { MoleBioReflection } from "./MoleBioReflection";
 
 const scalePosition: Record<ProjectStory["kind"], string> = {
   "medical-ai": "01 / 05 · IMAGE",
@@ -64,19 +65,18 @@ function PhytophthoraStory({ project }: { project: ProjectStory }) {
     <section className="story-field-diary"><div className="story-section-heading"><span className="story-kicker">Field notes / May 2024–Present</span><h2>Leading the study from orchard to bench.</h2><p>{project.timelineIntro}</p></div><Timeline items={project.timeline} /></section>
     <section className="story-field-chapters">{project.chapters.map((chapter, index) => <div className="story-field-chapter" key={chapter.label}><Chapter chapter={chapter} />{index < project.gallery.length && <Figure {...project.gallery[index]} />}</div>)}</section>
     <section className="story-field-contact-sheet"><div className="story-section-heading"><span className="story-kicker">Field & laboratory record</span><h2>Samples, tools, and culture work.</h2><p>Photographs from the sampling and isolation workflow.</p></div><div>{project.record?.map((item) => <Figure key={item.src} {...item} />)}</div></section>
-    <Status project={project} /><Credits project={project} /><UnfinishedResearchNote /><StoryEnd project={project} />
+    <Status project={project} /><Credits project={project} /><StoryEnd project={project} />
   </article>;
 }
 
 function MoleBioStory({ project }: { project: ProjectStory }) {
   return <article className="story story-lab"><StoryOpening project={project} />
-    <section className="story-lab-before-after"><div><span className="story-kicker">Before / 2024–2025</span><strong>Listen.</strong><h2>Lectures and self-study.</h2><p>Limited opportunities to handle laboratory tools.</p></div><div><span className="story-kicker">After / 2025–2026</span><strong>Practice.</strong><h2>Laboratory sessions and student-led projects.</h2><p>A redesigned program with workshops and outreach.</p></div></section>
+    <MoleBioLearningSequence />
     <section className="story-lab-program"><div className="story-section-heading"><span className="story-kicker">The relaunched program</span><h2>{project.question}</h2><p>{project.questionContext}</p></div><Metrics project={project} /></section>
     <section className="story-lab-record"><div><Timeline items={project.timeline} /></div><div className="story-lab-photos">{project.gallery.map((item) => <Figure key={item.src} {...item} />)}</div></section>
     <section className="story-lab-chapters">{project.chapters.map((chapter) => <Chapter key={chapter.label} chapter={chapter} />)}</section>
     <section className="story-lab-documentation"><div className="story-section-heading"><span className="story-kicker">Sessions, workshops & student projects</span><h2>A laboratory shared by learners.</h2></div><div className="story-photo-grid">{project.record?.map((item) => <Figure key={item.src} {...item} />)}</div></section>
-    <section className="story-related-learning"><div className="story-section-heading"><span className="story-kicker">Related laboratory experience / Beyond MoleBio</span><h2>Continuing to learn.</h2><p>Separate from the club: selected learning experiences in research and pharmaceutical laboratories.</p></div><div className="story-related-grid">{project.relatedImages?.map((item) => <Figure key={item.src} {...item} />)}</div></section>
-    <Status project={project} /><StoryEnd project={project} />
+    <Status project={project} /><MoleBioReflection /><StoryEnd project={project} />
   </article>;
 }
 

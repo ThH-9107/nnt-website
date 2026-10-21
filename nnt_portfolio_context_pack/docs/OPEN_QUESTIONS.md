@@ -6,13 +6,7 @@ When a page needs one of these facts, use a placeholder or ask Thanh.
 
 ## 1. SAT total
 
-Conflict:
-- earlier user-confirmed application context: **1480**, Math 800
-- one newer résumé draft: **1490**, Math 800
-
-Need: exact official SAT total.
-
-Until confirmed: do not publish total score.
+Resolved October 22, 2026 from the supplied official SAT report (`sat26.pdf`, retained privately): September 12, 2026, **1480 total**, Math **800**, Reading and Writing **680**. The 1490 résumé draft is superseded. The official AP report also confirms the three 2026 exam scores and AP Scholar. Neither full score report is a public download.
 
 ## 2. Six Core Values award year
 
@@ -159,9 +153,9 @@ Before publication:
 
 The October 2026 update resolves the scientific topic, May–July 2026 period, supervisor attribution, consulted researchers, and procurement/timing obstacle. Use the updated Facts and Metrics entry; older bioluminescence/regulatory-prohibition framing is superseded.
 
-The original Vietnamese DOCX is supplied as `docs/H_polysperma.docx`, with its actual workflow image embedded. A public PDF or rendered cover is not yet supplied. Link the original DOCX and use the authentic diagram; do not fabricate a cover preview or infer page count from cached Word metadata.
+Superseded by Thanh's October 22 privacy instruction: do not upload or link the full proposal, protocols, plasmid designs, technical workflow, or unpublished design details. The former public DOCX, diagram, and tracked context-pack source have been removed from the current public/Git tree and preserved in ignored local storage. Earlier Git history or earlier deployments can still contain previously published copies; this change does not rewrite history or delete deployments.
 
-The secondary story now opens at `/research/gfp-proposal`, with its own overlay and standalone page. The old Phytophthora anchor remains as a short link to it.
+The story is now **The Unseen**, a separate chapter beyond the Five Scales, using the existing `/research/gfp-proposal` route and matching overlay. The former Phytophthora teaser and ORGANISM branch have been removed. No additional source artifact is needed for the public story.
 
 ## 14. Creative poster and performance date
 
@@ -173,4 +167,4 @@ The final résumé uses Research Trainee for Stem Cell Summer School and the Mol
 
 ## 16. Personal details that could add depth
 
-Thanh supplied real MoleBio preparation work and an after-school Hỏa Chí rehearsal memory on October 15, 2026; those have been incorporated. Further Phytophthora task ownership, specific training/debugging decisions, or a particular theatre scene could add depth later if he chooses to share them. Do not fabricate these details. MSC's full institutional name is not supplied.
+Thanh supplied real MoleBio preparation work and an after-school Hỏa Chí rehearsal memory on October 15, 2026. The October 22 MoleBio prompt additionally supplies the iGEM decision, Grade 12 succession context, and approved unresolved reflection; these have been incorporated. Further Phytophthora task ownership, specific training/debugging decisions, or a particular theatre scene could add depth later if he chooses to share them. Do not fabricate these details. MSC's full institutional name is not supplied.

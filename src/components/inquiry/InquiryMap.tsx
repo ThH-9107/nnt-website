@@ -7,7 +7,6 @@ import { inquiryNodes } from "@/data/inquiry";
 import { photos } from "@/data/photography";
 import { scaleImages } from "@/data/scale-images";
 import { ScaleObservationImage } from "./ScaleObservationImage";
-import { unfinishedResearch } from "@/data/unfinished-research";
 
 export function InquiryMap() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -44,6 +43,7 @@ export function InquiryMap() {
   const activeNode = inquiryNodes[activeIndex];
 
   return <section className="scale-section" id="inquiry-map" ref={sectionRef} aria-labelledby="scale-title">
+    <span id="research" className="scale-anchor" aria-hidden="true" /><span id="leadership" className="scale-anchor" aria-hidden="true" />
     <div className="scale-sticky"><div className="container scale-container">
       <header className="scale-heading">
         <div>
@@ -54,12 +54,19 @@ export function InquiryMap() {
       </header>
 
       <div className="scale-world" data-active={activeNode.id}>
+        <div className="scale-reading">
+          <div>
+            <span className="scale-reading-index">{activeNode.number} / 05 &nbsp; {activeNode.scale} <span>· {activeNode.action.toLowerCase()}</span></span>
+            <blockquote>“{activeNode.question}”</blockquote>
+          </div>
+          <Link href={activeNode.href} scroll={false}>Explore {activeNode.destination} <span aria-hidden="true">↗</span></Link>
+        </div>
         <div className="scale-map-main">
           <nav className="scale-rail" aria-label="Explore the five project scales">
             <p className="scale-rail-intro">CLOSE OBSERVATION <span aria-hidden="true">↓</span> WIDER CONTEXT</p>
             <ol className="scale-stages">
               {inquiryNodes.map((node) => <li key={node.id} id={node.legacyAnchor} className="scale-stage" data-active={activeNode.id === node.id}>
-                <Link className="scale-stage-link" href={node.href} scroll={false} aria-label={`${node.scale}: ${node.destination}. Open project story`}>
+                <Link className="scale-stage-link" href={node.href} scroll={false} aria-label={`${node.scale}: ${node.destination}. ${node.question} Open project story`}>
                   <span className="scale-stage-marker" aria-hidden="true" />
                   <span className="scale-stage-content">
                     <span className="scale-stage-number">{node.number} / 05</span>
@@ -70,7 +77,6 @@ export function InquiryMap() {
                   <span className="scale-stage-texture" data-scene={node.id} aria-hidden="true"><span className="scale-mobile-window"><ScaleObservationImage id={node.id} /></span><span className="scale-mobile-caption">{scaleImages[node.id].title}</span></span>
                   <span className="scale-stage-arrow" aria-hidden="true">↗</span>
                 </Link>
-                {node.id === "test" && <div className="scale-secondary scale-secondary-unfinished"><Link href={unfinishedResearch.href} scroll={false} className="scale-secondary-direct" aria-label="A question I couldn't test: open the GFP proposal story">A question I couldn&apos;t test <span aria-hidden="true">↗</span></Link></div>}
                 {node.id === "serve" && <details className="scale-secondary" id="council">
                   <summary>Family Representative Council</summary>
                   <p>F08 Representative · May 2024–Present. Elected annually as one of 32 representatives serving a high-school community of 1,000+ students.</p>
@@ -100,13 +106,6 @@ export function InquiryMap() {
           </div>
         </div>
 
-        <div className="scale-reading">
-          <div>
-            <span className="scale-reading-index">{activeNode.number} / 05 &nbsp; {activeNode.scale} <span>· {activeNode.action.toLowerCase()}</span></span>
-            <blockquote>“{activeNode.question}”</blockquote>
-          </div>
-          <Link href={activeNode.href} scroll={false}>Explore {activeNode.destination} <span aria-hidden="true">↗</span></Link>
-        </div>
       </div>
 
       <p className="scale-orientation"><span>IMAGE</span><span className="scale-orientation-line" aria-hidden="true"><i style={{ width: `${(activeIndex + 1) * 20}%` }} /></span><span>AUDIENCE</span><span className="scale-orientation-instruction">Scroll to pull back · Select a name to open its story</span></p>

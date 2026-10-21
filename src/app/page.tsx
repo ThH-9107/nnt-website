@@ -3,12 +3,13 @@ import Image from "next/image";
 import { InquiryMap } from "@/components/inquiry/InquiryMap";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
-import { medicalManuscript, profile } from "@/data/portfolio";
+import { profile } from "@/data/portfolio";
 import { photos } from "@/data/photography";
 import { CertificateShowcase } from "@/components/CertificateShowcase";
 import { HomeHero } from "@/components/home/HomeHero";
 import { HomeIntroduction } from "@/components/home/HomeIntroduction";
 import { ResumeLink } from "@/components/ResumeLink";
+import { UnseenChapter } from "@/components/home/UnseenChapter";
 
 export default function Home() {
   return <>
@@ -21,10 +22,7 @@ export default function Home() {
 
       <InquiryMap />
 
-      <section className="home-current" aria-labelledby="current-title"><div className="container home-current-grid">
-        <div><p className="eyebrow">Current work / October 2026</p><h2 id="current-title">A question still in progress.</h2></div>
-        <div className="home-current-detail"><p className="home-current-kicker">First-author manuscript · Submitted October 2026</p><h3>{medicalManuscript.title}</h3><p className="home-current-status">{medicalManuscript.status}</p><Link href="/research/medical-ai" scroll={false}>Read the research story <span aria-hidden="true">↗</span></Link></div>
-      </div></section>
+      <UnseenChapter />
 
       <section className="home-about" id="working-method" aria-labelledby="working-method-title"><div className="container home-about-grid">
         <div><p className="eyebrow">Working method / In practice</p><h2 id="working-method-title">I learn by making,<br />then revising.</h2><figure className="home-about-photo"><Image src={photos.labPortrait.src} alt={photos.labPortrait.alt} width={photos.labPortrait.width} height={photos.labPortrait.height} sizes="(max-width: 900px) 100vw, 40vw" /><figcaption>{photos.labPortrait.title}</figcaption></figure></div>

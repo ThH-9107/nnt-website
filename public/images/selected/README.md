@@ -22,6 +22,7 @@ The review at `/preview/portrait` reuses the actual hero and About components an
 | COMMUNITY scale | Gathering viewport of [hoa-yen-mid-autumn-2024.webp](./hoa-yen-mid-autumn-2024.webp) | hoa-yen/mid_autumn_2024(2).jpg |
 | AUDIENCE scale | [school-performance-full-stage.webp](./school-performance-full-stage.webp) | creative/family3.jpg |
 | Personal About | [thanh-restaurant-portrait.webp](./thanh-restaurant-portrait.webp) | portrait/nnt_suit.png (local original) |
+| MoleBio Listen / 2024–2025 | [molebio-early-classroom.webp](./molebio-early-classroom.webp) | molebio/mole2024.png (local original; user identifies the earlier club period) |
 | Working Method | [thanh-at-the-lab-bench.webp](./thanh-at-the-lab-bench.webp) | portrait/lab_work.jpg |
 | Medical AI opening | [medical-ai-test-image-examples.webp](./medical-ai-test-image-examples.webp) | medical-ai/figures/11_test_image_examples.png |
 | Medical AI evidence gallery | [medical-ai-condition-comparison.webp](./medical-ai-condition-comparison.webp) | medical-ai/figures/01_condition_comparison.png |

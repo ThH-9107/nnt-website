@@ -41,3 +41,11 @@ next-env.d.ts
 
 # Full-resolution hero upload; publish only the selected optimized crops
 /public/images/portrait/DMDT0895.JPG
+
+# Publish selected delivery images only; score/proposal originals stay local
+/public/images/molebio/mole2024.png
+/public/documents/certificates/Score Report.pdf
+/public/documents/certificates/sat26.pdf
+/nnt_portfolio_context_pack/docs/H_polysperma.docx
+/public/documents/research/hygrophila-polysperma-gfp-proposal.docx
+/public/images/research-proposal/hygrophila-proposed-workflow.png

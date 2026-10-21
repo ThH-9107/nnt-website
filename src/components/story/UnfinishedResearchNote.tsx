@@ -1,22 +1,44 @@
 import Link from "next/link";
 import { unfinishedResearch as proposal } from "@/data/unfinished-research";
-import { StoryFigure } from "./StoryFigure";
 import { ScientificText } from "./ScientificText";
 
-export function UnfinishedResearchNote() {
-  return <aside className="story-secondary-note" id="unfinished-research" aria-labelledby="unfinished-research-title"><div><span className="story-kicker">{proposal.label} · {proposal.period}</span><h2 id="unfinished-research-title">{proposal.title}</h2></div><div><p>{proposal.summary}</p><Link href={proposal.href} scroll={false}>Read the GFP proposal story <span aria-hidden="true">↗</span></Link></div></aside>;
-}
-
 export function UnfinishedResearchStory() {
-  return <article className="story story-proposal"><section className="story-unfinished" aria-labelledby="proposal-title">
-    <header><span className="story-kicker">{proposal.label}</span><h1 id="proposal-title">{proposal.title}</h1><p className="story-unfinished-subtitle">Transient GFP expression in <em>Hygrophila polysperma</em></p><p className="story-unfinished-period">{proposal.period} <span aria-hidden="true">/</span> {proposal.role}</p><p className="story-unfinished-status">Experiment not conducted</p></header>
-    <div className="story-unfinished-content">
-      <ol className="story-unfinished-path" aria-label="The proposal story">{proposal.chapters.map((chapter, index) => <li key={chapter.id} data-interrupted={chapter.id === "obstacle"}><span>{String(index + 1).padStart(2, "0")}</span>{chapter.label}</li>)}</ol>
-      {proposal.chapters.map(chapter => <section className="story-unfinished-chapter" key={chapter.id}>
-        <span className="story-kicker">{chapter.label}</span><h2>{chapter.title}</h2>{chapter.paragraphs.map(paragraph => <p key={paragraph}><ScientificText text={paragraph} /></p>)}
-        {chapter.id === "question" && <aside className="story-unfinished-science-note">{proposal.fluorescenceNote}</aside>}
-        {chapter.id === "proposal" && <div className="story-unfinished-artifact"><div className="story-unfinished-document"><span className="story-kicker">Original document / {proposal.document.language}</span><h3 lang="vi"><ScientificText text={proposal.document.title} /></h3><p><ScientificText text={proposal.document.englishTitle} /></p><dl><div><dt>Scientific supervisor named in the proposal</dt><dd>{proposal.document.supervisor}</dd></div></dl><a href={proposal.document.href} download>Read the original proposal (.docx) <span aria-hidden="true">↗</span></a></div><StoryFigure image={proposal.workflow} sizes="(max-width: 900px) 90vw, 55vw" /></div>}
-      </section>)}
+  return <article className="story story-unseen" aria-labelledby="unseen-title">
+    <header className="unseen-opening">
+      <div className="unseen-opening-copy">
+        <span className="story-kicker">{proposal.label}</span>
+        <h1 id="unseen-title">The <em>Unseen.</em></h1>
+        <p className="unseen-tagline">{proposal.tagline}</p>
+        <p className="unseen-introduction">{proposal.introduction}</p>
+      </div>
+      <aside className="unseen-folio" aria-label="Proposal overview">
+        <span className="unseen-folio-rule" aria-hidden="true" />
+        <p className="unseen-folio-date">{proposal.period}</p>
+        <p className="unseen-folio-type">{proposal.role}</p>
+        <p className="unseen-folio-topic">Transient GFP expression in <em>Hygrophila polysperma</em></p>
+        <p className="unseen-status">Experiment not conducted</p>
+        <p className="unseen-folio-footnote">Literature review &amp; written proposal<br />No experimental results</p>
+      </aside>
+    </header>
+
+    <div className="unseen-reading">
+      <nav className="unseen-contents" aria-label="In this story">
+        <span className="story-kicker">On these pages</span>
+        <ol>{proposal.chapters.map((chapter, index) => <li key={chapter.id}><a href={`#unseen-${chapter.id}`}><span aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>{chapter.label}</a></li>)}</ol>
+      </nav>
+      <div className="unseen-chapters">
+        {proposal.chapters.map((chapter, index) => <section className="unseen-chapter" id={`unseen-${chapter.id}`} key={chapter.id} aria-labelledby={`unseen-heading-${chapter.id}`}>
+          <p className="unseen-chapter-label"><span aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>{chapter.label}</p>
+          <h2 id={`unseen-heading-${chapter.id}`}>{chapter.title}</h2>
+          {chapter.paragraphs.map(paragraph => <p key={paragraph}><ScientificText text={paragraph} /></p>)}
+          {chapter.id === "question" && <aside className="unseen-science-note">{proposal.fluorescenceNote}</aside>}
+        </section>)}
+      </div>
     </div>
-  </section><div className="story-end"><span>Also under ORGANISM</span><Link href="/research/phytophthora" scroll={false}>The durian field and laboratory study ↗</Link></div></article>;
+
+    <footer className="unseen-closing">
+      <div><span className="story-kicker">Proposal credit</span><p>{proposal.supervisor}<small>Scientific supervisor named in the written proposal</small></p></div>
+      <Link href="/#the-unseen">← Return to the portfolio</Link>
+    </footer>
+  </article>;
 }

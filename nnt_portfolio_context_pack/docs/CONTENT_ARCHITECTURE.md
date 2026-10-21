@@ -45,10 +45,7 @@ Why:
 - sampling
 - experimental iteration
 
-Secondary side story:
-**A question I couldn't test** — May–July 2026 proposal for transient GFP fluorescence in Hygrophila polysperma; experiment not conducted
-
-This side story must remain visually secondary.
+The GFP proposal is no longer a side story here. **The Unseen** has its own chapter after the five-scale experience, without becoming a sixth scale.
 
 ### LEARNER
 Primary story: **MoleBio**
@@ -104,13 +101,13 @@ Must communicate immediately:
 - student researcher
 - biology / biomedical orientation
 - computational + experimental range
-- résumé access
+- résumé access and a clear path into the portfolio
 
 Keep calm.
 
 ### B. Personal introduction
 
-The hero is followed by Thanh's personal “A little about me” introduction, supplied in October 2026. Keep his wording, including curiosity for biology, experimenting, theatre, music, storytelling, and bringing people together. The About navigation points here.
+The hero is followed by a short “A little about me” introduction, refined October 22. It uses two concise paragraphs and one first-person “I,” preserving biology, experimentation, theatre, music, storytelling, and bringing people together. The portrait sits beside the heading and prose as one composition. Header navigation is Contact, Portfolio, CV; Portfolio currently jumps to the five-scale section. Direct Research/Leadership rows are removed from the hero.
 
 ### C. Scale experience
 Main memorable interaction.
@@ -128,16 +125,11 @@ Use:
 Primary scale sequence:
 IMAGE → ORGANISM → LEARNER → COMMUNITY → AUDIENCE
 
-### D. Current work
-Concise editorial strip.
+### D. The Unseen
 
-Highlight:
-- current first-author manuscript
-- exact title
-- submitted to Computer Methods and Programs in Biomedicine
-- Oct. 2026
+A separate, contemplative chapter immediately after the Five Scales. It links to the sole `/research/gfp-proposal` story and clearly labels it a research proposal whose experiment was never conducted. It has no numbered scale, no protocol/complete-proposal download, and no fabricated research imagery.
 
-Do not create a giant repeated Medical AI card immediately after the scale map.
+The former Current Work / “A question still in progress” strip is removed. Medical AI status remains in its project story.
 
 ### E. Working Method
 Short.
@@ -152,6 +144,7 @@ Core idea:
 ### F. Selected Honors
 Only strongest / most informative.
 Do not dump every award.
+Include the verified SAT/AP text records before the selected honors; full reports remain private. Preserve certificate dropdowns for the public award scans.
 
 ### G. Contact / Footer
 
@@ -211,7 +204,7 @@ sample → isolate → inspect → inconsistent → revise ↺
 Do not manufacture a final result.
 
 ### MoleBio
-Mechanic: **before / after + one learner → group**
+Mechanic: **Listen → Practice → Beyond, followed by an unresolved reflection**
 
 Before:
 - ~16-member predecessor
@@ -226,6 +219,8 @@ After:
 - outreach
 
 Photo-heavy.
+
+Listen/Practice retain adjacent contrasting editorial panels. Beyond is directly connected underneath with two authentic, separate laboratory-learning experiences. It is conceptual, not chronological. Detailed workshops and projects follow; the ending is “What I Couldn't Carry Forward,” using Thanh's approved iGEM/succession account.
 
 ### Hoa Yen
 Mechanic: **one initiative → recurring organization**
@@ -262,7 +257,7 @@ These can live in:
 - résumé
 - contextual links within primary stories
 
-The GFP proposal remains secondary within ORGANISM, with its own route and matching overlay at `/research/gfp-proposal`. A compact teaser after the main study's advisor credits preserves `/research/phytophthora#unfinished-research`. Its sequence is question → proposal → seeking support → obstacle → moving on. Keep supervisor attribution separate from later implementation discussions. The original Vietnamese DOCX and its workflow diagram are the documentary artifacts. This is not a sixth main scale.
+The GFP proposal is **The Unseen**, a separate homepage chapter with one route and matching overlay at `/research/gfp-proposal`. Its sequence is question → proposal → seeking guidance → constraints → unfinished experiment. Keep supervisor attribution separate from later implementation discussions. Technical documents and diagrams are private and excluded from the public story. The old Phytophthora teaser and ORGANISM branch are removed; this is not a sixth scale.
 
 Secondary:
 - Stem Cell Summer School

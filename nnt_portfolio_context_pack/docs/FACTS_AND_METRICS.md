@@ -25,13 +25,12 @@ Tags:
 - AP Calculus BC: 5
 - AP Statistics: 4
 - AP exams self-studied; school does not offer AP courses
+- Official AP report supplied October 2026 confirms Biology 5, Calculus BC 5, Statistics 4, all taken in 2026, and AP Scholar (2026). Calculus AB 5 is a subscore, not an additional AP exam.
 
-**[NEEDS-CONFIRMATION]**
-- SAT total:
-  - earlier user-confirmed application context: **1480**, Math 800
-  - one newer résumé draft: **1490**, Math 800
-- Do not publish the total until Thanh confirms.
-- Math 800 appears consistent.
+**[VERIFIED — OFFICIAL SCORE REPORT SUPPLIED OCTOBER 2026]**
+- SAT, September 12, 2026: **1480 / 1600**.
+- Math: **800 / 800**; Reading and Writing: **680 / 800**.
+- This resolves the previous 1480/1490 conflict in favor of 1480. The reports are private local sources; publish score text, not the original PDFs or personal identifiers.
 
 ---
 
@@ -173,9 +172,8 @@ International Science Exchange:
 **[USER-CONFIRMED IN OCTOBER 2026; ORIGINAL DOCX PROVIDED]**
 - May–July 2026 · Independent research proposal.
 - Proposed transient GFP expression in Hygrophila polysperma through Agrobacterium-mediated gene transfer.
-- Proposed comparison of submerged and emersed plant forms.
-- Developed literature review, background, objectives, planned methods/controls, workflow diagram, and a possible tissue-culture/regeneration extension.
-- Original Vietnamese proposal: `docs/H_polysperma.docx`.
+- Developed a literature review and substantial written research proposal, with objectives and a proposed experimental approach.
+- The complete proposal and its technical artifacts remain private local sources; they are excluded from the website and current Git tree by Thanh's October 22 instruction.
 - Scientific supervisor named in that proposal: Nguyễn Thị Thảo Sương.
 - Subsequent implementation discussions: Dr. Trần Trọng Tuấn, Institute of Tropical Biology, Ho Chi Minh City, and Dr. Bùi Thế Vinh; both were willing to support implementation.
 - These discussions were not completed laboratory collaboration or experimental supervision.
@@ -186,7 +184,9 @@ International Science Exchange:
 - Do not infer a categorical legal prohibition on import from the procurement/timing obstacle.
 
 Allowed public framing:
-**“A question I couldn't test”**
+**“The Unseen.” — Not everything worth exploring can be seen yet.**
+
+Standalone chapter after the Five Scales, using the existing `/research/gfp-proposal` URL. It is not a sixth scale and is no longer a Phytophthora side story.
 
 Public status: **Research proposal — Experiment not conducted.**
 No transformed plant, validated hypothesis, experimental result, or completed laboratory work may be claimed.
@@ -208,6 +208,12 @@ MoleBio:
 - 36 weekly sessions
 - 80 min/session
 - approximately 48 scheduled programming hours
+
+**[USER-CONFIRMED OCTOBER 22, 2026]**
+- The Listen → Practice → Beyond sequence connects the earlier club, its hands-on relaunch, and separate laboratory learning experiences. This is a conceptual sequence, not a claim that external training occurred after the presidency or was organized by MoleBio.
+- Thanh initially pursued an iGEM direction, then discussed abandoning it with the core team after recognizing that many members wanted more practical, accessible learning.
+- School rules prevented continuing as president in Grade 12. iGEM became a required focus the following year, and nearly all members from the team Thanh had led chose to leave.
+- The approved reflection expresses pride in that year's shared environment and regret about its continuity. Do not claim permanent club collapse or portray iGEM or the school as villains.
 
 Methods / skills taught or practiced:
 - lab safety

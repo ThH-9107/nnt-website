@@ -1,0 +1,69 @@
+/* One connected sequence: the club comparison opens into learning elsewhere. */
+.story-lab .molebio-learning{border-bottom:1px solid var(--line)}
+.molebio-learning-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+.molebio-learning-panel{min-width:0;display:flex;flex-direction:column;padding:48px clamp(24px,4vw,60px) 32px}
+.molebio-learning-01{background:#f4f2eb}
+.molebio-learning-02{background:#dce9dc}
+.molebio-learning-label{display:flex;align-items:baseline;gap:18px;color:var(--accent)}
+.molebio-learning-label>span:first-child{font-size:12px;letter-spacing:.1em;font-weight:700}
+.story-lab .molebio-learning h2{font-size:clamp(66px,7.5vw,112px);letter-spacing:-.075em;line-height:1;margin:25px 0 21px}
+.story-lab .molebio-learning h3{font-size:clamp(25px,2.6vw,36px);line-height:1.2;letter-spacing:-.04em;max-width:500px;margin:0 0 17px}
+.story-lab .molebio-learning-panel>p{margin:0 0 28px;color:#465a54;max-width:520px}
+.molebio-learning-photo{margin-top:auto}
+.molebio-learning-photo .story-figure-image{display:block}
+.molebio-learning-photo figcaption{padding-top:12px}
+.molebio-learning-photo figcaption strong{font-weight:600}
+.molebio-learning-photo figcaption small{display:none}
+.molebio-learning-beyond{padding:40px clamp(24px,4vw,60px) 50px;background:#f0f1e9;border-top:1px solid #c8d1c2}
+.molebio-beyond-introduction{display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:start;margin-bottom:30px}
+.story-lab .molebio-learning-beyond h2{margin-top:24px}
+.molebio-beyond-introduction>div:last-child{padding-top:25px}
+.story-lab .molebio-beyond-introduction p{margin:0 0 14px;color:#465a54}
+.story-lab .molebio-beyond-introduction .molebio-beyond-context{font-size:15px;line-height:1.7;color:var(--muted);margin-bottom:0}
+/* 4:3 beside 9:16: a 64:27 width ratio gives the full photographs equal heights. */
+.molebio-beyond-experiences{display:grid;grid-template-columns:minmax(0,64fr) minmax(0,27fr);gap:32px;align-items:start}
+.molebio-experience{margin:0;min-width:0}
+.molebio-experience-image{display:block;position:relative;width:100%;overflow:hidden}
+.molebio-experience-image img{display:block;width:100%;height:auto}
+.molebio-image-open{position:absolute;top:14px;right:14px;display:grid;place-items:center;width:31px;height:31px;background:var(--paper);color:var(--accent);font-size:16px}
+.molebio-experience-image:focus-visible,.molebio-learning-photo .story-figure-image:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.molebio-experience figcaption{padding-top:20px}
+.molebio-experience-date{display:block;font-size:13px;line-height:1.6;color:var(--muted);margin-bottom:7px}
+.story-lab .molebio-experience h3{font-size:clamp(25px,2.4vw,33px);margin-bottom:13px}
+.story-lab .molebio-experience p{font-size:16px;line-height:1.75;max-width:520px;margin:0;color:#465a54}
+.story-lab .story-lab-photos>.story-figure:only-child{width:100%;margin:0;grid-column:1/-1}
+.story-lab .story-lab-photos>.story-figure:only-child .story-figure-image{aspect-ratio:4/3}
+
+/* A quieter ending, preserving an unresolved, personal account. */
+.molebio-reflection{display:grid;grid-template-columns:.65fr 1fr;gap:9%;padding:85px max(32px,5vw) 80px;background:#f7f5ef;border-top:1px solid var(--line)}
+.molebio-reflection header{max-width:420px}
+.story-lab .molebio-reflection h2{font-size:clamp(35px,3.8vw,53px);line-height:1.14;margin:18px 0 0}
+.molebio-reflection-copy{min-width:0;max-width:700px}
+.story-lab .molebio-reflection-copy p{margin:0 0 23px}
+.story-lab .molebio-reflection-copy p:last-child{font-family:Georgia,'Times New Roman',serif;font-size:clamp(23px,2.4vw,31px);line-height:1.5;letter-spacing:-.025em;margin:31px 0 0;color:var(--accent)}
+
+@media(max-width:900px){
+  .molebio-learning-panel{padding:36px 24px 24px}
+  .molebio-learning-beyond{padding:34px 24px 40px}
+  .molebio-learning-label{gap:12px}
+  .molebio-learning-label .story-kicker{font-size:11px;line-height:1.6}
+  .molebio-beyond-experiences{gap:24px}
+  .molebio-reflection{grid-template-columns:minmax(0,1fr);gap:30px;padding:65px 24px}
+  .molebio-reflection header{max-width:560px}
+}
+@media(max-width:760px){
+  .molebio-learning-pair,.molebio-beyond-introduction,.molebio-beyond-experiences{grid-template-columns:minmax(0,1fr)}
+  .molebio-learning-panel{padding:35px 24px 27px}
+  .molebio-learning-02{border-top:1px solid #c8d1c2}
+  .story-lab .molebio-learning h2{font-size:76px}
+  .molebio-beyond-introduction{gap:0}
+  .molebio-beyond-introduction>div:last-child{padding-top:6px}
+  .molebio-beyond-experiences{gap:33px}
+  .molebio-experience[data-orientation="portrait"]{width:100%;max-width:360px}
+}
+@media(max-width:620px){
+  .molebio-learning-panel,.molebio-learning-beyond{padding-left:17px;padding-right:17px}
+  .story-lab .molebio-learning h2{font-size:70px}
+  .story-lab .molebio-learning h3{font-size:29px}
+  .molebio-reflection{padding:55px 17px 60px}
+}

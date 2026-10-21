@@ -6,14 +6,14 @@ import { UnfinishedResearchStory } from "@/components/story/UnfinishedResearchNo
 import { unfinishedResearch } from "@/data/unfinished-research";
 
 export const metadata: Metadata = {
-  title: "A Question I Couldn’t Test | Nguyen Ngoc Thanh",
+  title: "The Unseen — An Unfinished Research Proposal | Nguyen Ngoc Thanh",
   description: unfinishedResearch.summary,
 };
 
 export default function GfpProposalPage() {
   return <>
     <a className="skip-link" href="#main">Skip to content</a><SiteHeader />
-    <main id="main" className="story-page"><div className="story-page-top container"><nav aria-label="Breadcrumb"><Link href="/">Home</Link><span aria-hidden="true">/</span><Link href="/#research">Research</Link><span aria-hidden="true">/</span><span aria-current="page">GFP proposal</span></nav><Link href="/#inquiry-map">← Back to Inquiry Map</Link></div><UnfinishedResearchStory /></main>
+    <main id="main" className="story-page"><div className="story-page-top container"><nav aria-label="Breadcrumb"><Link href="/">Home</Link><span aria-hidden="true">/</span><span aria-current="page">The Unseen</span></nav><Link href="/#the-unseen">← Back to the portfolio</Link></div><UnfinishedResearchStory /></main>
     <SiteFooter />
   </>;
 }

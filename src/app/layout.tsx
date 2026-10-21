@@ -7,6 +7,8 @@ import "./photography.css";
 import "./scale-photography.css";
 import "./certificates.css";
 import "./readability.css";
+import "./molebio.css";
+import "./unseen.css";
 
 export const metadata: Metadata = {
   title: "Nguyen Ngoc Thanh | Student Researcher",
