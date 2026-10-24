@@ -161,7 +161,9 @@ The story is now **The Unseen**, a separate chapter beyond the Five Scales, usin
 
 Resolved October 15, 2026: XULONG is Thanh's team name. November 15 is the performance date; January 2025 is the First Prize certificate date. The poster can be shown with this context. The performance year has not been explicitly reconfirmed; do not infer or publish it from the certificate date.
 
-October 24 media status: Cao Văn Lầu performance footage is lost; the real preparation photograph and poster are available. The original script, Hỏa Chí vocal-rehearsal video, dragon voiceover, and translated captions have not been supplied to the repository. Optional archive fields exist, but no empty player, invented transcript, or missing-footage placeholder should appear.
+October 24 media correction: `preparation.jpg` belongs to Hỏa Chí, not Cao Văn Lầu. Its corrected selected delivery is `public/images/selected/hoa-chi-stage-preparation.webp`. Cao Văn Lầu retains the original poster and certificate; its performance footage is lost and no preparation photograph is attributed to it.
+
+Resolved media availability: Thanh supplied the Hỏa Chí vocal-rehearsal recording at `https://res.cloudinary.com/m6yc0cyk/video/upload/c_limit,w_960/q_auto/f_auto/v1792830094/practice.mp4`, captioned exactly “Somewhere in these rehearsals, I discovered I could actually sing.” The original script, dragon voiceover audio, and subtitle/caption files remain unavailable. Optional archive fields exist, but no empty player, invented transcript, or missing-footage placeholder should appear. Availability of the URL is not a browser playback test; do not invent dimensions, duration, or other metadata.
 
 ## 15. Training titles
 

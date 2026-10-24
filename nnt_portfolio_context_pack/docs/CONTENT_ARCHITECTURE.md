@@ -248,7 +248,7 @@ Use:
 
 Do not force research metrics into the page.
 
-The October 24 refinement makes this a personal creative archive. Cao Văn Lầu has the most narrative space, with the real Sunday-to-script-to-stage memory and adjacent preparation/poster records. Hỏa Chí keeps the singing and dragon memories with its genuine performance photograph; Khởi Sắc 27 stays text-first and upcoming. Secondary ensemble images remain subordinate. The shared direct/overlay component uses simple production data, with optional real recordings and scripts; absent media renders nothing. Keep the homepage About text and all five scales unchanged.
+The October 24 refinement makes this a personal creative archive. Cao Văn Lầu has the most narrative space, with the real Sunday-to-script-to-stage memory, original poster, and First Prize certificate; no preparation photograph or performance footage is available for that entry. Thanh corrected `preparation.jpg` as a Hỏa Chí image. Hỏa Chí keeps that stage-make-up photograph, its genuine performance photograph, the supplied Cloudinary vocal-rehearsal recording, and the singing and dragon memories together. Use the exact recording caption: “Somewhere in these rehearsals, I discovered I could actually sing.” Khởi Sắc 27 stays text-first and upcoming. Secondary ensemble images remain subordinate. The shared direct/overlay component uses simple production data, with optional real recordings and scripts; absent media renders nothing. Dragon audio, subtitle/caption files, and the original script remain absent. Keep the homepage About text and all five scales unchanged.
 
 ## 6. Secondary content
 

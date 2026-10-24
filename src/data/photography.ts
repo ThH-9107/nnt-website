@@ -296,12 +296,12 @@ export const photos = {
     "alt": "The original poster for the Cao Van Lau production, showing the cast and title 1919 Xuyen Khong.",
     "kind": "figure"
   },
-  "creativePreparation": {
-    "src": "/images/selected/cao-van-lau-stage-preparation.webp",
+  "hoaChiPreparation": {
+    "src": "/images/selected/hoa-chi-stage-preparation.webp",
     "width": 720,
     "height": 1280,
-    "title": "Before the performance",
-    "caption": "Stage make-up during preparations for our Cao Văn Lầu production.",
+    "title": "Preparing for Hỏa Chí",
+    "caption": "Stage make-up before our Hỏa Chí performance.",
     "alt": "Thanh seated in a classroom while another student applies dark stage make-up to his face.",
     "aspectRatio": "9 / 16"
   },

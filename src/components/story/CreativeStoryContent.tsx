@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Fragment } from "react";
 import { photos } from "@/data/photography";
 import { creativeProductions, type CreativeProduction } from "@/data/creative-productions";
 import { StoryFigure } from "./StoryFigure";
@@ -10,15 +11,17 @@ function ProductionText({ text }: { text: string }) {
 
 function Production({ production, index }: { production: CreativeProduction; index: number }) {
   const hasPhotographs = Boolean(production.photographs?.length);
-  const photoSizes = production.photographs?.length === 2 ? "(max-width: 620px) 44vw, (max-width: 900px) 40vw, 24vw" : "(max-width: 900px) 90vw, 45vw";
+  const inlineRecordings = production.recordings?.filter(({ afterParagraph }) => afterParagraph !== undefined && Number.isInteger(afterParagraph) && afterParagraph > 0 && afterParagraph <= production.paragraphs.length) ?? [];
+  const trailingRecordings = production.recordings?.filter(recording => !inlineRecordings.includes(recording)) ?? [];
+  const photoSizes = production.id === "hoa-chi" ? "(max-width: 900px) 90vw, 40vw" : "(max-width: 900px) 90vw, 35vw";
 
   return <section className="creative-production" id={production.id} data-status={production.status} data-featured={index === 0} aria-labelledby={`${production.id}-title`}>
     <header className="creative-production-heading"><span className="creative-production-number" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span><div><p className="story-kicker">{production.label}</p><h3 id={`${production.id}-title`}>{production.title}</h3><p className="creative-production-roles">{production.roles}</p></div></header>
     <div className="creative-production-body" data-with-images={hasPhotographs}>
-      <div className="creative-production-copy">{production.paragraphs.map((paragraph, paragraphIndex) => <p className={paragraphIndex === 0 ? "creative-production-lead" : undefined} key={paragraph}><ProductionText text={paragraph} /></p>)}</div>
+      <div className="creative-production-copy">{production.paragraphs.map((paragraph, paragraphIndex) => <Fragment key={paragraph}><p className={paragraphIndex === 0 ? "creative-production-lead" : undefined}><ProductionText text={paragraph} /></p>{inlineRecordings.filter(recording => recording.afterParagraph === paragraphIndex + 1).map(recording => <CreativeRecording key={recording.id} recording={recording} productionId={production.id} />)}</Fragment>)}</div>
       {hasPhotographs && <div className="creative-production-photographs" data-count={production.photographs?.length}>{production.photographs?.map(({ image, treatment }) => <StoryFigure image={image} key={image.src} className={`creative-production-photo creative-production-photo-${treatment}`} sizes={photoSizes} />)}</div>}
     </div>
-    {production.recordings?.length ? <div className="creative-production-recordings">{production.recordings.map(recording => <CreativeRecording key={recording.id} recording={recording} productionId={production.id} />)}</div> : null}
+    {trailingRecordings.length ? <div className="creative-production-recordings">{trailingRecordings.map(recording => <CreativeRecording key={recording.id} recording={recording} productionId={production.id} />)}</div> : null}
     {production.script && <aside className="creative-script-record"><span className="story-kicker">From the archive</span><a href={production.script.href} target="_blank" rel="noopener noreferrer">{production.script.label} <span aria-hidden="true">↗</span></a>{production.script.description && <p>{production.script.description}</p>}{production.script.language && <small>{production.script.language}</small>}</aside>}
     {(production.record || production.evidence?.length) && <aside className="creative-production-record" aria-label={`${production.title}: production record`}>{production.record && <p>{production.record}</p>}{production.evidence?.map(evidence => <a href={evidence.href} key={evidence.href} target="_blank" rel="noopener noreferrer">{evidence.label} <span aria-hidden="true">↗</span></a>)}</aside>}
   </section>;

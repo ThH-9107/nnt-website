@@ -193,10 +193,16 @@ This section can support:
 Avoid generic theatre-stock imagery.
 
 Selected October 24 delivery assets:
-- `public/images/selected/cao-van-lau-stage-preparation.webp` — 720 × 1280, about 89 KB; authentic stage-make-up photograph, adjacent to the original poster. Original `public/images/creative/preparation.jpg` remains unchanged and ignored by Git.
+- `public/images/selected/hoa-chi-stage-preparation.webp` — 720 × 1280, about 89 KB; authentic Hỏa Chí stage-make-up preparation photograph. Thanh explicitly corrected the production attribution; it is not a Cao Văn Lầu image. The selected image retains the same photographed pixels under the corrected filename. Original `public/images/creative/preparation.jpg` remains unchanged and ignored by Git.
 - `public/images/selected/molebio-bottle-terrarium.webp` — 720 × 768, about 35 KB; crop from `public/images/molebio/terrariums.jpg`, shown small beneath the final MoleBio reflection title.
 
-No rehearsal video, dragon voiceover, subtitles, or play script were available in the repository. Do not generate substitutes. Keep large recording originals outside the deployment tree; use optimized remote delivery URLs and authentic poster/caption assets when supplied.
+- Hỏa Chí vocal-rehearsal video, supplied by Thanh: `https://res.cloudinary.com/m6yc0cyk/video/upload/c_limit,w_960/q_auto/f_auto/v1792830094/practice.mp4`.
+- Exact user-supplied video caption: “Somewhere in these rehearsals, I discovered I could actually sing.”
+- Verified delivery metadata: 540 × 960 (9:16 portrait), 116.367 seconds, H.264 video with an audio track. The optimized remote file is 19,169,532 bytes; no video was saved to the repository.
+- Cloudinary's authentic two-second poster is `https://res.cloudinary.com/m6yc0cyk/video/upload/so_2,c_limit,w_960/q_auto/v1792830094/practice.jpg` — 540 × 960 JPEG, 28,378 bytes. It is delivered directly from Cloudinary.
+- Cao Văn Lầu retains its original production poster and First Prize certificate. Its performance footage is lost; do not assign the Hỏa Chí preparation image or vocal-rehearsal video to it.
+
+Dragon voiceover audio, subtitle/caption files, and the original play script remain unavailable. Do not generate substitutes. Keep large recording originals outside the deployment tree; use optimized remote delivery URLs and authentic poster/caption assets. Verify dimensions, duration, and other media metadata from the actual asset rather than inventing them. No browser playback result is established by this asset inventory.
 
 ## 8. Awards / Certificates
 

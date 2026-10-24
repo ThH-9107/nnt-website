@@ -27,6 +27,11 @@
 .story-creative .creative-production-photo figcaption strong{font-size:14px;line-height:1.5;font-weight:600;color:#cfdfd1}
 .creative-production-photo-poster{margin-top:48px}
 .creative-production-photo-performance{margin-top:8px}
+.creative-production-photographs[data-count="1"] .creative-production-photo-poster{max-width:360px;margin-top:0}
+#hoa-chi .creative-production-photographs{grid-template-columns:minmax(0,1fr);gap:36px}
+#hoa-chi .creative-production-photo-preparation{width:100%;max-width:260px;justify-self:end}
+#hoa-chi .creative-production-photo-performance{margin-top:0}
+.creative-production-copy>.creative-recording{margin:30px 0 34px}
 .creative-production[data-status="in-preparation"] .creative-production-body{max-width:800px}
 .creative-production[data-status="in-preparation"] .creative-production-heading h3{font-size:clamp(35px,3.7vw,50px)}
 .creative-production-record{margin:32px 0 0 79px;padding-top:18px;border-top:1px solid #3c574b;max-width:760px}
@@ -46,10 +51,12 @@
 .story-creative .creative-recording-heading h4{font-family:Georgia,'Times New Roman',serif;font-size:25px;line-height:1.3;font-weight:400;letter-spacing:-.025em;margin:0}
 .creative-recording video{display:block;width:100%;height:auto;max-height:650px;object-fit:contain;background:#102320;color-scheme:dark}
 .creative-recording audio{display:block;width:100%;color-scheme:dark}
+.creative-recording-frame{width:100%}
 .creative-recording-poster{position:relative;background:#102320}
 .creative-recording-poster img{display:block;width:100%;height:auto;max-height:650px;object-fit:contain}
 .creative-recording-load{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:10px 20px;border:1px solid #b7cdbb;background:#21392f;color:#edf2e9;font:inherit;font-size:15px;font-weight:600;cursor:pointer}
 .creative-recording-load:hover{background:#2d483a;border-color:#e0eadb}
+.creative-recording-load:focus-visible{outline:2px solid #edf2e9;outline-offset:4px}
 .creative-recording-load-video{position:absolute;left:18px;bottom:18px;background:rgba(26,45,43,.95)}
 .creative-recording figcaption{font-size:15px;line-height:1.7;color:#c4d4c7;margin-top:14px}
 .creative-recording-language{display:block;font-size:12px;line-height:1.6;color:#a6bdaa;margin-top:7px}
@@ -73,6 +80,7 @@
  .creative-production[data-featured="true"] .creative-production-photographs{position:static;max-width:660px}
  .creative-production-photographs[data-count="2"]{gap:25px}
  .creative-production-photo-performance{max-width:680px;margin-top:0}
+ #hoa-chi .creative-production-photo-preparation{justify-self:start;max-width:230px}
  .creative-production-recordings{grid-template-columns:minmax(0,1fr)}
  .creative-production-photo-poster{margin-top:35px}
  .creative-production{padding-bottom:45px}

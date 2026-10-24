@@ -455,7 +455,7 @@ unless stronger official wording is supplied.
 - grade-wide project ~300 students
 - First Prize
 - User-confirmed October 24, 2026: played Cao Văn Lầu; researched his life on Wikipedia on a Sunday afternoon, wrote the dialogue and planned each scene's stage setup. Seeing the rehearsed production come alive remains a vivid, satisfying memory.
-- The performance footage was lost after a classmate's Google Drive folder was deleted. The supplied preparation photograph depicts stage make-up, not the Sunday research session. Thanh still owns the script, but no script file was supplied in the repository.
+- The performance footage was lost after a classmate's Google Drive folder was deleted. The original poster and First Prize certificate remain available. Thanh clarified that the supplied `preparation.jpg` belongs to Hỏa Chí, not this production. Thanh still owns the script, but no script file was supplied in the repository.
 
 ## Hoa Chi
 
@@ -469,6 +469,10 @@ unless stronger official wording is supplied.
 - Fantasy House placed 1st of 4 Houses
 - User-confirmed memory, October 15, 2026: staying after school to rehearse was tiring but very fun because everyone was trying their best.
 - User-confirmed October 24, 2026: vocal rehearsals were a favorite part of the process and an unexpected discovery that he could sing; he also recorded the dragon character's voiceover. These are personal memories, not claims of professional singing experience.
+- Thanh corrected the attribution of `public/images/creative/preparation.jpg`: it shows Hỏa Chí stage make-up. Selected delivery: `public/images/selected/hoa-chi-stage-preparation.webp`.
+- A real Hỏa Chí vocal-rehearsal video is now supplied: `https://res.cloudinary.com/m6yc0cyk/video/upload/c_limit,w_960/q_auto/f_auto/v1792830094/practice.mp4`.
+- Exact user-supplied video caption: “Somewhere in these rehearsals, I discovered I could actually sing.”
+- The dragon voiceover memory is confirmed, but its audio file remains absent. No subtitle/caption file or script has been supplied. Do not invent media metadata, translations, or a playback-verification result.
 
 ## Khoi Sac 27
 

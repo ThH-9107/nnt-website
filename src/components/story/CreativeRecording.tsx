@@ -17,9 +17,9 @@ export function CreativeRecording({ recording, productionId }: { recording: Reco
 
   return <figure className={`creative-recording creative-recording-${recording.kind}`}>
     <div className="creative-recording-heading"><span className="story-kicker">{recording.kind === "video" ? "Rehearsal recording" : "Voice recording"}</span><h4>{recording.title}</h4></div>
-    <div id={playerId}>
+    <div id={playerId} className="creative-recording-frame" style={recording.kind === "video" && !failed ? { aspectRatio: `${recording.width} / ${recording.height}`, maxWidth: `${650 * recording.width / recording.height}px` } : undefined}>
       {!loaded && (recording.kind === "video" ? <div className="creative-recording-poster">
-        <Image src={recording.poster} alt="" width={recording.width} height={recording.height} sizes="(max-width: 900px) 90vw, 50vw" />
+        <Image src={recording.poster} alt="" width={recording.width} height={recording.height} unoptimized={recording.poster.startsWith("https://res.cloudinary.com/")} sizes="(max-width: 900px) 90vw, 50vw" />
         <button type="button" className="creative-recording-load creative-recording-load-video" onClick={() => setLoaded(true)} aria-controls={playerId} aria-describedby={captionId} aria-label={`Load video: ${recording.title}`}><span aria-hidden="true">▷</span> Load video</button>
       </div> : <button type="button" className="creative-recording-load" onClick={() => setLoaded(true)} aria-controls={playerId} aria-describedby={captionId} aria-label={`Load audio: ${recording.title}`}><span aria-hidden="true">▷</span> Load audio</button>)}
       {loaded && !failed && (recording.kind === "video" ? <video

@@ -15,6 +15,8 @@ type RecordingBase = {
   caption: string;
   languageLabel: string;
   transcript?: CreativeDocument;
+  // One-based paragraph number; omitted recordings follow the production story.
+  afterParagraph?: number;
 };
 
 export type CreativeVideo = RecordingBase & {
@@ -52,7 +54,7 @@ export type CreativeProduction = {
 // script, and recordings render only when real assets are supplied. A video
 // requires an optimized HTTPS URL, lightweight poster, and actual dimensions.
 // Subtitle/caption tracks and transcripts must contain authentic, reviewed text.
-// No rehearsal recordings, dragon audio, or original script are supplied yet.
+// The Hỏa Chí rehearsal is hosted remotely; dragon audio and the script are absent.
 export const creativeProductions: CreativeProduction[] = [
   {
     id: "cao-van-lau",
@@ -69,7 +71,6 @@ export const creativeProductions: CreativeProduction[] = [
       "Our production received First Prize, but the award is not the part that stays with me most. Even now, remembering that performance gives me chills.",
     ],
     photographs: [
-      { image: photos.creativePreparation, treatment: "preparation" },
       { image: photos.creativePoster, treatment: "poster" },
     ],
     record: "First Prize in a grade-wide project involving approximately 300 students.",
@@ -87,7 +88,22 @@ export const creativeProductions: CreativeProduction[] = [
       "Staying after school could be tiring, but it was very fun knowing that everyone was trying their best. The production was much bigger than any one role; dozens of us were working toward the same performance.",
       "We eventually performed before more than 1,000 students, teachers, and staff, and Fantasy House placed first among the four Houses. Looking back, though, it is those afternoons of singing, rehearsing, and figuring things out together that I remember most fondly.",
     ],
-    photographs: [{ image: photos.creativeAudience, treatment: "performance" }],
+    photographs: [
+      { image: photos.hoaChiPreparation, treatment: "preparation" },
+      { image: photos.creativeAudience, treatment: "performance" },
+    ],
+    recordings: [{
+      kind: "video",
+      id: "vocal-rehearsal",
+      title: "Vocal rehearsal",
+      src: "https://res.cloudinary.com/m6yc0cyk/video/upload/c_limit,w_960/q_auto/f_auto/v1792830094/practice.mp4",
+      poster: "https://res.cloudinary.com/m6yc0cyk/video/upload/so_2,c_limit,w_960/q_auto/v1792830094/practice.jpg",
+      width: 540,
+      height: 960,
+      caption: "Somewhere in these rehearsals, I discovered I could actually sing.",
+      languageLabel: "Vietnamese",
+      afterParagraph: 2,
+    }],
   },
   {
     id: "khoi-sac-27",
