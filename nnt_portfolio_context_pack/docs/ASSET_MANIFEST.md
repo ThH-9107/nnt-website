@@ -192,6 +192,12 @@ This section can support:
 
 Avoid generic theatre-stock imagery.
 
+Selected October 24 delivery assets:
+- `public/images/selected/cao-van-lau-stage-preparation.webp` — 720 × 1280, about 89 KB; authentic stage-make-up photograph, adjacent to the original poster. Original `public/images/creative/preparation.jpg` remains unchanged and ignored by Git.
+- `public/images/selected/molebio-bottle-terrarium.webp` — 720 × 768, about 35 KB; crop from `public/images/molebio/terrariums.jpg`, shown small beneath the final MoleBio reflection title.
+
+No rehearsal video, dragon voiceover, subtitles, or play script were available in the repository. Do not generate substitutes. Keep large recording originals outside the deployment tree; use optimized remote delivery URLs and authentic poster/caption assets when supplied.
+
 ## 8. Awards / Certificates
 
 Use sparingly.

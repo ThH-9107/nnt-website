@@ -49,3 +49,6 @@ next-env.d.ts
 /nnt_portfolio_context_pack/docs/H_polysperma.docx
 /public/documents/research/hygrophila-polysperma-gfp-proposal.docx
 /public/images/research-proposal/hygrophila-proposed-workflow.png
+
+# Preserve the preparation upload locally; publish its optimized delivery copy
+/public/images/creative/preparation.jpg

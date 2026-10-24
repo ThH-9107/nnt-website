@@ -454,6 +454,8 @@ unless stronger official wording is supplied.
 - 15-minute musical
 - grade-wide project ~300 students
 - First Prize
+- User-confirmed October 24, 2026: played Cao Văn Lầu; researched his life on Wikipedia on a Sunday afternoon, wrote the dialogue and planned each scene's stage setup. Seeing the rehearsed production come alive remains a vivid, satisfying memory.
+- The performance footage was lost after a classmate's Google Drive folder was deleted. The supplied preparation photograph depicts stage make-up, not the Sunday research session. Thanh still owns the script, but no script file was supplied in the repository.
 
 ## Hoa Chi
 
@@ -466,6 +468,7 @@ unless stronger official wording is supplied.
 - audience 1,000+
 - Fantasy House placed 1st of 4 Houses
 - User-confirmed memory, October 15, 2026: staying after school to rehearse was tiring but very fun because everyone was trying their best.
+- User-confirmed October 24, 2026: vocal rehearsals were a favorite part of the process and an unexpected discovery that he could sing; he also recorded the dragon character's voiceover. These are personal memories, not claims of professional singing experience.
 
 ## Khoi Sac 27
 

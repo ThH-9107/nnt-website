@@ -248,6 +248,8 @@ Use:
 
 Do not force research metrics into the page.
 
+The October 24 refinement makes this a personal creative archive. Cao Văn Lầu has the most narrative space, with the real Sunday-to-script-to-stage memory and adjacent preparation/poster records. Hỏa Chí keeps the singing and dragon memories with its genuine performance photograph; Khởi Sắc 27 stays text-first and upcoming. Secondary ensemble images remain subordinate. The shared direct/overlay component uses simple production data, with optional real recordings and scripts; absent media renders nothing. Keep the homepage About text and all five scales unchanged.
+
 ## 6. Secondary content
 
 These can live in:

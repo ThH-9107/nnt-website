@@ -631,6 +631,10 @@ Work:
 - performed excerpt from *Da co hoai lang*
 - included cai luong performance / duet
 
+Thanh's October 24, 2026 recollection: a Sunday afternoon reading Cao Văn Lầu's Wikipedia page developed into choosing life moments for the musical, writing every dialogue line, and planning each scene's stage setup. Thanh played Cao Văn Lầu. Rehearsing with the team and seeing the planned scenes come alive on stage remain the emotional center of the story, more than the First Prize itself.
+
+The original performance recording was lost after the classmate's Drive folder was deleted. The newly supplied photograph shows stage make-up during preparation; it must not be described as the Sunday research session. The original production poster remains available. The play script has not been supplied to the repository.
+
 ### Hoa Chi — Fantasy House Performing Arts
 
 Date: **Nov. 2025**  
@@ -643,6 +647,8 @@ Role: **Main Antagonist**
 - Fantasy House placed **1st of 4 Houses**
 
 Thanh's October 2026 recollection: staying after school to rehearse was tiring but very fun because everyone was trying their best. Use this authentic memory without inventing details about specific scenes or the character's psychology.
+
+In the October 24 brief, Thanh added that vocal rehearsals were especially memorable: they brought the unexpected discovery that he could sing, and he recorded the voiceover for a dragon character. These memories should feel playful and personal without implying professional singing credentials. No rehearsal video, dragon audio, or accurate subtitles were present in the repository at this update; render only real configured media.
 
 ### Khoi Sac 27
 

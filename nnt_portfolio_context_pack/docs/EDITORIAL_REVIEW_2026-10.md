@@ -50,3 +50,13 @@ Additional specific decisions from the durian study, a particular debugging epis
 The production build and TypeScript compilation passed, generating all 16 routes including the secondary GFP page and intercepted overlay. Inspection of the seven main standalone HTML outputs found one H1 per page and no missing local document/image link targets. The final diff passed the whitespace check. Browser preview was unavailable in this session, so desktop/mobile layout and interactive history behavior have not been visually verified.
 
 Automatic approval review rejected publishing the raw Hoa Yen DOCX reports because the user authorized factual review, not distribution of the originals. Their download links and public copies were removed, and the original source files remain locally available and ignored by Git. The unpublished commit was amended to exclude them from public history.
+
+## October 24 creative archive refinement
+
+- Replaced the résumé-like production summaries with Thanh's supplied memories: the Cao Văn Lầu Sunday research/script/stage sequence, Hỏa Chí vocal rehearsals and dragon voiceover, and the playful recurring antagonist role. Khởi Sắc 27 remains upcoming in May 2027.
+- Integrated the real stage-make-up preparation photograph beside the original Cao Văn Lầu poster; retained the First Prize certificate, production records, and secondary ensemble photographs. November 15's year remains unconfirmed.
+- Added simple typed production data and optional script, recording, caption, and transcript fields. No corresponding recordings or script were supplied, so no empty player or invented media is shown. Configured media mounts only after explicit interaction and uses native controls, no autoplay, and `preload="none"`.
+- Added a small authentic bottle-terrarium crop directly below the final MoleBio reflection title, retaining the approved reflection text.
+- No new dependency or homepage content change. Both new delivery images together are 124,050 bytes; the source preparation upload remains unchanged locally.
+
+Verification: production build generated all 17 routes; lint passed. Seven main standalone outputs retain one H1 each. All 106 local image/document references resolve to existing files, and 69 unique route/asset HTTP requests returned 200. No video or audio is bundled or rendered without configured media. Desktop/mobile CSS and semantics were reviewed; no browser surface was available for a visual viewport or interactive playback check.

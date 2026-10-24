@@ -161,6 +161,8 @@ The story is now **The Unseen**, a separate chapter beyond the Five Scales, usin
 
 Resolved October 15, 2026: XULONG is Thanh's team name. November 15 is the performance date; January 2025 is the First Prize certificate date. The poster can be shown with this context. The performance year has not been explicitly reconfirmed; do not infer or publish it from the certificate date.
 
+October 24 media status: Cao Văn Lầu performance footage is lost; the real preparation photograph and poster are available. The original script, Hỏa Chí vocal-rehearsal video, dragon voiceover, and translated captions have not been supplied to the repository. Optional archive fields exist, but no empty player, invented transcript, or missing-footage placeholder should appear.
+
 ## 15. Training titles
 
 The final résumé uses Research Trainee for Stem Cell Summer School and the Molecular Biology Course. The public site retains Selected Participant until official program evidence supports a stronger title. The Binh Phu Laboratory Assistant Intern title is supported by the supplied personal reference.

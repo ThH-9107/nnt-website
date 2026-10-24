@@ -9,6 +9,7 @@ import "./certificates.css";
 import "./readability.css";
 import "./molebio.css";
 import "./unseen.css";
+import "./creative.css";
 
 export const metadata: Metadata = {
   title: "Nguyen Ngoc Thanh | Student Researcher",

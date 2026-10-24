@@ -171,6 +171,15 @@ export const photos = {
     "caption": "The terrarium workshop used reused plastic bottles and locally collected materials.",
     "alt": "Students gathered around a table assembling small bottle terrariums."
   },
+  "molebioTerrariumDetail": {
+    "src": "/images/selected/molebio-bottle-terrarium.webp",
+    "width": 720,
+    "height": 768,
+    "title": "A bottle terrarium",
+    "caption": "From our terrarium activity.",
+    "alt": "A small terrarium planted with moss and foliage in a reused plastic bottle.",
+    "aspectRatio": "15 / 16"
+  },
   "molebioPCR": {
     "src": "/images/selected/molebio-pcr-practice.webp",
     "width": 1276,
@@ -286,6 +295,15 @@ export const photos = {
     "caption": "The original poster credits Thanh as Cao Văn Lầu and XULONG, his team, for direction. November 15 is the performance date; January 2025 is the certificate date.",
     "alt": "The original poster for the Cao Van Lau production, showing the cast and title 1919 Xuyen Khong.",
     "kind": "figure"
+  },
+  "creativePreparation": {
+    "src": "/images/selected/cao-van-lau-stage-preparation.webp",
+    "width": 720,
+    "height": 1280,
+    "title": "Before the performance",
+    "caption": "Stage make-up during preparations for our Cao Văn Lầu production.",
+    "alt": "Thanh seated in a classroom while another student applies dark stage make-up to his face.",
+    "aspectRatio": "9 / 16"
   },
   "creativeFamilyScene": {
     "src": "/images/selected/school-family-performance-ensemble.webp",

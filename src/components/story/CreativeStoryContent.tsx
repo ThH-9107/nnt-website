@@ -1,27 +1,36 @@
 import Link from "next/link";
-import { photos, type PortfolioImage } from "@/data/photography";
+import { photos } from "@/data/photography";
+import { creativeProductions, type CreativeProduction } from "@/data/creative-productions";
 import { StoryFigure } from "./StoryFigure";
+import { CreativeRecording } from "./CreativeRecording";
 
-const productions: { label: string; title: string; role: string; paragraphs: string[]; image?: PortfolioImage; evidence?: { href: string; label: string } }[] = [
-  { label: "Performed Nov. 15 · Certificate Jan. 2025", title: "The Beauty of Vietnamese Culture", role: "Team Lead · Writer · Director · Performer", paragraphs: [
-    "With a six-student team, I wrote, directed, and performed in a 15-minute musical dramatizing Cao Văn Lầu’s life. The production brought together a script, Vietnamese music, and performance, including an excerpt from Dạ cổ hoài lang and a cải lương duet.",
-    "Our team, XULONG, received First Prize in the grade-wide project, which involved approximately 300 students. We performed on November 15; January 2025 is the date of the certificate. The poster’s directing credit uses our team name.",
-  ], image: photos.creativePoster, evidence: { href: "/documents/certificates/vietnamese-culture-first-prize.pdf", label: "First Prize certificate" } },
-  { label: "Nov. 2025 · Fantasy House production", title: "Hỏa Chí", role: "Main Antagonist", paragraphs: [
-    "I joined the cast through an audition and rehearsed for more than a month as the main antagonist. The production involved around 50–60 people, with performers working together across the larger House cast.",
-    "I remember staying after school to rehearse. It was tiring, but very fun: everyone was trying their best.",
-    "We performed before more than 1,000 students, teachers, and staff. Fantasy House placed first among the four Houses.",
-  ], image: photos.creativeAudience },
-  { label: "Sep. 2026–May 2027 · Upcoming", title: "Khởi Sắc 27", role: "Main Antagonist (Cast)", paragraphs: [
-    "After two audition rounds, I was cast as the main antagonist in the school’s annual Grade 12 performing-arts fundraiser. I am currently rehearsing for the May 2027 production.",
-  ] },
-];
+function ProductionText({ text }: { text: string }) {
+  return <>{text.split(/(Dạ cổ hoài lang)/g).map((part, index) => index % 2 ? <em key={index} lang="vi">{part}</em> : part)}</>;
+}
+
+function Production({ production, index }: { production: CreativeProduction; index: number }) {
+  const hasPhotographs = Boolean(production.photographs?.length);
+  const photoSizes = production.photographs?.length === 2 ? "(max-width: 620px) 44vw, (max-width: 900px) 40vw, 24vw" : "(max-width: 900px) 90vw, 45vw";
+
+  return <section className="creative-production" id={production.id} data-status={production.status} data-featured={index === 0} aria-labelledby={`${production.id}-title`}>
+    <header className="creative-production-heading"><span className="creative-production-number" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span><div><p className="story-kicker">{production.label}</p><h3 id={`${production.id}-title`}>{production.title}</h3><p className="creative-production-roles">{production.roles}</p></div></header>
+    <div className="creative-production-body" data-with-images={hasPhotographs}>
+      <div className="creative-production-copy">{production.paragraphs.map((paragraph, paragraphIndex) => <p className={paragraphIndex === 0 ? "creative-production-lead" : undefined} key={paragraph}><ProductionText text={paragraph} /></p>)}</div>
+      {hasPhotographs && <div className="creative-production-photographs" data-count={production.photographs?.length}>{production.photographs?.map(({ image, treatment }) => <StoryFigure image={image} key={image.src} className={`creative-production-photo creative-production-photo-${treatment}`} sizes={photoSizes} />)}</div>}
+    </div>
+    {production.recordings?.length ? <div className="creative-production-recordings">{production.recordings.map(recording => <CreativeRecording key={recording.id} recording={recording} productionId={production.id} />)}</div> : null}
+    {production.script && <aside className="creative-script-record"><span className="story-kicker">From the archive</span><a href={production.script.href} target="_blank" rel="noopener noreferrer">{production.script.label} <span aria-hidden="true">↗</span></a>{production.script.description && <p>{production.script.description}</p>}{production.script.language && <small>{production.script.language}</small>}</aside>}
+    {(production.record || production.evidence?.length) && <aside className="creative-production-record" aria-label={`${production.title}: production record`}>{production.record && <p>{production.record}</p>}{production.evidence?.map(evidence => <a href={evidence.href} key={evidence.href} target="_blank" rel="noopener noreferrer">{evidence.label} <span aria-hidden="true">↗</span></a>)}</aside>}
+  </section>;
+}
 
 export function CreativeStoryContent({ inOverlay = false }: { inOverlay?: boolean }) {
+  const upcoming = creativeProductions.filter(production => production.status === "in-preparation");
+
   return <article className="story story-creative">
-    <header className="story-creative-opening"><div><p className="story-kicker">05 / 05 · AUDIENCE</p><h1>Writing, directing,<br />and being someone else.</h1><p>I love theatre, music, and storytelling. I enjoy writing and directing, and occasionally getting to be someone completely different on stage.</p></div><StoryFigure image={photos.creativeEnsemble} className="story-creative-hero" priority sizes="(max-width: 900px) 100vw, 60vw" /></header>
-    <section className="story-creative-archive"><div className="story-section-heading"><span className="story-kicker">Selected performance archive</span><h2>On and behind the stage.</h2><p>These productions have given me different roles in the work: shaping a script, directing a small team, and joining a larger cast as an actor.</p></div><div>{productions.map((production, index) => <article key={production.title}><span className="story-creative-number">{String(index + 1).padStart(2, "0")}</span><div><p className="story-kicker">{production.label}</p><h3>{production.title}</h3><strong>{production.role}</strong>{production.paragraphs.map(paragraph => <p key={paragraph}>{paragraph}</p>)}{production.evidence && <a className="story-production-evidence" href={production.evidence.href} target="_blank" rel="noopener noreferrer">{production.evidence.label} ↗</a>}{production.image && <StoryFigure image={production.image} className="story-production-image" />}</div></article>)}</div></section>
+    <header className="story-creative-opening"><div><p className="story-kicker">05 / 05 · AUDIENCE <span aria-hidden="true">/</span> express</p><h1>Writing, directing,<br />and being someone else.</h1><p>There&apos;s something wonderful about bringing a story to life. Sometimes that means writing a script, directing a group of performers, or stepping into the spotlight as someone entirely different. Sometimes, it simply means laughing through rehearsals with friends.</p></div><StoryFigure image={photos.creativeEnsemble} className="story-creative-hero" priority sizes="(max-width: 900px) 100vw, 60vw" /></header>
+    <section className="creative-production-archive" aria-labelledby="creative-archive-title"><div className="story-section-heading"><span className="story-kicker">A personal performance archive</span><h2 id="creative-archive-title">On and behind the stage.</h2></div>{creativeProductions.map((production, index) => <Production key={production.id} production={production} index={index} />)}</section>
     <section className="story-creative-photo-essay"><div className="story-section-heading"><span className="story-kicker">Additional performance record</span><h2>The ensemble, and the room.</h2></div><div><StoryFigure image={photos.creativeFamilyScene} /><StoryFigure image={photos.creativeWide} /></div></section>
-    <div className="story-creative-end"><span>Currently rehearsing for Khởi Sắc 27 · May 2027.</span>{!inOverlay && <Link href="/#inquiry-map">Return to the Inquiry Map ↗</Link>}</div>
+    <div className="story-creative-end">{upcoming.length > 0 && <span>In preparation: {upcoming.map(production => production.title).join(" · ")}.</span>}{!inOverlay && <Link href="/#inquiry-map">Return to the Inquiry Map ↗</Link>}</div>
   </article>;
 }
