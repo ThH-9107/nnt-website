@@ -4,6 +4,7 @@ import { photos } from "@/data/photography";
 import { creativeProductions, type CreativeProduction } from "@/data/creative-productions";
 import { StoryFigure } from "./StoryFigure";
 import { CreativeRecording } from "./CreativeRecording";
+import { FromPageToStage } from "./FromPageToStage";
 
 function ProductionText({ text }: { text: string }) {
   return <>{text.split(/(Dạ cổ hoài lang)/g).map((part, index) => index % 2 ? <em key={index} lang="vi">{part}</em> : part)}</>;
@@ -21,8 +22,9 @@ function Production({ production, index }: { production: CreativeProduction; ind
       <div className="creative-production-copy">{production.paragraphs.map((paragraph, paragraphIndex) => <Fragment key={paragraph}><p className={paragraphIndex === 0 ? "creative-production-lead" : undefined}><ProductionText text={paragraph} /></p>{inlineRecordings.filter(recording => recording.afterParagraph === paragraphIndex + 1).map(recording => <CreativeRecording key={recording.id} recording={recording} productionId={production.id} />)}</Fragment>)}</div>
       {hasPhotographs && <div className="creative-production-photographs" data-count={production.photographs?.length}>{production.photographs?.map(({ image, treatment }) => <StoryFigure image={image} key={image.src} className={`creative-production-photo creative-production-photo-${treatment}`} sizes={photoSizes} />)}</div>}
     </div>
+    {production.id === "cao-van-lau" && <FromPageToStage fullScript={production.script} />}
     {trailingRecordings.length ? <div className="creative-production-recordings">{trailingRecordings.map(recording => <CreativeRecording key={recording.id} recording={recording} productionId={production.id} />)}</div> : null}
-    {production.script && <aside className="creative-script-record"><span className="story-kicker">From the archive</span><a href={production.script.href} target="_blank" rel="noopener noreferrer">{production.script.label} <span aria-hidden="true">↗</span></a>{production.script.description && <p>{production.script.description}</p>}{production.script.language && <small>{production.script.language}</small>}</aside>}
+    {production.script && production.id !== "cao-van-lau" && <aside className="creative-script-record"><span className="story-kicker">From the archive</span><a href={production.script.href} target="_blank" rel="noopener noreferrer">{production.script.label} <span aria-hidden="true">↗</span></a>{production.script.description && <p>{production.script.description}</p>}{production.script.language && <small>{production.script.language}</small>}</aside>}
     {(production.record || production.evidence?.length) && <aside className="creative-production-record" aria-label={`${production.title}: production record`}>{production.record && <p>{production.record}</p>}{production.evidence?.map(evidence => <a href={evidence.href} key={evidence.href} target="_blank" rel="noopener noreferrer">{evidence.label} <span aria-hidden="true">↗</span></a>)}</aside>}
   </section>;
 }

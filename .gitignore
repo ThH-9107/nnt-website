@@ -52,3 +52,6 @@ next-env.d.ts
 
 # Preserve the preparation upload locally; publish its optimized delivery copy
 /public/images/creative/preparation.jpg
+
+# Unreviewed theatre upload; publish only the privacy-reviewed reading copy
+/public/documents/other/Scripts1919.pdf

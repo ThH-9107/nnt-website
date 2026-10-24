@@ -163,7 +163,9 @@ Resolved October 15, 2026: XULONG is Thanh's team name. November 15 is the perfo
 
 October 24 media correction: `preparation.jpg` belongs to Hỏa Chí, not Cao Văn Lầu. Its corrected selected delivery is `public/images/selected/hoa-chi-stage-preparation.webp`. Cao Văn Lầu retains the original poster and certificate; its performance footage is lost and no preparation photograph is attributed to it.
 
-Resolved media availability: Thanh supplied the Hỏa Chí vocal-rehearsal recording at `https://res.cloudinary.com/m6yc0cyk/video/upload/c_limit,w_960/q_auto/f_auto/v1792830094/practice.mp4`, captioned exactly “Somewhere in these rehearsals, I discovered I could actually sing.” The original script, dragon voiceover audio, and subtitle/caption files remain unavailable. Optional archive fields exist, but no empty player, invented transcript, or missing-footage placeholder should appear. Availability of the URL is not a browser playback test; do not invent dimensions, duration, or other metadata.
+Resolved media availability: Thanh supplied the Hỏa Chí vocal-rehearsal recording at `https://res.cloudinary.com/m6yc0cyk/video/upload/c_limit,w_960/q_auto/f_auto/v1792830094/practice.mp4`, captioned exactly “Somewhere in these rehearsals, I discovered I could actually sing.” Dragon voiceover audio and subtitle/caption files remain unavailable. Optional archive fields exist, but no empty player, invented transcript, or missing-footage placeholder should appear. Availability of the URL is not a browser playback test; do not invent dimensions, duration, or other metadata.
+
+The Cao Văn Lầu script has now been supplied as `Scripts1919.pdf`, reviewed across all five pages, and its separation excerpt matched to page 3. It confirms 1919 / Nét đẹp văn hóa Việt Nam / Xuyên không. The original contains private credits, metadata, and unreviewed external references; only the privacy-edited reading copy may be published. Thanh explicitly chose the script and existing poster when no separate Cao Văn Lầu preparation photo was found. Keep the existing Hỏa Chí preparation photograph in Hỏa Chí.
 
 ## 15. Training titles
 

@@ -633,7 +633,11 @@ Work:
 
 Thanh's October 24, 2026 recollection: a Sunday afternoon reading Cao Văn Lầu's Wikipedia page developed into choosing life moments for the musical, writing every dialogue line, and planning each scene's stage setup. Thanh played Cao Văn Lầu. Rehearsing with the team and seeing the planned scenes come alive on stage remain the emotional center of the story, more than the First Prize itself.
 
-The original performance recording was lost after the classmate's Drive folder was deleted. The original production poster and First Prize certificate remain available. Thanh clarified that the newly supplied `preparation.jpg` shows Hỏa Chí stage make-up, not Cao Văn Lầu preparation or the Sunday research session. The play script has not been supplied to the repository.
+The original performance recording was lost after the classmate's Drive folder was deleted. The original production poster and First Prize certificate remain available. Thanh clarified that `preparation.jpg` shows Hỏa Chí stage make-up, not Cao Văn Lầu preparation or the Sunday research session. He confirmed using the script and poster for **From Page to Stage**, without a separate preparation photograph.
+
+Thanh's supplied five-page script PDF confirms the production title **1919**, the school project *Nét đẹp văn hóa Việt Nam*, and the script's group credit **Xuyên không**. Keep that source credit distinct from the retained poster's XULONG credit. The story follows Cát Tiên through a time-travel experience, witnessing marriage, separation, and music in a student adaptation of Cao Văn Lầu's life. It is presented as a theatrical plot rather than a definitive historical biography.
+
+The feature uses Thanh's supplied English adaptation and original Vietnamese separation-scene excerpt (source page 3), a concise synopsis, and a reviewed full-script link. Personal credits, ambiguous peer identification, metadata, and external reference links are removed from the public reading copy; the source PDF stays local. No footage is recovered or reconstructed.
 
 ### Hoa Chi — Fantasy House Performing Arts
 
@@ -648,7 +652,7 @@ Role: **Main Antagonist**
 
 Thanh's October 2026 recollection: staying after school to rehearse was tiring but very fun because everyone was trying their best. Use this authentic memory without inventing details about specific scenes or the character's psychology.
 
-In the October 24 brief, Thanh added that vocal rehearsals were especially memorable: they brought the unexpected discovery that he could sing, and he recorded the voiceover for a dragon character. These memories should feel playful and personal without implying professional singing credentials. He subsequently clarified that `preparation.jpg` belongs to Hỏa Chí; its delivery is `public/images/selected/hoa-chi-stage-preparation.webp`. He also supplied the real vocal-rehearsal recording at `https://res.cloudinary.com/m6yc0cyk/video/upload/c_limit,w_960/q_auto/f_auto/v1792830094/practice.mp4`, with the exact caption “Somewhere in these rehearsals, I discovered I could actually sing.” Dragon audio, subtitle/caption files, and the original script remain absent; render only real configured media and do not invent metadata or claim unperformed playback checks.
+In the October 24 brief, Thanh added that vocal rehearsals were especially memorable: they brought the unexpected discovery that he could sing, and he recorded the voiceover for a dragon character. These memories should feel playful and personal without implying professional singing credentials. He subsequently clarified that `preparation.jpg` belongs to Hỏa Chí; its delivery is `public/images/selected/hoa-chi-stage-preparation.webp`. He also supplied the real vocal-rehearsal recording at `https://res.cloudinary.com/m6yc0cyk/video/upload/c_limit,w_960/q_auto/f_auto/v1792830094/practice.mp4`, with the exact caption “Somewhere in these rehearsals, I discovered I could actually sing.” Dragon audio and subtitle/caption files remain absent; render only real configured media and do not invent metadata or claim unperformed playback checks.
 
 ### Khoi Sac 27
 

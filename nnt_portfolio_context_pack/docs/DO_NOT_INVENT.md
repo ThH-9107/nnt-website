@@ -143,6 +143,10 @@ Safe:
 Cao Van Lau:
 - XULONG is Thanh's team name, confirmed October 15, 2026; the poster's directing credit uses that name.
 - November 15 is the performance date; January 2025 is the certificate date. Do not call January the performance date or infer the November year without confirmation.
+- The 1919 screenplay identifies its group as Xuyên không; retain that source credit without inventing an explanation for the poster's XULONG credit.
+- The supplied synopsis is the plot of a student theatrical adaptation, not an authoritative biographical account.
+- The preparation photograph belongs to Hỏa Chí. Thanh confirmed using the script and poster for From Page to Stage; do not reassign that photograph or fabricate new rehearsal imagery.
+- The bilingual excerpt is supplied text: label English as an adaptation and Vietnamese as the original with minor readability corrections. Publish only the privacy-reviewed reading copy of the full script, never the unreviewed source PDF.
 
 Khoi Sac 27:
 Do NOT claim:

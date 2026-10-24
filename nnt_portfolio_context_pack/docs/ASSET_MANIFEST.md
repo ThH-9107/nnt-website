@@ -202,7 +202,9 @@ Selected October 24 delivery assets:
 - Cloudinary's authentic two-second poster is `https://res.cloudinary.com/m6yc0cyk/video/upload/so_2,c_limit,w_960/q_auto/v1792830094/practice.jpg` — 540 × 960 JPEG, 28,378 bytes. It is delivered directly from Cloudinary.
 - Cao Văn Lầu retains its original production poster and First Prize certificate. Its performance footage is lost; do not assign the Hỏa Chí preparation image or vocal-rehearsal video to it.
 
-Dragon voiceover audio, subtitle/caption files, and the original play script remain unavailable. Do not generate substitutes. Keep large recording originals outside the deployment tree; use optimized remote delivery URLs and authentic poster/caption assets. Verify dimensions, duration, and other media metadata from the actual asset rather than inventing them. No browser playback result is established by this asset inventory.
+Dragon voiceover audio and subtitle/caption files remain unavailable. Do not generate substitutes. Keep large recording originals outside the deployment tree; use optimized remote delivery URLs and authentic poster/caption assets. Verify dimensions, duration, and other media metadata from the actual asset rather than inventing them. No browser playback result is established by this asset inventory.
+
+The new `Scripts1919.pdf` is the five-page source for From Page to Stage. It confirms 1919 / Nét đẹp văn hóa Việt Nam / Xuyên không and the separation-scene excerpt on page 3. The uploaded source contains personal credits, class metadata, an ambiguous peer label, and unreviewed external reference links. Preserve it under ignored `local-source-documents/theatre-script-review/`; publish only the privacy-reviewed reading copy at `public/documents/creative/1919-vietnamese-script.pdf`. No separate Cao Văn Lầu preparation photograph was found; Thanh chose the script and poster. Do not reuse the Hỏa Chí preparation photograph for this feature.
 
 ## 8. Awards / Certificates
 

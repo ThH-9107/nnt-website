@@ -10,6 +10,7 @@ import "./readability.css";
 import "./molebio.css";
 import "./unseen.css";
 import "./creative.css";
+import "./page-to-stage.css";
 
 export const metadata: Metadata = {
   title: "Nguyen Ngoc Thanh | Student Researcher",

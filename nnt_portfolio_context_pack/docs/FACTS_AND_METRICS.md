@@ -455,7 +455,10 @@ unless stronger official wording is supplied.
 - grade-wide project ~300 students
 - First Prize
 - User-confirmed October 24, 2026: played Cao Văn Lầu; researched his life on Wikipedia on a Sunday afternoon, wrote the dialogue and planned each scene's stage setup. Seeing the rehearsed production come alive remains a vivid, satisfying memory.
-- The performance footage was lost after a classmate's Google Drive folder was deleted. The original poster and First Prize certificate remain available. Thanh clarified that the supplied `preparation.jpg` belongs to Hỏa Chí, not this production. Thanh still owns the script, but no script file was supplied in the repository.
+- The production's original title is **1919**, under the school project *Nét đẹp văn hóa Việt Nam*. The supplied five-page Vietnamese script identifies its group as **Xuyên không**; the poster's XULONG directing credit remains separately attributed. Do not infer a relationship between the two credit forms.
+- The performance footage was lost after a classmate's Google Drive folder was deleted. The original poster and First Prize certificate remain available. Thanh clarified that the supplied `preparation.jpg` belongs to Hỏa Chí, not this production, and confirmed using only the script and poster for this feature.
+- Thanh supplied `Scripts1919.pdf`. The selected separation-scene excerpt matches page 3. The supplied English text is an adaptation; Vietnamese is the original with minor punctuation/typo cleanup. The synopsis describes the student theatrical adaptation, not an authoritative biography.
+- Review found a teacher credit, class metadata, one ambiguous peer label, and external reference links. The original remains local; publish only a reviewed reading copy with those details removed and a visible editing note.
 
 ## Hoa Chi
 
@@ -472,7 +475,7 @@ unless stronger official wording is supplied.
 - Thanh corrected the attribution of `public/images/creative/preparation.jpg`: it shows Hỏa Chí stage make-up. Selected delivery: `public/images/selected/hoa-chi-stage-preparation.webp`.
 - A real Hỏa Chí vocal-rehearsal video is now supplied: `https://res.cloudinary.com/m6yc0cyk/video/upload/c_limit,w_960/q_auto/f_auto/v1792830094/practice.mp4`.
 - Exact user-supplied video caption: “Somewhere in these rehearsals, I discovered I could actually sing.”
-- The dragon voiceover memory is confirmed, but its audio file remains absent. No subtitle/caption file or script has been supplied. Do not invent media metadata, translations, or a playback-verification result.
+- The dragon voiceover memory is confirmed, but its audio file remains absent. No subtitle/caption file has been supplied. Do not invent media metadata, translations, or a playback-verification result.
 
 ## Khoi Sac 27
 

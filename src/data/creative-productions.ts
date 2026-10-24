@@ -54,27 +54,34 @@ export type CreativeProduction = {
 // script, and recordings render only when real assets are supplied. A video
 // requires an optimized HTTPS URL, lightweight poster, and actual dimensions.
 // Subtitle/caption tracks and transcripts must contain authentic, reviewed text.
-// The Hỏa Chí rehearsal is hosted remotely; dragon audio and the script are absent.
+// The Hỏa Chí rehearsal is hosted remotely; 1919 has a reviewed reading copy.
+// Dragon audio and subtitle files have not been supplied.
 export const creativeProductions: CreativeProduction[] = [
   {
     id: "cao-van-lau",
-    title: "The Beauty of Vietnamese Culture",
+    title: "The Beauty of Vietnamese Culture — 1919",
     label: "Performed November 15 · Certificate January 2025",
     status: "performed",
     roles: "Team Lead · Writer · Director · Performer",
     paragraphs: [
-      "It started on a Sunday afternoon, with a laptop open to Cao Văn Lầu’s Wikipedia page.",
-      "Reading about the composer behind Dạ cổ hoài lang soon turned into working out how to tell his story on stage: which moments to include, how the scenes would unfold, and what each character would say. Every line of dialogue and every scene’s stage setup became part of the script.",
-      "Our six-student team, XULONG, was making a fifteen-minute musical. Alongside writing and directing, I played Cao Văn Lầu himself. The performance brought together acting, traditional Vietnamese music, an excerpt from Dạ cổ hoài lang, and a cải lương duet.",
-      "Imagining it all on a laptop was one kind of excitement. Rehearsing together gave those ideas voices, movement, and music. Our team spent a great deal of time bringing the script to life, and I loved being part of that process.",
-      "Then came the performance. The scenes we had planned and rehearsed came together on stage, just as we had imagined them. There are few feelings quite like watching something you have written come alive in front of you.",
-      "Our production received First Prize, but the award is not the part that stays with me most. Even now, remembering that performance gives me chills.",
+      "It all started on a Sunday afternoon, with a laptop open to Cao Văn Lầu’s Wikipedia page.",
+      "What began as a little research into the life of the composer behind Dạ cổ hoài lang soon turned into something much bigger. Hours went into reading about his life, figuring out how to tell his story, and eventually writing every line of dialogue and planning every scene of a fifteen-minute musical.",
+      "There was something incredibly satisfying about imagining an entire performance from scratch. But getting those ideas off the screen and onto the stage was another challenge altogether. Rehearsal after rehearsal, our team worked to bring the script to life, weaving together acting, traditional music, and cải lương.",
+      "And then came the actual performance.",
+      "Somehow, the scenes I’d spent a Sunday afternoon imagining on my laptop played out exactly as we’d rehearsed them. There are few feelings quite like watching something you’ve written come alive in front of you.",
+      "Our production received First Prize, but even now, it’s that feeling of seeing everything come together that gives me chills.",
     ],
     photographs: [
       { image: photos.creativePoster, treatment: "poster" },
     ],
-    record: "First Prize in a grade-wide project involving approximately 300 students.",
+    record: "A six-student production, with Thanh playing Cao Văn Lầu. First Prize in a grade-wide project involving approximately 300 students.",
     evidence: [{ href: "/documents/certificates/vietnamese-culture-first-prize.pdf", label: "First Prize certificate" }],
+    script: {
+      href: "/documents/creative/1919-vietnamese-script.pdf",
+      label: "Read the original script",
+      description: "1919 · Vietnamese · Public reading copy",
+      language: "Vietnamese",
+    },
   },
   {
     id: "hoa-chi",
