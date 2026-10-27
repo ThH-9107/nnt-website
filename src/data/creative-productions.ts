@@ -12,7 +12,7 @@ type RecordingBase = {
   title: string;
   // Use an actual optimized remote file URL, never a large original in /public.
   src: `https://${string}`;
-  caption: string;
+  caption?: string;
   languageLabel: string;
   transcript?: CreativeDocument;
   // One-based paragraph number; omitted recordings follow the production story.
@@ -107,7 +107,6 @@ export const creativeProductions: CreativeProduction[] = [
       poster: "https://res.cloudinary.com/m6yc0cyk/video/upload/so_2,c_limit,w_960/q_auto/v1792830094/practice.jpg",
       width: 540,
       height: 960,
-      caption: "Somewhere in these rehearsals, I discovered I could actually sing.",
       languageLabel: "Vietnamese",
       afterParagraph: 2,
     }],

@@ -5,6 +5,7 @@ import { creativeProductions, type CreativeProduction } from "@/data/creative-pr
 import { StoryFigure } from "./StoryFigure";
 import { CreativeRecording } from "./CreativeRecording";
 import { FromPageToStage } from "./FromPageToStage";
+import { creativeSerif } from "@/app/fonts";
 
 function ProductionText({ text }: { text: string }) {
   return <>{text.split(/(Dạ cổ hoài lang)/g).map((part, index) => index % 2 ? <em key={index} lang="vi">{part}</em> : part)}</>;
@@ -32,7 +33,7 @@ function Production({ production, index }: { production: CreativeProduction; ind
 export function CreativeStoryContent({ inOverlay = false }: { inOverlay?: boolean }) {
   const upcoming = creativeProductions.filter(production => production.status === "in-preparation");
 
-  return <article className="story story-creative">
+  return <article className={`story story-creative ${creativeSerif.variable}`}>
     <header className="story-creative-opening"><div><p className="story-kicker">05 / 05 · AUDIENCE <span aria-hidden="true">/</span> express</p><h1>Writing, directing,<br />and being someone else.</h1><p>There&apos;s something wonderful about bringing a story to life. Sometimes that means writing a script, directing a group of performers, or stepping into the spotlight as someone entirely different. Sometimes, it simply means laughing through rehearsals with friends.</p></div><StoryFigure image={photos.creativeEnsemble} className="story-creative-hero" priority sizes="(max-width: 900px) 100vw, 60vw" /></header>
     <section className="creative-production-archive" aria-labelledby="creative-archive-title"><div className="story-section-heading"><span className="story-kicker">A personal performance archive</span><h2 id="creative-archive-title">On and behind the stage.</h2></div>{creativeProductions.map((production, index) => <Production key={production.id} production={production} index={index} />)}</section>
     <section className="story-creative-photo-essay"><div className="story-section-heading"><span className="story-kicker">Additional performance record</span><h2>The ensemble, and the room.</h2></div><div><StoryFigure image={photos.creativeFamilyScene} /><StoryFigure image={photos.creativeWide} /></div></section>

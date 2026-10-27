@@ -5,6 +5,8 @@ import { hoaYenThankYouLetter } from "@/data/community-documents";
 import { ScientificText } from "./ScientificText";
 import { MoleBioLearningSequence } from "./MoleBioLearningSequence";
 import { MoleBioReflection } from "./MoleBioReflection";
+import { ProjectExternalLink } from "@/components/ProjectExternalLink";
+import { projectLinks } from "@/data/project-links";
 
 const scalePosition: Record<ProjectStory["kind"], string> = {
   "medical-ai": "01 / 05 · IMAGE",
@@ -72,7 +74,7 @@ function PhytophthoraStory({ project }: { project: ProjectStory }) {
 function MoleBioStory({ project }: { project: ProjectStory }) {
   return <article className="story story-lab"><StoryOpening project={project} />
     <MoleBioLearningSequence />
-    <section className="story-lab-program"><div className="story-section-heading"><span className="story-kicker">The relaunched program</span><h2>{project.question}</h2><p>{project.questionContext}</p></div><Metrics project={project} /></section>
+    <section className="story-lab-program"><div className="story-section-heading"><span className="story-kicker">The relaunched program</span><h2>{project.question}</h2><p>{project.questionContext}</p><ProjectExternalLink link={projectLinks.molebio} /></div><Metrics project={project} /></section>
     <section className="story-lab-record"><div><Timeline items={project.timeline} /></div><div className="story-lab-photos">{project.gallery.map((item) => <Figure key={item.src} {...item} />)}</div></section>
     <section className="story-lab-chapters">{project.chapters.map((chapter) => <Chapter key={chapter.label} chapter={chapter} />)}</section>
     <section className="story-lab-documentation"><div className="story-section-heading"><span className="story-kicker">Sessions, workshops & student projects</span><h2>A laboratory shared by learners.</h2></div><div className="story-photo-grid">{project.record?.map((item) => <Figure key={item.src} {...item} />)}</div></section>
@@ -83,11 +85,20 @@ function MoleBioStory({ project }: { project: ProjectStory }) {
 function HoaYenStory({ project }: { project: ProjectStory }) {
   return <article className="story story-community"><StoryOpening project={project} />
     <section className="story-question story-community-question"><span className="story-kicker">{project.questionLabel}</span><h2>{project.question}</h2><p>{project.questionContext}</p></section>
-    <section className="story-community-route"><div className="story-section-heading"><span className="story-kicker">Selected documented programs / 2024–2026</span><h2>From water safety to recurring programs.</h2><p>{project.timelineIntro}</p></div><Timeline items={project.timeline} /></section>
+    <section className="story-community-route"><div className="story-section-heading"><span className="story-kicker">Selected documented programs / 2024–2026</span><h2>From water safety to recurring programs.</h2><p>{project.timelineIntro}</p><ProjectExternalLink link={projectLinks.hoaYen} /></div><Timeline items={project.timeline} /></section>
     <section className="story-community-impact"><div><span className="story-kicker">Documented reach</span><h2>The program record.</h2><p>Program totals come from the three-year report. Beneficiary participations may include repeat participants; expenditures/support covers documented program costs and support, not fundraising revenue. Core membership describes the organization’s growth.</p></div><Metrics project={project} /></section>
     <section className="story-community-gallery">{project.gallery.map((item) => <Figure key={item.src} {...item} />)}</section>
     <section className="story-community-evidence" aria-labelledby="hoa-yen-letter-title"><div><span className="story-kicker">Acknowledgment from a community partner</span><h2 id="hoa-yen-letter-title">A letter from Cai Rang.</h2><p>The Cai Rang Ward Youth Union thanked Thanh and Hoa Yen for supporting its 2026 Mid-Autumn activities.</p><p>The letter acknowledges 100 gift packages and 10 scholarships. These figures describe the support recognized in this document and are not added to the program totals above.</p><a href={hoaYenThankYouLetter.fullSrc} target="_blank" rel="noopener noreferrer">Read the original letter <span aria-hidden="true">↗</span></a></div><StoryFigure image={hoaYenThankYouLetter} sizes="(max-width: 900px) 90vw, 40vw" /></section>
-    <section className="story-community-chapters">{project.chapters.map((chapter) => <Chapter key={chapter.label} chapter={chapter} />)}<aside className="story-program-sources" aria-label="Further program records"><p><a href="https://giaoducthoidai.vn/can-tho-tuyen-truyen-an-toan-giao-thong-tang-qua-thuong-ho-cho-noi-cai-rang-post681418.html" target="_blank" rel="noopener noreferrer">Local coverage of the water-safety campaign ↗</a><span>Giáo dục & Thời đại · April 30, 2024 · Reports on the joint local activity.</span></p></aside></section><Status project={project} /><StoryEnd project={project} />
+    <section className="story-community-chapters">{project.chapters.map((chapter) => <Chapter key={chapter.label} chapter={chapter} />)}<aside className="story-program-sources" aria-label="Further program records"><p><a href="https://giaoducthoidai.vn/can-tho-tuyen-truyen-an-toan-giao-thong-tang-qua-thuong-ho-cho-noi-cai-rang-post681418.html" target="_blank" rel="noopener noreferrer">Local coverage of the water-safety campaign ↗</a><span>Giáo dục & Thời đại · April 30, 2024 · Reports on the joint local activity.</span></p></aside>
+      <section className="story-community-heritage" aria-labelledby="hoa-yen-heritage-title">
+        <header><span className="story-kicker">Beyond the celebration</span><h2 id="hoa-yen-heritage-title">A digital home for local heritage.</h2><p className="story-community-heritage-meta">Cái Răng, Cần Thơ · 2026</p></header>
+        <div><p>As part of our 2026 Mid-Autumn initiative in Cần Thơ, Hoa Yên gifted the floating-market community a website: a digital place to share its stories, traditions, and everyday life beyond the celebration.</p><p>My part was to review the design and content for accuracy and suitability, and to propose and present the website to community members. The hope was simple: to help the culture of the market remain visible and accessible to future generations.</p><ProjectExternalLink link={projectLinks.caiRang} /></div>
+      </section>
+      <aside className="story-community-support" aria-labelledby="hoa-yen-support-title">
+        <h3 className="story-kicker" id="hoa-yen-support-title">With the support of</h3>
+        <div><div className="story-community-sponsor"><ProjectExternalLink link={projectLinks.hoaYenSponsor} /><span>Principal Sponsor</span></div><p>With thanks to BaLi’S for supporting Hoa Yên and helping bring our community initiatives to life.</p></div>
+      </aside>
+    </section><Status project={project} /><StoryEnd project={project} />
   </article>;
 }
 

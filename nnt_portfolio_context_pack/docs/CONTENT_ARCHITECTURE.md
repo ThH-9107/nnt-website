@@ -222,6 +222,8 @@ Photo-heavy.
 
 Listen/Practice retain adjacent contrasting editorial panels. Beyond is directly connected underneath with two authentic, separate laboratory-learning experiences. It is conceptual, not chronological. Detailed workshops and projects follow; the ending is “What I Couldn't Carry Forward,” using Thanh's approved iGEM/succession account.
 
+October 27 project-link refinement: keep an understated link to the official MoleBio Instagram within its own story, preserving the founding/program narrative. The FRC Instagram belongs in the separate FRC module under COMMUNITY, without suggesting personal account management.
+
 ### Hoa Yen
 Mechanic: **one initiative → recurring organization**
 
@@ -235,6 +237,8 @@ Use:
 - documented impact
 
 Do not turn into a KPI dashboard.
+
+October 27 refinement: connect Hoa Yên's official Facebook page, a short **A digital home for local heritage.** account after its narrative chapters, and a compact **With the Support Of** acknowledgment for **BaLi’S · Principal Sponsor** before its current-direction section. Preserve the charity narrative and photographs. These are connected editorial elements, not three large cards or a new homepage section. Thanh clarified that Hoa Yên gifted `chonoicairang.vn` to the community in 2026; his role was design/content review and proposing/presenting the website to the community. The domain link is now allowed as the organization's shared initiative. Preserve the platform's pre-existing 2024 history; do not imply a 2026 first launch, sole development by Thanh, or measured preservation outcomes. Sponsor support does not imply independent organization of every event. Use simple external links, without social embeds or tracking scripts.
 
 ### Creative
 Mechanic: **production archive / audience**
@@ -250,7 +254,7 @@ Do not force research metrics into the page.
 
 The October 24 refinement makes this a personal creative archive. Cao Văn Lầu has the most narrative space, with the supplied Sunday-to-stage memory, original poster, and First Prize certificate. Its original title **1919** is now in the production heading. **From Page to Stage** follows its narrative with a concise synopsis beside a bilingual script excerpt and reviewed full-script link. English is labeled as an adaptation, Vietnamese as the original with minor readability corrections. Native language buttons reserve stable text height; the two-column feature stacks on phones. The synopsis is explicitly a student theatrical adaptation. Thanh confirmed the script/poster composition, without a separate Cao preparation photograph. Do not add footage placeholders.
 
-Thanh corrected `preparation.jpg` as a Hỏa Chí image. Hỏa Chí keeps that stage-make-up photograph, its genuine performance photograph, the supplied Cloudinary vocal-rehearsal recording, and the singing and dragon memories together. Use the exact recording caption: “Somewhere in these rehearsals, I discovered I could actually sing.” Khởi Sắc 27 stays text-first and upcoming. Secondary ensemble images remain subordinate. The shared direct/overlay component uses simple production data, with optional real recordings and scripts; absent media renders nothing. Dragon audio and subtitle/caption files remain absent. Keep the homepage About text and all five scales unchanged.
+Thanh corrected `preparation.jpg` as a Hỏa Chí image. Hỏa Chí keeps that stage-make-up photograph, its genuine performance photograph, the supplied Cloudinary vocal-rehearsal recording, and the singing and dragon memories together. Thanh removed the anecdotal recording caption on October 24, 2026; do not restore it. The video and original Vietnamese audio remain. Khởi Sắc 27 stays text-first and upcoming. Secondary ensemble images remain subordinate. The shared direct/overlay component uses simple production data, with optional real recordings and scripts; absent media renders nothing. Dragon audio and subtitle/caption files remain absent. Keep the homepage About text and all five scales unchanged.
 
 ## 6. Secondary content
 

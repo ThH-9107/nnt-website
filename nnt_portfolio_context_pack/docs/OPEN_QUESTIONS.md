@@ -163,7 +163,7 @@ Resolved October 15, 2026: XULONG is Thanh's team name. November 15 is the perfo
 
 October 24 media correction: `preparation.jpg` belongs to Hỏa Chí, not Cao Văn Lầu. Its corrected selected delivery is `public/images/selected/hoa-chi-stage-preparation.webp`. Cao Văn Lầu retains the original poster and certificate; its performance footage is lost and no preparation photograph is attributed to it.
 
-Resolved media availability: Thanh supplied the Hỏa Chí vocal-rehearsal recording at `https://res.cloudinary.com/m6yc0cyk/video/upload/c_limit,w_960/q_auto/f_auto/v1792830094/practice.mp4`, captioned exactly “Somewhere in these rehearsals, I discovered I could actually sing.” Dragon voiceover audio and subtitle/caption files remain unavailable. Optional archive fields exist, but no empty player, invented transcript, or missing-footage placeholder should appear. Availability of the URL is not a browser playback test; do not invent dimensions, duration, or other metadata.
+Resolved media availability: Thanh supplied the Hỏa Chí vocal-rehearsal recording at `https://res.cloudinary.com/m6yc0cyk/video/upload/c_limit,w_960/q_auto/f_auto/v1792830094/practice.mp4`. Its anecdotal caption was removed at his request on October 24, 2026; preserve the recording and original Vietnamese audio without restoring it. Dragon voiceover audio and subtitle/caption files remain unavailable. Optional archive fields exist, but no empty player, invented transcript, or missing-footage placeholder should appear. Availability of the URL is not a browser playback test; do not invent dimensions, duration, or other metadata.
 
 The Cao Văn Lầu script has now been supplied as `Scripts1919.pdf`, reviewed across all five pages, and its separation excerpt matched to page 3. It confirms 1919 / Nét đẹp văn hóa Việt Nam / Xuyên không. The original contains private credits, metadata, and unreviewed external references; only the privacy-edited reading copy may be published. Thanh explicitly chose the script and existing poster when no separate Cao Văn Lầu preparation photo was found. Keep the existing Hỏa Chí preparation photograph in Hỏa Chí.
 
@@ -174,3 +174,13 @@ The final résumé uses Research Trainee for Stem Cell Summer School and the Mol
 ## 16. Personal details that could add depth
 
 Thanh supplied real MoleBio preparation work and an after-school Hỏa Chí rehearsal memory on October 15, 2026. The October 22 MoleBio prompt additionally supplies the iGEM decision, Grade 12 succession context, and approved unresolved reflection; these have been incorporated. Further Phytophthora task ownership, specific training/debugging decisions, or a particular theatre scene could add depth later if he chooses to share them. Do not fabricate these details. MSC's full institutional name is not supplied.
+
+## 17. Cái Răng cultural-preservation website attribution — clarified
+
+Resolved October 27, 2026 by Thanh's direct clarification: Hoa Yên gifted `https://chonoicairang.vn/` to the community in the organization's name as part of its 2026 initiative. The work was shared. Thanh's role was to review the design and content for validity and to propose/present the website to the community. Its purpose was to share the floating-market community's stories, traditions, and everyday life beyond the celebration.
+
+The domain may now be linked as Hoa Yên's organizational initiative with that specific personal contribution. No further confirmation is needed for this account. Do not describe Thanh as the sole developer, creator of all current platform code, or legal owner.
+
+A [tourism report published October 28, 2024](https://www.dulichvn.org.vn/index.php/item/hoi-thao-khoa-hoc-trien-khai-ung-dung-he-thong-du-lich-thong-minh-tp-can-tho-thi-diem-tai-cho-noi-cai-rang-62606) records the domain's introduction at a smart-tourism workshop on October 26, 2024, before the 2026 initiative. The site's footer names Cần Thơ tourism authorities. Preserve this pre-existing platform history; the 2026 organizational gift does not establish a 2026 first launch or authorship of the full platform.
+
+This clarification supersedes the earlier instruction to withhold the project link. Keep the public account focused on the community gift, Thanh's specified role, and the cultural-preservation purpose without adding unsupported usage or impact metrics.

@@ -197,7 +197,7 @@ Selected October 24 delivery assets:
 - `public/images/selected/molebio-bottle-terrarium.webp` — 720 × 768, about 35 KB; crop from `public/images/molebio/terrariums.jpg`, shown small beneath the final MoleBio reflection title.
 
 - Hỏa Chí vocal-rehearsal video, supplied by Thanh: `https://res.cloudinary.com/m6yc0cyk/video/upload/c_limit,w_960/q_auto/f_auto/v1792830094/practice.mp4`.
-- Exact user-supplied video caption: “Somewhere in these rehearsals, I discovered I could actually sing.”
+- The anecdotal recording caption was removed at Thanh's request on October 24, 2026. Preserve the video and original Vietnamese audio; do not restore that caption.
 - Verified delivery metadata: 540 × 960 (9:16 portrait), 116.367 seconds, H.264 video with an audio track. The optimized remote file is 19,169,532 bytes; no video was saved to the repository.
 - Cloudinary's authentic two-second poster is `https://res.cloudinary.com/m6yc0cyk/video/upload/so_2,c_limit,w_960/q_auto/v1792830094/practice.jpg` — 540 × 960 JPEG, 28,378 bytes. It is delivered directly from Cloudinary.
 - Cao Văn Lầu retains its original production poster and First Prize certificate. Its performance footage is lost; do not assign the Hỏa Chí preparation image or vocal-rehearsal video to it.

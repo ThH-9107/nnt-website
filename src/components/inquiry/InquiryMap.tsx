@@ -7,6 +7,8 @@ import { inquiryNodes } from "@/data/inquiry";
 import { photos } from "@/data/photography";
 import { scaleImages } from "@/data/scale-images";
 import { ScaleObservationImage } from "./ScaleObservationImage";
+import { ProjectExternalLink } from "@/components/ProjectExternalLink";
+import { projectLinks } from "@/data/project-links";
 
 export function InquiryMap() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -81,6 +83,7 @@ export function InquiryMap() {
                   <summary>Family Representative Council</summary>
                   <p>F08 Representative · May 2024–Present. Elected annually as one of 32 representatives serving a high-school community of 1,000+ students.</p>
                   <p>On the Documentation Committee, I collect and summarize student feedback. I have proposed online feedback forms and contributed to well-being and onboarding work and the council’s vision and mission. Through discussions with the school, the council’s collective feedback helped prompt pool cleaning and shared-seating maintenance.</p>
+                  <ProjectExternalLink link={projectLinks.frc} className="scale-secondary-note-link" />
                   <figure className="scale-secondary-photo"><Image src={photos.frcMeeting.src} alt={photos.frcMeeting.alt} width={photos.frcMeeting.width} height={photos.frcMeeting.height} sizes="(max-width: 900px) 80vw, 250px" /><figcaption>{photos.frcMeeting.caption}</figcaption></figure>
                 </details>}
               </li>)}

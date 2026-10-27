@@ -161,6 +161,28 @@
 .story-community-gallery .story-figure:last-child .story-figure-image{aspect-ratio:.95}
 .story-community-chapters{padding:0 max(32px,5vw) 95px}
 
+/* Outbound project links remain part of the surrounding editorial narrative. */
+.project-external-link{display:inline-flex;align-items:center;gap:12px;max-width:100%;min-height:44px;padding:8px 0;color:var(--accent);font-size:15px;font-weight:600;line-height:1.5;text-decoration:underline;text-decoration-color:#a5b7a1;text-underline-offset:6px;text-decoration-thickness:1px}
+.project-external-link>span:first-child{min-width:0;overflow-wrap:break-word}
+.project-external-link>span:last-child{flex:none}
+.project-external-link:hover{color:var(--ink);text-decoration-color:currentColor}
+.project-external-link.scale-secondary-note-link{text-decoration:none}
+.story-section-heading>.project-external-link{margin-top:12px}
+.story-community-heritage{display:grid;grid-template-columns:.65fr 1fr;gap:8%;margin-top:45px;padding:38px 0 28px;border-top:1px solid var(--line)}
+.story-community-heritage>header,.story-community-heritage>div{min-width:0}
+.story-community-heritage .story-kicker{margin-bottom:17px}
+.story-community-heritage h2{font-size:clamp(29px,3vw,42px);max-width:400px}
+.story .story-community-heritage-meta{font-size:14px;line-height:1.6;color:var(--accent);margin:0}
+.story-community-heritage>div>p{max-width:650px;color:var(--muted);margin:0 0 18px}
+.story-community-support{display:grid;grid-template-columns:.65fr 1fr;gap:8%;padding:28px 0 0;border-top:1px solid var(--line)}
+.story-community-support h3.story-kicker{font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:800;letter-spacing:.1em;line-height:1.6;margin:8px 0 0}
+.story-community-support>div{min-width:0}
+.story-community-sponsor{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 18px}
+.story-community-sponsor .project-external-link{margin:0;font-size:18px}
+.story-community-sponsor>span{font-size:13px;color:var(--muted);line-height:1.5}
+.story .story-community-support p{max-width:650px;margin:8px 0 0;font-size:15px;line-height:1.75;color:var(--muted)}
+@media(max-width:900px){.story-community-heritage,.story-community-support{grid-template-columns:minmax(0,1fr);gap:20px}.story-community-heritage{margin-top:35px;padding-top:30px}.story-community-support{gap:8px}.story-community-heritage h2{max-width:550px}}
+
 /* Story / audience: a restrained performance archive. */
 .story-creative{background:#1a2d2b;color:#f4f2e9}
 .story-creative .story-kicker{color:#b3d0bd}

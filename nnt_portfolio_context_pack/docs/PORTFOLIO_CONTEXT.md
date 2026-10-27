@@ -315,6 +315,8 @@ Do not claim a genetically modified or GFP-expressing plant was produced. Do not
 
 School: Lawrence S. Ting School
 
+Official club Instagram, supplied by Thanh October 27, 2026: https://www.instagram.com/mole._.bio/. Use a contextual project link rather than a personal social-media credit.
+
 Timeline:
 - **2024–2025:** member of predecessor Molecular Biology Club
 - **2025–2026:** Founder & President of relaunched **MoleBio**
@@ -403,6 +405,8 @@ Thanh's role includes:
 - resource allocation
 - on-site execution
 
+Thanh supplied Hoa Yên's official Facebook page on October 27, 2026: https://www.facebook.com/profile.php?id=61558934763565. He also identified **BaLi’S** as Hoa Yên's principal sponsor, with Facebook page https://www.facebook.com/Baliscoffeebaclieu. Keep the acknowledgment compact and appreciative, crediting organizational support without implying that BaLi’S independently organized every event.
+
 ### Officially documented lower-bound impact
 
 The 3-year report documents at least:
@@ -462,6 +466,12 @@ A separate Cai Rang Ward Youth Union thank-you letter, dated September 18, 2026,
 - beneficiary count not specified in the report
 - VND 5M contribution/support
 
+### A digital home for local heritage — Cái Răng
+
+Thanh clarified on October 27 that Hoa Yên gifted the website at `https://chonoicairang.vn/` to the local community in the organization's name as part of its 2026 initiative. His role was to review the design and content for validity and to propose/present the website to the community. This was shared work, with the aim of extending the community initiative beyond a single celebration: a digital place for Cái Răng's stories, traditions, and everyday life to be shared and appreciated by future generations.
+
+This belongs within Hoa Yên's community story, with an understated link to the organization's initiative. Preserve Thanh's specific design/content-review and community-presentation role without calling him the sole developer, attributing all platform code to him, claiming legal ownership, or inventing preservation metrics. The domain was publicly introduced in October 2024; the 2026 gift is not a claim that the platform first launched in 2026. Its contribution and link attribution are now clarified by Thanh; no further confirmation is needed for that bounded account.
+
 ### Water-safety campaign / life jackets
 
 On October 15, 2026, Thanh explicitly confirmed **100 life jackets**, superseding the earlier 50+ figure, and supplied contemporary Giáo dục & Thời đại coverage from April 30, 2024. The article describes nearly 100 distributed during the joint local campaign, without naming Hoa Yen. Public copy credits Hoa Yen's participation and the campaign outcome; it does not imply exclusive delivery by Hoa Yen.
@@ -497,6 +507,8 @@ The stronger story:
 ## 7. Family Representative Council (FRC)
 
 School: Lawrence S. Ting School
+
+Official Council Instagram, supplied by Thanh October 27, 2026: https://www.instagram.com/frc.lsts/. A project link does not imply personal ownership or management of the account.
 
 Role:
 - **F08 Representative**
@@ -652,7 +664,7 @@ Role: **Main Antagonist**
 
 Thanh's October 2026 recollection: staying after school to rehearse was tiring but very fun because everyone was trying their best. Use this authentic memory without inventing details about specific scenes or the character's psychology.
 
-In the October 24 brief, Thanh added that vocal rehearsals were especially memorable: they brought the unexpected discovery that he could sing, and he recorded the voiceover for a dragon character. These memories should feel playful and personal without implying professional singing credentials. He subsequently clarified that `preparation.jpg` belongs to Hỏa Chí; its delivery is `public/images/selected/hoa-chi-stage-preparation.webp`. He also supplied the real vocal-rehearsal recording at `https://res.cloudinary.com/m6yc0cyk/video/upload/c_limit,w_960/q_auto/f_auto/v1792830094/practice.mp4`, with the exact caption “Somewhere in these rehearsals, I discovered I could actually sing.” Dragon audio and subtitle/caption files remain absent; render only real configured media and do not invent metadata or claim unperformed playback checks.
+In the October 24 brief, Thanh added that vocal rehearsals were especially memorable: they brought the unexpected discovery that he could sing, and he recorded the voiceover for a dragon character. These memories should feel playful and personal without implying professional singing credentials. He subsequently clarified that `preparation.jpg` belongs to Hỏa Chí; its delivery is `public/images/selected/hoa-chi-stage-preparation.webp`. He also supplied the real vocal-rehearsal recording at `https://res.cloudinary.com/m6yc0cyk/video/upload/c_limit,w_960/q_auto/f_auto/v1792830094/practice.mp4`. Later on October 24, 2026, he requested removal of its anecdotal caption; retain the video and original Vietnamese audio without restoring that caption. Dragon audio and subtitle/caption files remain absent; render only real configured media and do not invent metadata or claim unperformed playback checks.
 
 ### Khoi Sac 27
 

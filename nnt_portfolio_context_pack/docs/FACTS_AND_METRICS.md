@@ -209,6 +209,10 @@ MoleBio:
 - 80 min/session
 - approximately 48 scheduled programming hours
 
+**[USER-CONFIRMED OCTOBER 27, 2026]**
+- Official MoleBio Instagram: https://www.instagram.com/mole._.bio/
+- This is the club's account, not a claim of personal ownership or account management by Thanh.
+
 **[USER-CONFIRMED OCTOBER 22, 2026]**
 - The Listen → Practice → Beyond sequence connects the earlier club, its hands-on relaunch, and separate laboratory learning experiences. This is a conceptual sequence, not a claim that external training occurred after the presidency or was organized by MoleBio.
 - Thanh initially pursued an iGEM direction, then discussed abandoning it with the core team after recognizing that many members wanted more practical, accessible learning.
@@ -257,6 +261,14 @@ Organization size:
 - ~15 initial core members
 - ~25 current core members
 - ~20–25 volunteers may participate per event
+
+## Official page and principal sponsor
+
+**[USER-CONFIRMED OCTOBER 27, 2026]**
+- Official Hoa Yên Facebook: https://www.facebook.com/profile.php?id=61558934763565
+- **BaLi’S — Principal Sponsor** of Hoa Yên Charity.
+- Sponsor Facebook: https://www.facebook.com/Baliscoffeebaclieu
+- Acknowledge support for Hoa Yên without attributing independent organization of every initiative to the sponsor. No sponsorship amount is supplied.
 
 ## Official 3-year report totals
 
@@ -321,6 +333,16 @@ Do not convert this into “50+ households” unless separate verified evidence 
 - 10 scholarship / gift packages
 - VND 100M total program cost
 
+### Cái Răng cultural-preservation website initiative
+
+**[USER-CONFIRMED OCTOBER 27, 2026]**
+- Thanh clarified that Hoa Yên gifted `https://chonoicairang.vn/` to the local community in the name of the organization as part of its 2026 initiative.
+- Thanh's role was to review the design and content for validity and to propose/present the website to the community. The work was shared; do not describe him as the sole developer or creator of the full platform.
+- Purpose: a digital space for preserving and sharing Cái Răng's stories, traditions, and everyday life, with future generations in mind.
+- Location: Cái Răng, Cần Thơ, Vietnam. Focus: community, cultural preservation, and digital storytelling.
+- The domain may now be linked as Hoa Yên's organizational initiative with that specific contribution. This does not establish measured preservation outcomes, legal ownership, or authorship of the platform's full code.
+- The platform was already introduced publicly in October 2024. Describe the 2026 community gift and Thanh's role without claiming that the domain or platform was first launched in 2026; see the retained primary-source evidence in `OPEN_QUESTIONS.md`.
+
 ### Additional 2026 Mid-Autumn acknowledgment
 
 **[VERIFIED BY USER-SUPPLIED PHOTOGRAPH, OCTOBER 2026]**
@@ -382,6 +404,10 @@ October 15, 2026: Thanh says the $1,200 is **likely included** in the VND 284M. 
 - high-school community: 1,000+ students
 - 8-person Content / Documentation Committee
 - elected annually
+
+**[USER-CONFIRMED OCTOBER 27, 2026]**
+- Official FRC Instagram: https://www.instagram.com/frc.lsts/
+- The account belongs to the Council; do not imply that Thanh personally owns or manages it.
 
 Contributions:
 - collect / synthesize student feedback
@@ -474,7 +500,7 @@ unless stronger official wording is supplied.
 - User-confirmed October 24, 2026: vocal rehearsals were a favorite part of the process and an unexpected discovery that he could sing; he also recorded the dragon character's voiceover. These are personal memories, not claims of professional singing experience.
 - Thanh corrected the attribution of `public/images/creative/preparation.jpg`: it shows Hỏa Chí stage make-up. Selected delivery: `public/images/selected/hoa-chi-stage-preparation.webp`.
 - A real Hỏa Chí vocal-rehearsal video is now supplied: `https://res.cloudinary.com/m6yc0cyk/video/upload/c_limit,w_960/q_auto/f_auto/v1792830094/practice.mp4`.
-- Exact user-supplied video caption: “Somewhere in these rehearsals, I discovered I could actually sing.”
+- October 24, 2026: Thanh requested removal of the anecdotal video caption. Keep the rehearsal video, original Vietnamese audio, and confirmed singing memory; do not restore that caption.
 - The dragon voiceover memory is confirmed, but its audio file remains absent. No subtitle/caption file has been supplied. Do not invent media metadata, translations, or a playback-verification result.
 
 ## Khoi Sac 27
